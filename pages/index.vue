@@ -364,8 +364,8 @@
                 // }),
                 // fetch all blog posts sorted by creation date
                 client.getEntries({
-                    'content_type': 'article',
-                    // 'content_type': env.CTF_BLOG_POST_TYPE_ID,
+                    // 'content_type': 'article',
+                    'content_type': env.CTF_BLOG_POST_TYPE_ID,
                     order: '-sys.createdAt'
                 })
             ]).then(([posts]) => {
