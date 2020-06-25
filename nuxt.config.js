@@ -77,7 +77,7 @@ const dynamicRoutes = async () =>{
     modules: [
       '@nuxtjs/style-resources',
       ['nuxt-gmaps', {
-        key: 'AIzaSyDZKnCkSgp4xlrJyJzd9tSfRAToeHfNFvE',
+        key: process.env.GOOGLE_MAP_API_KEY,
       }],
       ['@nuxtjs/google-analytics',
       {
