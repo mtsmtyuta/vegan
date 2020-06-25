@@ -1,6 +1,6 @@
 # vegan
 
-> A Contentful x nuxt x Netlify implementation for vegan web magazine OX
+> A Contentful x nuxt x Netlify implementation for vegan web magazine [OX](https://ox-vegan.jp)
 
 ## Build Setup
 
