@@ -36,7 +36,7 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: black;
+    background: #292929;
     /*background: white;*/
     &.is-finish {
       transition: opacity 1s, z-index 0s 1.01s;
