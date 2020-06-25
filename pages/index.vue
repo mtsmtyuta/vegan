@@ -346,10 +346,10 @@
             Posts,
             Footer
         },
-        mounted: function(){
-            console.log(process.env.CTF_BLOG_POST_TYPE_ID);
-        }
-        ,
+        // mounted: function(){
+        //     console.log(process.env.CTF_BLOG_POST_TYPE_ID);
+        // }
+        // ,
         data (){
             return{
                 posts: []
