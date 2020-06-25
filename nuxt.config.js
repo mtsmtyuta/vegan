@@ -100,7 +100,8 @@ const dynamicRoutes = async () =>{
       CTF_SPACE_ID: process.env.CTF_SPACE_ID,
       CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN,
       CTF_BLOG_POST_TYPE_ID: process.env.CTF_BLOG_POST_TYPE_ID,
-      CTF_RESTAURANTS_POST_TYPE_ID: process.env.CTF_RESTAURANTS_POST_TYPE_ID
+      CTF_RESTAURANTS_POST_TYPE_ID: process.env.CTF_RESTAURANTS_POST_TYPE_ID,
+      GOOGLE_MAP_API_KEY: process.env.GOOGLE_MAP_API_KEY
     },
     /*
     ** Customize the progress bar color
@@ -135,4 +136,4 @@ const dynamicRoutes = async () =>{
     ]
   }
 
-  console.log('nuxt.config: ' + process.env);
+  console.log(process.env);

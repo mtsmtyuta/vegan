@@ -36,14 +36,16 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: white;
+    background: black;
+    /*background: white;*/
     &.is-finish {
       transition: opacity 1s, z-index 0s 1.01s;
       opacity: 0;
       z-index: -1;
     }
     .img-box{
-      background-image: url("/loading.svg");
+      background-image: url("/oxlogo.svg");
+      /*background-image: url("/loading.svg");*/
       width: get-vh(200px);
       height: get-vh(200px);
     }

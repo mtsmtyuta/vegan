@@ -347,7 +347,7 @@
             Footer
         },
         mounted: function(){
-            console.log(this.posts);
+            console.log(process.env.CTF_BLOG_POST_TYPE_ID);
         }
         ,
         data (){

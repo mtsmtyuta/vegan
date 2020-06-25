@@ -32,6 +32,9 @@
                 ]
             }
         },
+        mounted: function(){
+            console.log(process.env.CTF_RESTAURANTS_POST_TYPE_ID);
+        },
 
         data () {
             return {
