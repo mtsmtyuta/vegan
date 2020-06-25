@@ -1,0 +1,40 @@
+{
+  "name": "vegan",
+  "version": "1.0.0",
+  "description": "contentful implementation for vegan web magazine",
+  "author": "Yuta <mtsmtyuta@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "aos": "^3.0.0-beta.6",
+    "axios": "^0.19.2",
+    "babel-runtime": "^6.26.0",
+    "contentful": "^7.14.0",
+    "node-sass": "^4.13.1",
+    "nuxt": "^2.0.0",
+    "nuxt-gmaps": "^1.1.8",
+    "sass-loader": "^8.0.2",
+    "velocity-animate": "^1.5.2",
+    "vue-carousel": "^0.18.0",
+    "vue-markdown": "^2.2.4",
+    "vue-slick-carousel": "^1.0.5",
+    "vuelidate": "^0.7.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.3.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
