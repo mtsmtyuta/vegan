@@ -46,8 +46,8 @@
     .img-box{
       background-image: url("/oxlogo.svg");
       /*background-image: url("/loading.svg");*/
-      width: get-vh(200px);
-      height: get-vh(200px);
+      width: get-vh(150px);
+      height: get-vh(150px);
     }
   }
 </style>
