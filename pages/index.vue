@@ -38,9 +38,9 @@
                              :key="index"
                         >
 
-                          <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[index].fields.slug }}" >
+                          <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >
 
-                            <p class="article__item__title bold">        {{ posts[index].fields.title }}
+                            <p class="article__item__title bold">        {{ posts[1].fields.title }}
                               <span class="date en-medi">{{
                           ( new Date(posts[index].fields.publishDate).toDateString())
                           }}</span>
