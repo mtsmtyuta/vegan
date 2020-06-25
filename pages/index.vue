@@ -347,7 +347,7 @@
             Footer
         },
         mounted: function(){
-            console.log('pages: ' + process.env);
+            console.log(this.posts);
         }
         ,
         data (){
