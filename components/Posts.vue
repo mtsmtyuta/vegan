@@ -13,7 +13,7 @@
 <!--            <div class="img-box"-->
 <!--                 v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"-->
 <!--            ></div>-->
-            <img loading="lazy" class="img-box" :src="post.fields.thumbnail.fields.file.url" alt="">
+            <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?q=50&fit=crop`" alt="">
                       <h4>        {{ post.fields.title }}</h4>
 <!--            <span v-if="post.fields.publishDate" class="date">  {{-->
 <!--            ( new Date(post.fields.publishDate).toDateString())-->

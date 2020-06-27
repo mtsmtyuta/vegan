@@ -44,6 +44,9 @@
     .content{
       width: get-vw(620px);
       margin: auto;
+      @media screen and (max-width: 768px){
+        width: responsive-vw(310px);
+      }
     }
     .txt-box{
       width: get-vw(290px);
