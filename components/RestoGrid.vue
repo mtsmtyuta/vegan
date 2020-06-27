@@ -13,9 +13,11 @@
                  data-aos-delay="50"
                  data-aos-offset="10"
             >
-              <div class="img-box"
-                   v-bind:style="{ backgroundImage: 'url(' + post.fields.thumbnail.fields.file.url +')' }"
-              ></div>
+<!--              <div class="img-box"-->
+<!--                   v-bind:style="{ backgroundImage: 'url(' + post.fields.thumbnail.fields.file.url +')' }"-->
+<!--              ></div>-->
+              <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?q=50&fit=crop`" alt="">
+
               <p>  {{ post.fields.name }} | <span class="region">{{post.fields.region}}</span></p>
             </div>
 
