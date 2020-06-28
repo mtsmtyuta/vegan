@@ -32,7 +32,7 @@
                 <div class="articles">
                   <div class="article flex column">
                     <div class="article-inner">
-                      <h3 class="new-posts__title en-medi">ARTICLES</h3>
+                      <p class="new-posts__title en-medi">NEW ARTICLE<span class="pc en-medi">S</span></p>
                       <div class="article__items flex pc">
                         <div class="article__item" v-for="index in 2"
                              :key="index"
@@ -540,6 +540,8 @@
       display: block;
       position: relative;
       z-index: 99;
+      background-color: rgba(255,255,255,0.0902);
+      backdrop-filter: blur(1px);
       @media screen and (max-width: 768px){
         line-height: responsive-vw(66px);
       }
