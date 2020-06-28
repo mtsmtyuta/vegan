@@ -8,15 +8,16 @@
         >
           <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.fields.slug }}" class="card-footer-item">
             <div class="slide-content"
-                 data-aos="fade-up"
-                 data-aos-duration="500"
-                 data-aos-delay="50"
-                 data-aos-offset="10"
             >
+<!--                 data-aos="fade-up"-->
+<!--                 data-aos-duration="500"-->
+<!--                 data-aos-delay="50"-->
+<!--                 data-aos-offset="10"-->
+<!--            >-->
 <!--              <div class="img-box"-->
 <!--                   v-bind:style="{ backgroundImage: 'url(' + post.fields.thumbnail.fields.file.url +')' }"-->
 <!--              ></div>-->
-              <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?q=50&fit=crop`" alt="">
+              <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&q=90&&w=290&h=273`" alt="">
 
               <h4>        {{ post.fields.title }}</h4>
 <!--              <span v-if="post.fields.publishDate" class="date">  {{-->
