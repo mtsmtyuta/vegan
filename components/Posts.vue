@@ -98,7 +98,7 @@
       height: get-vw(273px);
       width: get-vw(330px);
       @media screen and (max-width: 768px) {
-        @include res-width-height(340px, 265px);
+        @include res-width-height(330px, 273px);
       }
     }
     .date{
