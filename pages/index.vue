@@ -33,36 +33,59 @@
                   <div class="article flex column">
                     <div class="article-inner">
                       <p class="new-posts__title en-medi">NEW ARTICLE<span class="pc en-medi">S</span></p>
-                      <div class="article__items flex pc">
-                        <div class="article__item" v-for="index in 2"
-                             :key="index"
-                        >
+                      <div class="article__items flex">
+                        <div class="article__item"
+                             >
+<!--                             v-for="index in 2"-->
+<!--                             :key="index"-->
+<!--                        >-->
+<!--                          <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[index].fields.slug }}" >-->
 
+<!--                            <p class="article__item__title bold">        {{ posts[index].fields.title }}-->
+<!--                              <span class="date en-medi">{{-->
+<!--                          ( new Date(posts[index].fields.publishDate).toDateString())-->
+<!--                          }}</span>-->
+<!--                            </p>-->
+<!--                            <p class="article__description">{{ posts[index].fields.description }}</p>-->
+<!--                          </nuxt-link>-->
                           <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >
 
-                            <p class="article__item__title bold">        {{ posts[1].fields.title }}
-                              <span class="date en-medi">{{
-                          ( new Date(posts[index].fields.publishDate).toDateString())
-                          }}</span>
+                            <p class="article__item__title bold">        {{ posts[0].fields.title }}
                             </p>
 
-                            <p class="article__description">{{ posts[index].fields.description }}</p>
+                            <p class="article__description small">{{ posts[0].fields.description }}</p>
+                            <span class="date smallest en-medi">{{
+                          ( new Date(posts[0].fields.publishDate).toDateString())
+                          }}</span>
+                          </nuxt-link>
+                        </div>
+                        <div class="article__item pc"
+                             >
+                          <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[1].fields.slug }}" >
+
+                            <p class="article__item__title bold">        {{ posts[1].fields.title }}
+                            </p>
+
+                            <p class="article__description small">{{ posts[1].fields.description }}</p>
+                            <span class="date smallest en-medi">{{
+                          ( new Date(posts[0].fields.publishDate).toDateString())
+                          }}</span>
                           </nuxt-link>
                         </div>
                       </div>
 
-                      <div class="article__items flex sp">
-                        <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >
+<!--                      <div class="article__items flex sp">-->
+<!--                        <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >-->
 
-                          <p class="article__item__title bold">        {{ posts[0].fields.title }}
-                          </p>
+<!--                          <p class="article__item__title bold">        {{ posts[0].fields.title }}-->
+<!--                          </p>-->
 
-                          <p class="article__description small">{{ posts[0].fields.description }}</p>
-                          <span class="date smallest en-medi">{{
-                          ( new Date(posts[0].fields.publishDate).toDateString())
-                          }}</span>
-                        </nuxt-link>
-                      </div>
+<!--                          <p class="article__description small">{{ posts[0].fields.description }}</p>-->
+<!--                          <span class="date smallest en-medi">{{-->
+<!--                          ( new Date(posts[0].fields.publishDate).toDateString())-->
+<!--                          }}</span>-->
+<!--                        </nuxt-link>-->
+<!--                      </div>-->
                     </div>
                   </div>
                   <div class="link">
@@ -347,7 +370,7 @@
             Footer
         },
         // mounted: function(){
-        //     console.log(process.env.CTF_BLOG_POST_TYPE_ID);
+        //     console.log(sys.createdAt);
         // }
         // ,
         data (){
@@ -367,6 +390,7 @@
                     // 'content_type': 'article',
                     'content_type': env.CTF_BLOG_POST_TYPE_ID,
                     order: '-sys.createdAt'
+                    // order: '-sys.createdAt'
                 })
             ]).then(([posts]) => {
                 // return data that should be available
@@ -490,6 +514,13 @@
       }
       &__items{
         justify-content: space-between;
+      }
+      &__item{
+        width: 45%;
+        /*margin-left: get-vw(100px);*/
+        @media screen and (max-width: 768px){
+          width: unset;
+        }
       }
       &__description{
         width: get-vw(368px);

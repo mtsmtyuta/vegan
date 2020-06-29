@@ -66,11 +66,11 @@
       }
     }
     .bio{
-      font-size: get-vw(11px);
+      /*font-size: get-vw(11px);*/
       color: #a2a2a2;
       line-height: 1.09;
       @media screen and (max-width: 768px){
-        font-size: responsive-vw(8px);
+        font-size: responsive-vw(13px);
         color: #7e7e7e;
       }
     }
@@ -80,8 +80,8 @@
     height: get-vw(62px);
     border-radius: 50%;
     @media screen and (max-width: 768px){
-      width: responsive-vw(36px);
-      height: responsive-vw(36px);
+      width: responsive-vw(50px);
+      height: responsive-vw(50px);
     }
   }
 

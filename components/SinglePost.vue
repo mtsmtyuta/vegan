@@ -41,13 +41,32 @@
     width: get-vw(620px);
     /*max-width: 620px;*/
     margin: auto;
+    /*a,li{*/
+    /*  font-size: get-vw(15px);*/
+    /*  @media screen and (max-width: 1280px) {*/
+    /*    font-size: 15px;*/
+    /*  }*/
+    /*  @media screen and (max-width: 768px){*/
+    /*    font-size: responsive-vw(15px);*/
+    /*  }*/
+    /*}*/
     p{
       margin-bottom: get-vw(30px);
+      /*font-size: get-vw(15px);*/
+      /*@media screen and (max-width: 1280px) {*/
+      /*  font-size: 15px;*/
+      /*}*/
+      /*@media screen and (max-width: 768px){*/
+      /*  font-size: responsive-vw(15px);*/
+      /*}*/
     }
     h2, h3{
       font-size: get-vw(20px);
-      @media screen and (max-width: 768px){
-        font-size: responsive-vw(15px);
+      @media screen and (max-width: 1280px) {
+        font-size: 20px;
+      }
+        @media screen and (max-width: 768px){
+        font-size: responsive-vw(18px);
       }
     }
     a{
@@ -57,7 +76,7 @@
       font-size: get-vw(50px);
       line-height: 1.5;
       @media screen and (max-width: 768px){
-        font-size: responsive-vw(18px);
+        font-size: responsive-vw(25px);
       }
     }
     .date{
