@@ -4,14 +4,14 @@
     >
       <nuxt-link to="/"><div class="img-container img-box logo"></div></nuxt-link>
       <ul class="footer-links flex">
-        <li class="footer-links__item"><nuxt-link to="/posts/why-vegan">WHY VEGAN</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/posts/nutrition">NUTRITION</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/posts/recipes">RECIPES</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/restaurants">RESTAURANTS</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/posts/faq">FAQ</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/contact">CONTACT</nuxt-link></li>
-        <li class="footer-links__item pc"><nuxt-link to="/about-us">ABOUT US</nuxt-link></li>
-        <li class="footer-links__item pc"><nuxt-link to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
+        <li class="footer-links__item"><nuxt-link to="/posts/why-vegan/">WHY VEGAN</nuxt-link></li>
+        <li class="footer-links__item"><nuxt-link to="/posts/nutrition/">NUTRITION</nuxt-link></li>
+        <li class="footer-links__item"><nuxt-link to="/posts/recipes/">RECIPES</nuxt-link></li>
+        <li class="footer-links__item"><nuxt-link to="/restaurants/">RESTAURANTS</nuxt-link></li>
+        <li class="footer-links__item"><nuxt-link to="/posts/faq/">FAQ</nuxt-link></li>
+        <li class="footer-links__item"><nuxt-link to="/contact/">CONTACT</nuxt-link></li>
+        <li class="footer-links__item"><nuxt-link to="/about-us/">ABOUT US</nuxt-link></li>
+        <li class="footer-links__item"><nuxt-link to="/privacy-policy/">PRIVACY POLICY</nuxt-link></li>
       </ul>
       <div class="sns-links flex">
         <div class="img-box ig"></div>

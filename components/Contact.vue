@@ -19,7 +19,7 @@
   .contact-form{
     background-color: #333;
     color: #fff;
-    padding: get-vh(72px) 0;
+    padding: 15vh 0;
     .comp-section-title{
       color: #fff;
     }

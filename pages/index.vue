@@ -12,17 +12,22 @@
                    data-aos="fade-up"
                    data-aos-duration="1000"
                    data-aos-delay="1000">
-                <h1 class="en-medi">THE <br class="sp"> ANSWER FOR <br>YOUR OPTIMAL <br class="sp"> HEALTH</h1>
-                <p class="jp sub-title">ヴィーガンのライフスタイルに興味があるけれど、<br>
+                <h1 class="en-medi">THE <br class="sp"> ANSWER <br class="sp"> FOR <br class="pc">YOUR <br class="sp"> OPTIMAL <br class="sp"> HEALTH</h1>
+                <p class="jp sub-title"
+                   data-aos="fade-up"
+                   data-aos-duration="2000"
+                   data-aos-delay="1500">
+                  ヴィーガンのライフスタイルに興味があるけれど、<br class="pc">
                   何から始めたらいいか分からないという方の疑問に答えます。</p>
-                <div class="sp">
-                  <p>
-                    植物を中心とした食事に切り替え<br>
-                    パフォーマンスを大幅に向上させる為に<br>
-                    必要なレシピ、食事計画、ヒントを手に入れて、<br>
+                  <p class="sub-title jp sp"
+                     data-aos="fade-up"
+                     data-aos-duration="2000"
+                     data-aos-delay="1500">
+                    植物を中心とした食事に切り替え
+                    パフォーマンスを大幅に向上させる為に
+                    必要なレシピ、食事計画、ヒントを手に入れて、
                     毎日をエネルギッシュに過ごしましょう！
                   </p>
-                </div>
               </div>
               <div class="new-posts"
                    data-aos="slide-left"
@@ -403,9 +408,11 @@
 
 <style lang="scss">
 
-
-
-
+  @media screen and (max-width: 768px){
+    [data-aos][data-aos][data-aos-delay="2000"].aos-animate{
+      transition-delay: 0s !important;
+    }
+  }
 
   .main-content{
     background-color: #f2f2f2;
@@ -421,7 +428,7 @@
       background: #1b1b1b;
       /*height: get-vh(1029px);*/
       /*width: 100%;*/
-      height: 100vh;
+      height: 140vh;
     }
   }
   .top{
@@ -444,8 +451,9 @@
       padding-top: get-vh(216px);
       line-height: 1;
       @media screen and (max-width: 768px){
-        font-size: get-vh(40px);
+        font-size: get-vh(45px);
         line-height: 1.5;
+        font-weight: 600;
         padding-top: get-vh(80px);
       }
     }
@@ -455,8 +463,8 @@
         margin: auto;
       }
       p{
-        font-size: get-vh(13px);
-        line-height: 2.1;
+        font-size: get-vh(17px);
+        line-height: 2.5;
         letter-spacing: responsive-vw(2.6px);
         text-align: left;
         color: #d5d5d5;
@@ -465,6 +473,10 @@
     .sub-title{
       margin-top: get-vh(19px);
       line-height: 1.93;
+      @media screen and (max-width: 768px){
+        margin-top: 0;
+        width: 80%;
+      }
     }
     .new-posts{
       position: absolute;
@@ -472,7 +484,7 @@
       width: 100%;
       height: get-vh(314px);
       @media screen and (max-width: 768px){
-        bottom: -15vh;
+        bottom: -50vh;
         height: get-vh(251px);
       }
       &__title{

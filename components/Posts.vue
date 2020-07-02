@@ -38,6 +38,7 @@
             return {
                 settings: {
                     // "speed": 500,
+                    "active": false,
                     "slidesToShow": 3,
                     // "slidesToScroll": 3,
                     // "initialSlide": 0,

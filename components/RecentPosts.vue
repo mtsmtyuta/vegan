@@ -1,8 +1,8 @@
 <template>
   <div class="recent-posts "
-       data-aos="fade-up-mini"
+       data-aos="fade-up"
        data-aos-duration="500"
-       data-aos-delay="50"
+       data-aos-delay="0"
   >
 
     <div class="comp-section-title">

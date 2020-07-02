@@ -10,7 +10,7 @@
             <div class="slide-content"
                  data-aos="fade-up"
                  data-aos-duration="500"
-                 data-aos-delay="50"
+                 data-aos-delay="0"
                  data-aos-offset="10"
             >
 <!--              <div class="img-box"-->

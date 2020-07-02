@@ -12,7 +12,6 @@
     import Restaurant from '~/components/Restaurant.vue'
     import Author from "../../../components/Author";
     import RecentPosts from "../../../components/RecentPosts";
-    import Article from "../../../layouts/article";
     import VueMarkdown from 'vue-markdown'
     // import {createClient} from '~/plugins/contentful.js'
     import client from "~/plugins/contentful";
@@ -40,7 +39,6 @@
             }
         },
         components: {
-            Article,
             RecentPosts,
             VueMarkdown,
             Restaurant,
