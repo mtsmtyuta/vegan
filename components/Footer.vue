@@ -1,10 +1,6 @@
 <template>
   <footer>
     <div class="footer-content flex"
-         data-aos="fade-up"
-         data-aos-duration="1000"
-         data-aos-delay="50"
-         data-aos-once="true"
     >
       <nuxt-link to="/"><div class="img-container img-box logo"></div></nuxt-link>
       <ul class="footer-links flex">

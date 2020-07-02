@@ -7,8 +7,10 @@
 
   @media screen and (max-width: 768px) {
     width: responsive-vw(363px);
-    height: responsive-vw(573px);
+    //height: responsive-vw(573px);
     margin: 0 auto get-vh(36px);
+    height: auto;
+    padding-bottom: 2vw;
     color:  #282828;
     //&:active,
     //:focus

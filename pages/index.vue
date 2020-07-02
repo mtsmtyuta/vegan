@@ -98,8 +98,8 @@
             </div>
             <div class="txt-box bottom-ground pc"
                  data-aos="fade-up"
-                 data-aos-duration="3000"
-                 data-aos-delay="100"
+                 data-aos-duration="500"
+                 data-aos-delay="0"
             >
               <p>植物を中心とした食事に切り替えると、最適な燃料が得られることで、血流が増加し、</p>
               <p>筋肉がより効率的になり、パフォーマンスが大幅に向上し、炎症を抑えることで回復が速くなります。</p>
@@ -115,9 +115,6 @@
       <div class="main-content">
 
         <div class="introduction "
-             data-aos="fade-up-mini"
-             data-aos-duration="500"
-             data-aos-delay="0"
         >
           <div class="comp-section-title">
             <h2 class="en-medi section-title">WHAT TO LEARN TODAY?</h2>
@@ -147,8 +144,8 @@
         <nuxt-link to="/posts/why-vegan">
           <div class="comp-category-card sp"
                data-aos="fade-up"
-               data-aos-duration="2000"
-               data-aos-delay="100"
+               data-aos-duration="500"
+               data-aos-delay="0"
           >
             <div class="img-box whyvegan-bg">
             </div>
@@ -185,8 +182,8 @@
 
           <div class="comp-category-card sp"
                data-aos="fade-up"
-               data-aos-duration="2000"
-               data-aos-delay="100"
+               data-aos-duration="500"
+               data-aos-delay="0"
           >
             <div class="img-box nutrition-bg right">
             </div>
@@ -226,8 +223,8 @@
 
           <div class="comp-category-card sp"
                data-aos="fade-up"
-               data-aos-duration="2000"
-               data-aos-delay="100"
+               data-aos-duration="500"
+               data-aos-delay="0"
           >
             <div class="img-box recipe-bg left">
             </div>
@@ -267,8 +264,8 @@
 
           <div class="comp-category-card sp"
                data-aos="fade-up"
-               data-aos-duration="2000"
-               data-aos-delay="100"
+               data-aos-duration="500"
+               data-aos-delay="0"
           >
             <div class="img-box restaurant-bg right">
             </div>
@@ -308,8 +305,8 @@
 
           <div class="comp-category-card sp"
                data-aos="fade-up"
-               data-aos-duration="2000"
-               data-aos-delay="100"
+               data-aos-duration="500"
+               data-aos-delay="0"
           >
             <div class="img-box faq-bg left">
             </div>
@@ -413,7 +410,7 @@
   .main-content{
     background-color: #f2f2f2;
     padding-bottom: get-vh(10px);
-    overflow: hidden !important;
+    /*overflow: hidden !important;*/
   }
   .fv-container {
     position: relative;

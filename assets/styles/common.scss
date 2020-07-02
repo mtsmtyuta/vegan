@@ -1,6 +1,6 @@
 @import "mixins";
 html, body{
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 * {
   @include font-jp;
