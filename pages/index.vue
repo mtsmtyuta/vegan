@@ -259,13 +259,13 @@
                 <p>ヴィーガン向けの飲食店は日本では <br>
                   まだまだ多くはありません。 <br>
                   わたしたちが見つけた　オススメの店を紹介していきます。</p>
-                <Button link="/posts/restaurant" text="食べに行こう→" color="white" />
+                <Button link="/posts/restaurants" text="食べに行こう→" color="white" />
 
               </div>
             </div>
           </div>
         </div>
-        <nuxt-link to="/posts/restaurant">
+        <nuxt-link to="/posts/restaurants">
 
           <div class="comp-category-card sp"
                data-aos="fade-up"

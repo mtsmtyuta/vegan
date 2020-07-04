@@ -7,16 +7,16 @@
 <!--      :alt="alt"-->
 <!--    >-->
     <div class="img-box hero"
-         v-bind:style="{ backgroundImage: 'url(' + img +')' }"></div>
+         v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"></div>
 
 
 
     <article class="section">
       <div class="headline">
-        <h1 class="title has-text-centered">{{ title }}</h1>
-        <p v-if="publishDate"  class="date">{{ publishDate }}</p>
+        <h1 class="title has-text-centered">{{ post.fields.title }}</h1>
+        <p v-if="post.fields.publishDate"  class="date">{{ post.fields.publishDate }}</p>
       </div>
-      <vue-markdown class="content">{{ body }}</vue-markdown>
+      <vue-markdown class="content">{{ post.fields.body }}</vue-markdown>
     </article>
   </div>
 
@@ -24,11 +24,13 @@
 
 <script>
     import VueMarkdown from 'vue-markdown'
+    import Gmap from "./Gmap";
     export default {
         components: {
+            Gmap,
             VueMarkdown
         },
-        props: ['title', 'img', 'publishDate', 'body']
+        props: ['post']
     }
 </script>
 

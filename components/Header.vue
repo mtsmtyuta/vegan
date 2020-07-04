@@ -8,7 +8,7 @@
       <li class="header-nav__item"><nuxt-link to="/posts/why-vegan">WHY VEGAN</nuxt-link></li>
       <li class="header-nav__item"><nuxt-link to="/posts/nutrition">NUTRITION</nuxt-link></li>
       <li class="header-nav__item"><nuxt-link to="/posts/recipes">RECIPES</nuxt-link></li>
-      <li class="header-nav__item"><nuxt-link to="/restaurants">RESTAURANTS</nuxt-link></li>
+      <li class="header-nav__item"><nuxt-link to="/posts/restaurants">RESTAURANTS</nuxt-link></li>
       <li class="header-nav__item"><nuxt-link to="/posts/faq">FAQ</nuxt-link></li>
       <li class="header-nav__item"><nuxt-link to="/contact">CONTACT</nuxt-link></li>
     </ul>

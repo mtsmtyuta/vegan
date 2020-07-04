@@ -2,12 +2,13 @@
 <template>
   <article>
     <div v-if="currentPost.fields.topImage" class="single-post-page">
-      <SinglePost
-        :title="currentPost.fields.title"
-        :img="currentPost.fields.topImage.fields.file.url"
-        :publishDate="( new Date(currentPost.fields.publishDate)).toDateString()"
-        :body="currentPost.fields.body"
-      />
+      <SinglePost :post="currentPost"/>
+<!--      <SinglePost-->
+<!--        :title="currentPost.fields.title"-->
+<!--        :img="currentPost.fields.topImage.fields.file.url"-->
+<!--        :publishDate="( new Date(currentPost.fields.publishDate)).toDateString()"-->
+<!--        :body="currentPost.fields.body"-->
+<!--      />-->
       <Author :author="currentPost.fields.author"></Author>
     </div>
     <RecentPosts :posts="allPosts"></RecentPosts>

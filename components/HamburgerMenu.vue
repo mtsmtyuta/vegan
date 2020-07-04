@@ -8,15 +8,15 @@
             <nuxt-link @click.native="hamburger()" to="/"><div class="title img-box logo"></div></nuxt-link>
 
             <ul>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/why-vegan/">WHY VEGAN</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/nutrition/">NUTRITION</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/recipes/">RECIPES</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/restaurants/">RESTAURANTS</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/faq/">FAQ</nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/why-vegan">WHY VEGAN</nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/nutrition">NUTRITION</nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/recipes">RECIPES</nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/restaurants">RESTAURANTS</nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/faq">FAQ</nuxt-link></li>
               <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/">ARCHIVE</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/contact/">CONTACT</nuxt-link></li>
-              <li class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/about-us/">ABOUT US</nuxt-link></li>
-              <li class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/privacy-policy/">PRIVACY POLICY</nuxt-link></li>
+              <li  class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/contact">CONTACT</nuxt-link></li>
+              <li class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/about-us">ABOUT US</nuxt-link></li>
+              <li class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
             </ul>
           </nav>
           <div class="sns-links flex">
