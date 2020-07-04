@@ -28,6 +28,9 @@
 <style lang="scss">
   footer{
     background-color: #292929;
+    @media screen and (max-width: 768px){
+      background-color: #191919;
+    }
     .ig{
       margin-right: get-vw(52px);
     }
@@ -36,7 +39,7 @@
     height: get-vh(307px);
     align-items: center;
     color: #fff;
-    width: 80%;
+    width: 90%;
     margin: auto;
     justify-content: space-between;
     @media screen and (max-width: 768px) {
@@ -58,11 +61,13 @@
     }
   }
   .footer-links{
-    width: 70%;
+    width: 75%;
     justify-content: space-between;
     a{
+      @include font-en;
       display: block;
       font-size: get-vw(9px);
+      letter-spacing: 4.5px;
       @media screen and (max-width: 768px){
         font-size: responsive-vw(10px);
       }

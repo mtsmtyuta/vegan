@@ -38,9 +38,12 @@
     position: fixed;
     align-items: center;
     height: get-vh(63px);
-
-
+    @media screen and (max-width: 768px){
+      background-color: #191919;
+    }
     a {
+      @include font-en;
+      letter-spacing: 4.5px;
       text-decoration: none;
       color: white;
       display: block;

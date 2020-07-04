@@ -5,7 +5,6 @@
       <SinglePost
         :title="currentPost.fields.title"
         :img="currentPost.fields.topImage.fields.file.url"
-        :alt="currentPost.fields.topImage.fields.description"
         :publishDate="( new Date(currentPost.fields.publishDate)).toDateString()"
         :body="currentPost.fields.body"
       />

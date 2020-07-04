@@ -40,7 +40,8 @@
         asyncData ({ env }) {
             return client.getEntries({
                 'content_type': env.CTF_BLOG_POST_TYPE_ID,
-                order: '-fields.publishDate'
+                order: '-fields.publishDate',
+                // 'fields.category': 'recipes'
             }).then(entries => {
                 const posts = entries.items;
                 const category = posts.filter(function (item) {

@@ -28,7 +28,7 @@
         components: {
             VueMarkdown
         },
-        props: ['title', 'img', 'alt', 'publishDate', 'body']
+        props: ['title', 'img', 'publishDate', 'body']
     }
 </script>
 

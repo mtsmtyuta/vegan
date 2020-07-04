@@ -218,13 +218,13 @@
                 <p>チャンピオンのように最適な燃料を自分に供給するために <br>
                   必要なすべてのレシピ、食事計画、ヒント、 <br>
                   および回答を入手してください。</p>
-                <Button link="/posts/recipe" text="料理してみる→" color="white" />
+                <Button link="/posts/recipes" text="料理してみる→" color="white" />
 
               </div>
             </div>
           </div>
         </div>
-        <nuxt-link to="/posts/recipe">
+        <nuxt-link to="/posts/recipes">
 
           <div class="comp-category-card sp"
                data-aos="fade-up"
