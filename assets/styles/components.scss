@@ -26,14 +26,16 @@
     font-size: get-vw(45px);
     letter-spacing: 4.5px;
     @media screen and (max-width: 768px) {
-      font-size: responsive-vw(21px);
-      margin: responsive-vw(26px) 0;
+      font-size: responsive-vw(30px);
+      font-weight: bold;
+      margin: responsive-vw(26px) 0 responsive-vw(6px);
     }
   }
   .strong{
     margin: get-vh(5px) 0 get-vh(25px);
     @media screen and (max-width: 768px){
-      color: #7b7b7b;
+      //color: #7b7b7b;
+      color: #3aaa98;
       margin: 0 0 responsive-vw(16px) 0;
     }
   }

@@ -9,9 +9,9 @@
         <li class="footer-links__item"><nuxt-link to="/posts/recipes/">RECIPES</nuxt-link></li>
         <li class="footer-links__item"><nuxt-link to="/restaurants/">RESTAURANTS</nuxt-link></li>
         <li class="footer-links__item"><nuxt-link to="/posts/faq/">FAQ</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/contact/">CONTACT</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/about-us/">ABOUT US</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/privacy-policy/">PRIVACY POLICY</nuxt-link></li>
+        <li class="footer-links__item "><nuxt-link class="pages" to="/contact/">CONTACT</nuxt-link></li>
+        <li class="footer-links__item "><nuxt-link class="pages" to="/about-us/">ABOUT US</nuxt-link></li>
+        <li class="footer-links__item "><nuxt-link class="pages" to="/privacy-policy/">PRIVACY POLICY</nuxt-link></li>
       </ul>
       <div class="sns-links flex">
         <div class="img-box ig"></div>
@@ -69,7 +69,10 @@
       font-size: get-vw(9px);
       letter-spacing: 4.5px;
       @media screen and (max-width: 768px){
-        font-size: responsive-vw(10px);
+        font-size: responsive-vw(14px);
+        &.pages{
+          font-size: responsive-vw(12px);
+        }
       }
     }
   }

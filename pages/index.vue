@@ -25,7 +25,7 @@
                      data-aos-delay="1500">
                     植物を中心とした食事に切り替え
                     パフォーマンスを大幅に向上させる為に
-                    必要なレシピ、食事計画、ヒントを手に入れて、
+                    ヒントを手に入れて、
                     毎日をエネルギッシュに過ごしましょう！
                   </p>
               </div>
@@ -428,7 +428,7 @@
       background: #1b1b1b;
       /*height: get-vh(1029px);*/
       /*width: 100%;*/
-      height: 140vh;
+      height: 120vh;
     }
   }
   .top{
@@ -451,10 +451,12 @@
       padding-top: get-vh(216px);
       line-height: 1;
       @media screen and (max-width: 768px){
-        font-size: get-vh(45px);
+        font-size: get-vh(40px);
         line-height: 1.5;
         font-weight: 600;
         padding-top: get-vh(80px);
+        letter-spacing: 4.5px;
+        margin-bottom: get-vh(15px);
       }
     }
     .txt-box {
@@ -468,6 +470,10 @@
         letter-spacing: responsive-vw(2.6px);
         text-align: left;
         color: #d5d5d5;
+        @media screen and (max-width: 768px){
+          font-size: get-vh(14px);
+          line-height: 3;
+        }
       }
     }
     .sub-title{
@@ -484,11 +490,12 @@
       width: 100%;
       height: get-vh(314px);
       @media screen and (max-width: 768px){
-        bottom: -50vh;
+        bottom: -40vh;
         height: get-vh(251px);
       }
       &__title{
         margin-bottom: get-vh(32px);
+        color: #3aaa98;
         @media screen and (max-width: 768px){
           margin: get-vh(10px) 0;
         }
