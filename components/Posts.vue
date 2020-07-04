@@ -44,9 +44,10 @@
                     // "initialSlide": 0,
                     "autoplay": true,
                     "infinite": true,
+                    // "autoplaySpeed": 1000,
+                    // "speed": 2000,
                     "arrows": false,
-                    "autoplaySpeed": 1000,
-                    "speed": 2000,
+                    "dots": true,
                     "responsive": [
                         {
                             "breakpoint": 768,

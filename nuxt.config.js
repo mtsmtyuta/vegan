@@ -132,7 +132,8 @@ const dynamicRoutes = async () =>{
     css: [
       '@/assets/styles/main.scss',
       'vue-slick-carousel/dist/vue-slick-carousel.css',
-      'aos/dist/aos.css'
+      'aos/dist/aos.css',
+      'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
     ]
   }
 
