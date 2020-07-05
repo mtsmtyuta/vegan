@@ -17,7 +17,7 @@
                    data-aos="fade-up"
                    data-aos-duration="2000"
                    data-aos-delay="1500">
-                  ヴィーガンのライフスタイルに興味があるけれど、<br class="pc">
+                  ヴィーガンのライフスタイルに興味はあるけど、<br class="pc">
                   何から始めたらいいか分からないという方の疑問に答えます。</p>
                   <p class="sub-title jp sp"
                      data-aos="fade-up"
@@ -391,7 +391,9 @@
                 client.getEntries({
                     // 'content_type': 'article',
                     'content_type': env.CTF_BLOG_POST_TYPE_ID,
-                    order: '-sys.createdAt'
+                    // order: '-sys.createdAt'
+                    order: '-fields.publishDate'
+
                     // order: '-sys.createdAt'
                 })
             ]).then(([posts]) => {
@@ -436,10 +438,10 @@
     background-image: url('~assets/img/top.jpg');
     background-size: cover;
     /*width: get-vw(1380px);*/
-    width: get-vw(1172px);
     /*height: get-vw(804px);*/
     height: 100vh;
     position: relative;
+    /*margin-left: auto;*/
     @media screen and (max-width: 768px) {
       background-image: url('~assets/img/sptop.jpg');
       height: get-vh(709px);
@@ -465,9 +467,9 @@
         margin: auto;
       }
       p{
-        font-size: get-vh(17px);
+        /*font-size: get-vh(14px);*/
         line-height: 2.5;
-        letter-spacing: responsive-vw(2.6px);
+        /*letter-spacing: responsive-vw(2.6px);*/
         text-align: left;
         color: #d5d5d5;
         @media screen and (max-width: 768px){
@@ -488,7 +490,8 @@
       position: absolute;
       bottom: 0;
       width: 100%;
-      height: get-vh(314px);
+      /*height: get-vh(314px);*/
+      height: 26vh;
       @media screen and (max-width: 768px){
         bottom: -40vh;
         height: get-vh(251px);
@@ -496,6 +499,7 @@
       &__title{
         margin-bottom: get-vh(32px);
         color: #3aaa98;
+        letter-spacing: 4.5px;
         @media screen and (max-width: 768px){
           margin: get-vh(10px) 0;
         }
@@ -559,24 +563,63 @@
       writing-mode: vertical-lr;
       transform: rotate(180deg);
       position: relative;
+      /*<!--overflow: hidden;-->*/
+      /*<!--background-image: linear-gradient(to right, $main-color 50%, transparent 50%);-->*/
+      /*<!--background-size: 200% 100% ;-->*/
+      /*<!--background-position: bottom left;-->*/
+      transition: all .2s ease-out;
+      /*background-color: transparent;*/
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $main-color;
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+      &:hover:before {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+      }
+      &:hover{
+        background-position:  right;
+      }
       @media screen and (max-width: 768px){
         width: responsive-vw(66px);
       }
 
-      .bgbar{
-        background-color: $main-color;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: all 0.6s;
-      }
-      &:hover{
-        .bgbar{
-          height: 0;
-        }
-      }
+      /*.bgbar{*/
+      /*  width: 100%;*/
+      /*  height: 100%;*/
+      /*  position: absolute;*/
+      /*  top: 0;*/
+      /*  left: 0;*/
+      /*  transition: all 0.6s;*/
+      /*  margin-top: 100%;*/
+      /*  !*background-color: rgba(255,255,255,0.0902);*!*/
+      /*  !*background-color: black;*!*/
+      /*  !*backdrop-filter: blur(1px);*!*/
+      /*  !*background-color: transparent;*!*/
+      /*  !*z-index: 1000;*!*/
+      /*}*/
+      /*&:hover{*/
+      /*  .bgbar{*/
+      /*    !*height: 0;*!*/
+      /*    margin: 0;*/
+      /*  }*/
+      /*}*/
     }
     .new-posts-link{
       height: 100%;
@@ -587,8 +630,9 @@
       display: block;
       position: relative;
       z-index: 99;
-      background-color: rgba(255,255,255,0.0902);
-      backdrop-filter: blur(1px);
+      &:hover{
+        transform: unset;
+      }
       @media screen and (max-width: 768px){
         line-height: responsive-vw(66px);
       }
@@ -620,13 +664,15 @@
 
   .foreground {
     margin-left: auto;
+    width: get-vw(1172px);
     @media screen and (max-width: 768px){
       width: 100%;
     }
   }
 
   .bottom-ground{
-    width: 100%;
+    /*width: 100%;*/
+    width: get-vw(1064px);
     text-align: center;
     height: 56vh;
     display: flex;

@@ -68,6 +68,9 @@
       display: block;
       font-size: get-vw(9px);
       letter-spacing: 4.5px;
+      @media screen and (min-width: 1440px){
+        font-size: 14px;
+      }
       @media screen and (max-width: 768px){
         font-size: responsive-vw(14px);
         &.pages{

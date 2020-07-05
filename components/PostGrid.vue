@@ -23,7 +23,7 @@
 <!--              ></div>-->
               <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&q=90&&w=290&h=273`" alt="">
 
-              <h4>        {{ post.fields.title }}</h4>
+              <p>{{ post.fields.title }} <span v-if="post.fields.region" class="region"> | {{post.fields.region}}</span></p>
 <!--              <span v-if="post.fields.publishDate" class="date">  {{-->
 <!--            ( new Date(post.fields.publishDate).toDateString())-->
 <!--            }}</span>-->

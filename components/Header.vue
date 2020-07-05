@@ -43,10 +43,17 @@
     }
     a {
       @include font-en;
+      font-size: get-vw(14px);
       letter-spacing: 4.5px;
       text-decoration: none;
       color: white;
       display: block;
+      @media screen and (min-width: 1280px){
+        font-size: 14px;
+      }
+      @media screen and (max-width: 768px){
+        font-size: responsive-vw(14px);
+      }
     }
 
     .header-nav {

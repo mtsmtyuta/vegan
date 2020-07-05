@@ -3,7 +3,7 @@
   <article>
     <div class="hero-banner restaurant">
       <h1 class="page-title">
-        RESTAURANTS
+        RESTAURANTS <span></span>
       </h1>
     </div>
     <PostGrid :posts="category"></PostGrid>

@@ -1,4 +1,3 @@
-<script src="../nuxt.config.js"></script>
 <template>
   <div class="single-post">
     <!--    <h1>slug is SLUG: {{ $route.params.slug }}</h1>-->
@@ -17,6 +16,11 @@
         <p v-if="post.fields.publishDate"  class="date">{{ post.fields.publishDate }}</p>
       </div>
       <vue-markdown class="content">{{ post.fields.body }}</vue-markdown>
+      <div v-if="post.fields.category === 'restaurants'" class="flex between access sp-column-reverse">
+        <vue-markdown class="txt-box">{{ post.fields.access }}</vue-markdown>
+        <Gmap class="map-box" :location="post.fields.location" :name="post.fields.title" />
+      </div>
+
     </article>
   </div>
 
@@ -41,26 +45,9 @@
 
   .single-post{
     width: get-vw(620px);
-    /*max-width: 620px;*/
     margin: auto;
-    /*a,li{*/
-    /*  font-size: get-vw(15px);*/
-    /*  @media screen and (max-width: 1280px) {*/
-    /*    font-size: 15px;*/
-    /*  }*/
-    /*  @media screen and (max-width: 768px){*/
-    /*    font-size: responsive-vw(15px);*/
-    /*  }*/
-    /*}*/
     p{
       margin-bottom: get-vw(30px);
-      /*font-size: get-vw(15px);*/
-      /*@media screen and (max-width: 1280px) {*/
-      /*  font-size: 15px;*/
-      /*}*/
-      /*@media screen and (max-width: 768px){*/
-      /*  font-size: responsive-vw(15px);*/
-      /*}*/
     }
     h2, h3{
       font-size: get-vw(20px);
@@ -128,6 +115,16 @@
       @media screen and (max-width: 768px){
         width: responsive-vw(310px);
       }
+    }
+  }
+  .access{
+    padding: get-vw(178px) 0 get-vw(160px);
+  }
+  .map-box{
+    width: get-vw(290px);
+    @media screen and (max-width: 768px){
+      width: 100%;
+      margin-bottom: responsive-vw(30px);
     }
   }
 
