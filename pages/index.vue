@@ -735,6 +735,9 @@
   }
   .introduction{
     padding: get-vh(132px) 0 get-vh(115px);
+    @media screen and (max-width: 768px){
+      padding: get-vh(74px) 0 get-vh(61px);
+    }
   }
 
   .recent-posts{

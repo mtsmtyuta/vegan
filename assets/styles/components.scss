@@ -108,7 +108,8 @@
     font-size: get-vw(25px);
     letter-spacing: 3px;
     @media screen and (max-width: 768px) {
-      font-size: responsive-vw(21px);
+      font-size: responsive-vw(22px);
+      letter-spacing: 2.2px;
     }
   }
   @media screen and (max-width: 768px) {
@@ -119,6 +120,13 @@
     margin: get-vh(30px) auto;
     border: solid get-vh(1px) #22aa95;
     background-color: #22aa95;
+    @media screen and (max-width: 768px){
+      width: responsive-vw(45px);
+      margin: responsive-vw(23px) auto;
+    }
+  }
+  h3{
+    font-weight: 400;
   }
 }
 
