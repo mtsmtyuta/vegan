@@ -13,17 +13,16 @@
                    data-aos-duration="1000"
                    data-aos-delay="1000">
                 <h1 class="en-medi">THE <br class="sp"> ANSWER <br class="sp"> FOR <br class="pc">YOUR <br class="sp"> OPTIMAL <br class="sp"> HEALTH</h1>
-                <p class="jp sub-title"
-                   data-aos="fade-up"
-                   data-aos-duration="2000"
-                   data-aos-delay="1500">
-                  ヴィーガンのライフスタイルに興味はあるけど、<br class="pc">
+                <p class="jp sub-title pc">
+                  ヴィーガンのライフスタイルに興味はあるけど、<br>
                   何から始めたらいいか分からないという方の疑問に答えます。</p>
                   <p class="sub-title jp sp"
                      data-aos="fade-up"
                      data-aos-duration="2000"
                      data-aos-delay="1500">
-                    植物を中心とした食事に切り替え
+                  ヴィーガンのライフスタイルに興味はあるけど、
+                  何から始めたらいいか分からないという方の疑問に答えます。
+                植物を中心とした食事に切り替え
                     パフォーマンスを大幅に向上させる為に
                     ヒントを手に入れて、
                     毎日をエネルギッシュに過ごしましょう！
@@ -103,7 +102,7 @@
             </div>
             <div class="txt-box bottom-ground pc"
                  data-aos="fade-up"
-                 data-aos-duration="500"
+                 data-aos-duration="2000"
                  data-aos-delay="0"
             >
               <p>植物を中心とした食事に切り替えると、最適な燃料が得られることで、血流が増加し、</p>

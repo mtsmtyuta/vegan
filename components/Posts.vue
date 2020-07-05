@@ -5,16 +5,19 @@
 
     <VueSlickCarousel v-bind="settings">
 
-      <div v-for="post in posts"
-           :key="post.id"
+      <div v-for="index in 6"
+           :key="index"
       >
-        <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.fields.slug }}" class="card-footer-item">
+<!--      <div v-for="post in posts"-->
+<!--           :key="post.id"-->
+<!--      >-->
+        <nuxt-link :to="{ name: 'posts-slug', params: { slug: posts[index - 1].fields.slug }}" class="card-footer-item">
           <div class="slide-content">
 <!--            <div class="img-box"-->
 <!--                 v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"-->
 <!--            ></div>-->
-            <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&q=90&&w=330&h=273`" alt="">
-                      <h4>        {{ post.fields.title }}</h4>
+            <img loading="lazy" class="img-box" :src="`${posts[index - 1].fields.thumbnail.fields.file.url}?fit=thumb&q=90&&w=330&h=273`" alt="">
+                      <p>        {{ posts[index - 1].fields.title }}</p>
 <!--            <span v-if="post.fields.publishDate" class="date">  {{-->
 <!--            ( new Date(post.fields.publishDate).toDateString())-->
 <!--            }}</span>-->
@@ -76,7 +79,12 @@
     @media screen and (max-width: 768px){
       width: 100%;
     }
-
+    .slick-dots{
+      bottom: -40px;
+    }
+    .slick-dots li button:before{
+      color: $main-color;
+    }
   }
 
   .slide-content{
@@ -87,7 +95,8 @@
     @media screen and (max-width: 768px) {
       width: responsive-vw(340px);
     }
-    h4{
+
+    p{
       color: #292929;
       font-size: get-vw(12px);
       margin: get-vh(5px) 0;

@@ -167,4 +167,10 @@ a:hover{
   background-repeat: no-repeat;
 }
 
-.slick-dots li button:focus:before { opacity: 0.25; }
+.slick-dots li button:focus:before {
+  opacity: 0.25;
+}
+
+//.slick-dots li button:focus:before{
+//  opacity: 0.25 !important;
+//}

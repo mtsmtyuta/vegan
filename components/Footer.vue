@@ -2,7 +2,7 @@
   <footer>
     <div class="footer-content flex"
     >
-      <nuxt-link to=""><div class="img-container img-box logo"></div></nuxt-link>
+      <nuxt-link to="/"><div class="img-container img-box logo"></div></nuxt-link>
       <ul class="footer-links flex">
         <li class="footer-links__item"><nuxt-link to="/posts/why-vegan">WHY VEGAN</nuxt-link></li>
         <li class="footer-links__item"><nuxt-link to="/posts/nutrition">NUTRITION</nuxt-link></li>
