@@ -18,13 +18,15 @@ const dynamicRoutes = async () =>{
       return [...entries.items.map(entry => `posts/${entry.fields.slug}`)]
     })
 
-  const restaurant = client.getEntries({
-    'content_type': process.env.CTF_RESTAURANTS_POST_TYPE_ID
-  }).then((entries) => {
-    return [...entries.items.map(entry => `restaurants/${entry.fields.slug}`)]
-  })
-  return Promise.all([post, restaurant]).then(values => {
-    return [...values[0], ...values[1]]
+  // const restaurant = client.getEntries({
+  //   'content_type': process.env.CTF_RESTAURANTS_POST_TYPE_ID
+  // }).then((entries) => {
+  //   return [...entries.items.map(entry => `restaurants/${entry.fields.slug}`)]
+  // })
+  return Promise.all([post]).then(values => {
+  // return Promise.all([post, restaurant]).then(values => {
+    return [...values[0]]
+    // return [...values[0], ...values[1]]
   })
 }
 
@@ -76,6 +78,7 @@ const dynamicRoutes = async () =>{
 
     modules: [
       '@nuxtjs/style-resources',
+      '@nuxtjs/sitemap',
       ['nuxt-gmaps', {
         key: process.env.GOOGLE_MAP_API_KEY,
       }],
@@ -85,6 +88,21 @@ const dynamicRoutes = async () =>{
       }],
       // '@nuxtjs/dotenv'
     ],
+    sitemap: {
+      path: '/sitemap.xml',
+      hostname: 'https://ox-vegan.jp',
+      // routes: dynamicRoutes,
+      routes () {
+      let postRoutes =  client.getEntries({
+        'content_type': process.CTF_BLOG_POST_TYPE_ID
+      }).then((entries) => {
+        return [...entries.items.map(entry => `posts/${entry.fields.slug}`)]
+      })
+      return Promise.all([postRoutes]).then(values => {
+        return [...values[0]]
+      })
+      },
+    },
 
     styleResources: {
       // your settings here
