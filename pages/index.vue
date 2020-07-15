@@ -9,15 +9,15 @@
           <div class="foreground">
             <div class="top img-box">
               <div class="txt-box"
-                   data-aos="fade-up"
-                   data-aos-duration="1000"
+                   data-aos="fade-in"
+                   data-aos-duration="2000"
                    data-aos-delay="1000">
                 <h1 class="en-medi">THE <br class="sp"> ANSWER <br class="sp"> FOR <br class="pc">YOUR <br class="sp"> OPTIMAL <br class="sp"> HEALTH</h1>
                 <p class="jp sub-title pc">
                   ヴィーガンのライフスタイルに興味はあるけど、<br>
                   何から始めたらいいか分からないという方の疑問に答えます。</p>
                   <p class="sub-title jp sp"
-                     data-aos="fade-up"
+                     data-aos="fade-in"
                      data-aos-duration="1500"
                      data-aos-delay="1500">
                   ヴィーガンのライフスタイルに興味はあるけど、
