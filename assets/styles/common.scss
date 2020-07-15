@@ -2,6 +2,7 @@
 html, body{
   overflow-x: hidden;
 }
+
 * {
   @include font-jp;
   font-size: get-vw(15px);

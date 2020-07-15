@@ -11,7 +11,7 @@
                  data-aos="fade-up"
                  data-aos-duration="500"
                  data-aos-delay="0"
-                 data-aos-offset="10"
+                 data-aos-offset="100"
             >
 <!--                 data-aos="fade-up"-->
 <!--                 data-aos-duration="500"-->

@@ -58,7 +58,7 @@
                                 "slidesToShow": 1,
                                 "centerPadding": "30px",
                                 "slidesToScroll": 1,
-                                "focusOnSelect": true,
+                                // "focusOnSelect": true,
                                 "centerMode": true,
                                 "autoplay": false,
                                 // "arrows": false,

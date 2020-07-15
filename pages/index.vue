@@ -18,7 +18,7 @@
                   何から始めたらいいか分からないという方の疑問に答えます。</p>
                   <p class="sub-title jp sp"
                      data-aos="fade-up"
-                     data-aos-duration="2000"
+                     data-aos-duration="1500"
                      data-aos-delay="1500">
                   ヴィーガンのライフスタイルに興味はあるけど、
                   何から始めたらいいか分からないという方の疑問に答えます。
@@ -102,7 +102,7 @@
             </div>
             <div class="txt-box bottom-ground pc"
                  data-aos="fade-up"
-                 data-aos-duration="2000"
+                 data-aos-duration="3000"
                  data-aos-delay="0"
             >
               <p>植物を中心とした食事に切り替えると、最適な燃料が得られることで、血流が増加し、</p>
