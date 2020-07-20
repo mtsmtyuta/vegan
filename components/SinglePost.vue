@@ -46,7 +46,7 @@
   .single-post{
     width: get-vw(620px);
     margin: auto;
-    p{
+    br{
       margin-bottom: get-vw(30px);
     }
     h2, h3{
