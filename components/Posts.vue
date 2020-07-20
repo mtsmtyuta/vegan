@@ -96,7 +96,7 @@
       width: responsive-vw(340px);
     }
 
-    p{
+    p,span{
       color: #292929;
       font-size: get-vw(12px);
       margin: get-vh(5px) 0;
