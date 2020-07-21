@@ -59,8 +59,8 @@
 <style lang="scss">
 
   .citation{
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
     padding: 20px 0;
   }
   .toggle{
