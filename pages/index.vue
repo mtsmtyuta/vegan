@@ -72,7 +72,7 @@
 
                             <p class="article__description small">{{ posts[1].fields.description }}</p>
                             <span class="date smallest en-medi">{{
-                          ( new Date(posts[0].fields.publishDate).toDateString())
+                          ( new Date(posts[1].fields.publishDate).toDateString())
                           }}</span>
                           </nuxt-link>
                         </div>
