@@ -21,11 +21,11 @@
 <script>
     export default {
         props: ['author'],
-        methods: {
-            log: function () {
-                console.log(this.author);
-            }
-        }
+        // methods: {
+        //     log: function () {
+        //         console.log(this.author);
+        //     }
+        // }
     }
 </script>
 

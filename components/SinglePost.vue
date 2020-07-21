@@ -5,7 +5,7 @@
 <!--      :src="img"-->
 <!--      :alt="alt"-->
 <!--    >-->
-    <div class="img-box hero"
+    <div v-if="post.fields.topImage" class="img-box hero"
          v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"></div>
 
 
@@ -15,7 +15,17 @@
         <h1 class="title has-text-centered">{{ post.fields.title }}</h1>
         <p v-if="post.fields.publishDate"  class="date">{{ post.fields.publishDate }}</p>
       </div>
-      <vue-markdown class="content">{{ post.fields.body }}</vue-markdown>
+      <div class="content">
+        <vue-markdown>{{ post.fields.body }}</vue-markdown>
+        <div v-if="post.fields.citation" class="citation">
+          <button @click="citation = !citation" class="toggle">出典をみる <transition name="fade"><span v-if="citation">-</span> <span v-else>+</span></transition></button>
+          <transition name="fade">
+            <div v-if="citation" class="links">
+              <vue-markdown>{{ post.fields.citation }}</vue-markdown>
+            </div>
+          </transition>
+        </div>
+      </div>
       <div v-if="post.fields.category === 'restaurants'" class="flex between access sp-column-reverse">
         <vue-markdown class="txt-box">{{ post.fields.access }}</vue-markdown>
         <Gmap class="map-box" :location="post.fields.location" :name="post.fields.title" />
@@ -29,16 +39,48 @@
 <script>
     import VueMarkdown from 'vue-markdown'
     import Gmap from "./Gmap";
+    import Button from "./Button";
     export default {
         components: {
+            Button,
             Gmap,
             VueMarkdown
         },
-        props: ['post']
+        props: ['post'],
+        data(){
+            return{
+                citation: false
+            }
+        },
+
     }
 </script>
 
 <style lang="scss">
+
+  .toggle{
+    cursor: pointer;
+    display: block;
+    color: #3e3e3e !important;
+    background-color: transparent;
+    border: none;
+    appearance: none;
+    &:focus{
+      outline: none;
+    }
+  }
+  .links{
+    margin-top: get-vw(30px);
+  }
+  .fade-enter-active {
+    transition: opacity .5s;
+  }
+  .fade-leave-active{
+    transition: opacity 0.2s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
   pre {
     white-space: unset;
   }

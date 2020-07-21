@@ -69,7 +69,7 @@
       width: get-vw(295px);
       @media screen and (max-width: 768px){
         width: 100%;
-        height: responsive-vw(350px);
+        /*height: responsive-vw(350px);*/
         margin-top: responsive-vw(43px);
       }
       .img-box{
@@ -78,7 +78,8 @@
 
         @media screen and (max-width: 768px){
           width: 100%;
-          height: responsive-vw(284px);
+          /*height: responsive-vw(284px);*/
+          height: auto;
         }
       }
     }

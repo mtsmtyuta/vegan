@@ -1,9 +1,9 @@
 <template>
-  <div class="recent-posts "
-       data-aos="fade-up"
-       data-aos-duration="500"
-       data-aos-delay="0"
-  >
+  <div class="recent-posts ">
+<!--       data-aos="fade-up"-->
+<!--       data-aos-duration="500"-->
+<!--       data-aos-delay="0"-->
+<!--  >-->
 
     <div class="comp-section-title">
       <h2 class="en-medi section-title">ARTICLES</h2>
