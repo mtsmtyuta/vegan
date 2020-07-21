@@ -18,7 +18,7 @@
       <div class="content">
         <vue-markdown>{{ post.fields.body }}</vue-markdown>
         <div v-if="post.fields.citation" class="citation">
-          <button @click="citation = !citation" class="toggle">出典をみる <transition name="fade"><span v-if="citation">-</span> <span v-else>+</span></transition></button>
+          <div @click="citation = !citation" class="toggle">出典をみる <transition name="fade"><span v-if="citation">-</span> <span v-else>+</span></transition></div>
           <transition name="fade">
             <div v-if="citation" class="links">
               <vue-markdown>{{ post.fields.citation }}</vue-markdown>
@@ -58,16 +58,20 @@
 
 <style lang="scss">
 
+  .citation{
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+  }
   .toggle{
     cursor: pointer;
-    display: block;
-    color: #3e3e3e !important;
-    background-color: transparent;
-    border: none;
-    appearance: none;
-    &:focus{
-      outline: none;
-    }
+    color: $main-color !important;
+    /*margin-top: get-vw(30px);*/
+    /*font-size: 16px;*/
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .links{
     margin-top: get-vw(30px);
