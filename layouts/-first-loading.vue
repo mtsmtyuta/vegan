@@ -14,7 +14,7 @@
         mounted() {
             window.addEventListener('load', () => {
                 this.dataLoadFinish = true
-                console.log('premiere chargement fini')
+                // console.log('premiere chargement fini')
             });
             window.onpageshow = function(event) {
                 if (event.persisted) {
