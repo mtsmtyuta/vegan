@@ -49,6 +49,7 @@
       margin-left: get-vw(62px);
       @media screen and (max-width: 768px){
         width: responsive-vw(44px);
+        margin-left: get-vw(30px);
       }
     }
     .ig{
@@ -80,8 +81,8 @@
     height: get-vw(62px);
     border-radius: 50%;
     @media screen and (max-width: 768px){
-      width: responsive-vw(50px);
-      height: responsive-vw(50px);
+      width: responsive-vw(60px);
+      height: responsive-vw(60px);
     }
   }
 

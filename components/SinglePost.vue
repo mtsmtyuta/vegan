@@ -96,7 +96,8 @@
       margin-bottom: get-vw(30px);
     }
     h2, h3{
-      font-size: get-vw(20px);
+      font-size: get-vw(22px);
+      margin-top: get-vw(20px);
       @media screen and (max-width: 1280px) {
         font-size: 20px;
       }
