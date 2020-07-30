@@ -12,6 +12,7 @@
       <Author :author="currentPost.fields.author"></Author>
     </div>
     <RecentPosts :posts="allPosts"></RecentPosts>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </article>
 </template>
 
