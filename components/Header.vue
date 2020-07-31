@@ -54,6 +54,12 @@
       @media screen and (max-width: 768px){
         font-size: responsive-vw(14px);
       }
+      &:hover{
+        color: $main-color ;
+      }
+    }
+    .nuxt-link-exact-active{
+      color: $main-color;
     }
 
     .header-nav {

@@ -14,8 +14,8 @@
         <li class="footer-links__item "><nuxt-link class="pages" to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
       </ul>
       <div class="sns-links flex">
-        <div class="img-box ig"></div>
-        <div class="img-box tw"></div>
+        <a href="https://www.instagram.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box ig"></div></a>
+        <a href="https://twitter.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box tw"></div></a>
       </div>
     </div>
   </footer>
@@ -77,6 +77,12 @@
           font-size: responsive-vw(12px);
         }
       }
+      &:hover{
+        color: $main-color ;
+      }
+    }
+    .nuxt-link-exact-active{
+      color: $main-color;
     }
   }
 </style>

@@ -12,7 +12,7 @@
     </div>
 
     <Posts :posts="posts"></Posts>
-    <Button link="/posts" text="GO TO ARCHIVES" color="black" />
+    <Button link="/posts" text="記事一覧へ" color="black" />
 
   </div>
 </template>

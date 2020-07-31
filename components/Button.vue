@@ -29,6 +29,8 @@
     background-position: right bottom;
     transition: all .2s ease-out;
     background-color: transparent;
+    display: flex;
+    align-items: center;
     &:hover{
       background-position: left bottom;
       color: #fff;

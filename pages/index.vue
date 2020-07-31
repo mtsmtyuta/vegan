@@ -93,7 +93,7 @@
                     </div>
                   </div>
                   <div class="link">
-                    <nuxt-link class="new-posts-link" to="/posts">VIEW MORE</nuxt-link>
+                    <nuxt-link class="new-posts-link en" to="/posts">VIEW MORE</nuxt-link>
                     <div class="bgbar"></div>
                   </div>
 
@@ -490,7 +490,7 @@
       bottom: 0;
       width: 100%;
       /*height: get-vh(314px);*/
-      height: 26vh;
+      height: 30vh;
       @media screen and (max-width: 768px){
         bottom: -40vh;
         height: get-vh(251px);
