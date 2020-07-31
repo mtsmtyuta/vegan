@@ -25,6 +25,7 @@
         head : {
             title: 'ヴィーガンについてよくある質問'
         },
+        layout: 'article',
         data () {
             return {
                 posts: []

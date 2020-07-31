@@ -27,7 +27,7 @@
   import client from "~/plugins/contentful";
 
   export default {
-        // layout: 'top',
+        layout: 'article',
         head () {
             return {
                 title: this.currentPost.fields.title,

@@ -25,6 +25,7 @@
             PostGrid,
             RecentPosts
         },
+        layout: 'article',
         data () {
             return {
                 posts: []

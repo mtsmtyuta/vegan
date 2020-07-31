@@ -55,9 +55,9 @@
 </script>
 <style lang="scss">
 
-  .header-padding{
-    padding-top: get-vh(63px);
-  }
+  /*.header-padding{*/
+  /*  padding-top: get-vh(63px);*/
+  /*}*/
   #header {
     transition: .6s cubic-bezier(.4, 1, .2, 1);
   }

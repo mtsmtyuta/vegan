@@ -21,6 +21,7 @@
         head : {
             title: 'ヴィーガンのレシピ'
         },
+        layout: 'article',
         data () {
             return {
                 posts: []

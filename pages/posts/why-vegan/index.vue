@@ -23,6 +23,7 @@
         head : {
             title: 'どうしてヴィーガンなの？'
         },
+        layout: 'article',
         data () {
             return {
                 posts: []

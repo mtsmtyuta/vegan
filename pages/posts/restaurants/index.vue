@@ -21,6 +21,7 @@
             title: 'Restaurants',
             description: 'ヴィーガン向けの飲食店は日本ではまだまだ多くはありません。私たちが見つけたオススメのお店を紹介していきます。'
         },
+        layout: 'article',
         data () {
             return {
                 posts: []

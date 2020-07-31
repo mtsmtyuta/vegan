@@ -27,6 +27,7 @@
         head : {
             title: '栄養の知識をつける'
         },
+        layout: 'article',
         data () {
             return {
                 posts: []
