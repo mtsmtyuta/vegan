@@ -9,9 +9,9 @@
         <li class="footer-links__item"><nuxt-link to="/posts/recipes">RECIPES</nuxt-link></li>
         <li class="footer-links__item"><nuxt-link to="/posts/restaurants">RESTAURANTS</nuxt-link></li>
         <li class="footer-links__item"><nuxt-link to="/posts/faq">FAQ</nuxt-link></li>
-        <li class="footer-links__item "><nuxt-link class="pages" to="/contact">CONTACT</nuxt-link></li>
-        <li class="footer-links__item "><nuxt-link class="pages" to="/about-us">ABOUT US</nuxt-link></li>
-        <li class="footer-links__item "><nuxt-link class="pages" to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
+        <li class="footer-links__item pc"><nuxt-link class="pages" to="/contact">CONTACT</nuxt-link></li>
+        <li class="footer-links__item pc"><nuxt-link class="pages" to="/about-us">ABOUT US</nuxt-link></li>
+        <li class="footer-links__item pc"><nuxt-link class="pages" to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
       </ul>
       <div class="sns-links flex">
         <a href="https://www.instagram.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box ig"></div></a>
@@ -32,7 +32,10 @@
       background-color: #191919;
     }
     .ig{
-      margin-right: get-vw(52px);
+      margin-right: get-vw(32px);
+      @media screen and (max-width: 768px){
+        margin-right: 9vw;
+      }
     }
   }
   .footer-content{
