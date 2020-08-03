@@ -22,8 +22,6 @@
     height: get-vw(48px);
     -webkit-backdrop-filter: blur(1.5px);
     backdrop-filter: blur(1.5px);
-    font-size: 22px;
-    letter-spacing: 2.2px;
     background-image: linear-gradient(to right, $main-color 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: right bottom;
@@ -44,9 +42,6 @@
     a{
       line-height: get-vw(48px);
       width: 100%;
-    }
-    p{
-      @include font-en-medi;
     }
     @media screen and (max-width: 768px) {
       @include res-width-height(277px, 59px);

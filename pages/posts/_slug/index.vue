@@ -103,8 +103,7 @@
 <style lang="scss">
   .single-post-page{
     background-color: #f2f2f2;
-    margin-bottom: get-vw(87px);
-
+    /*margin-bottom: get-vw(87px);*/
     .content{
     @include font-jp;
     font-size: get-vw(15px);

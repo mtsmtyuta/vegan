@@ -10,7 +10,7 @@
       <li class="header-nav__item"><nuxt-link to="/posts/recipes">RECIPES</nuxt-link></li>
       <li class="header-nav__item"><nuxt-link to="/posts/restaurants">RESTAURANTS</nuxt-link></li>
       <li class="header-nav__item"><nuxt-link to="/posts/faq">FAQ</nuxt-link></li>
-      <li class="header-nav__item"><nuxt-link to="/contact">CONTACT</nuxt-link></li>
+      <li class="header-nav__item"><nuxt-link to="/about-us">ABOUT US</nuxt-link></li>
     </ul>
     <div class="sp hamburger-menu">
       <HamburgerMenu></HamburgerMenu>
@@ -21,7 +21,7 @@
 </template>
 <style lang="scss">
   .logo {
-    background-image: url('~assets/img/oxlogo.svg');
+    background-image: url('~assets/icons/ox_title.svg');
     height: get-vw(18px);
     width: get-vh(36px);
     @media screen and (max-width: 768px) {

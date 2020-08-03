@@ -10,7 +10,6 @@
         <li class="footer-links__item"><nuxt-link to="/posts/restaurants">RESTAURANTS</nuxt-link></li>
         <li class="footer-links__item"><nuxt-link to="/posts/faq">FAQ</nuxt-link></li>
         <li class="footer-links__item pc"><nuxt-link class="pages" to="/contact">CONTACT</nuxt-link></li>
-        <li class="footer-links__item pc"><nuxt-link class="pages" to="/about-us">ABOUT US</nuxt-link></li>
         <li class="footer-links__item pc"><nuxt-link class="pages" to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
       </ul>
       <div class="sns-links flex">
@@ -69,7 +68,7 @@
     a{
       @include font-en;
       display: block;
-      font-size: get-vw(9px);
+      font-size: get-vw(10px);
       letter-spacing: 4.5px;
       @media screen and (min-width: 1440px){
         font-size: 14px;

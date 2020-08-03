@@ -136,11 +136,11 @@
             <div class="content-container pc">
               <div class="txt-box flex column">
                 <h3 class="en-medi">WHY VEGAN</h3>
-                <p class="strong"> - どうしてヴィーガンなの？</p>
+                <p class="strong">どうしてヴィーガンなの？</p>
                 <p>病気のリスクを減らし、エネルギッシュで <br>
                   パフォーマンスの高い生活をおくる為には <br>
                   食生活を変えてみましょう。</p>
-                <Button link="/posts/why-vegan" text="理由を学ぶ→" color="white" />
+                <Button link="/posts/why-vegan" text="理由を学ぶ" color="white" />
               </div>
             </div>
           </div>
@@ -156,7 +156,7 @@
             <div class="content-container sp">
               <div class="txt-box flex column">
                 <h3 class="en-medi">WHY VEGAN</h3>
-                <p class="strong"> - どうしてヴィーガンなの？</p>
+                <p class="strong">どうしてヴィーガンなの？</p>
                 <p>病気のリスクを減らし、エネルギッシュで <br>
                   パフォーマンスの高い生活をおくる為には <br>
                   食生活を変えてみましょう。</p>
@@ -177,7 +177,7 @@
                 <p>動物性食品から摂取できる必須栄養素の全ては、<br>
                   植物だけでも摂取できます。<br>
                   神話に騙されないために栄養について学びましょう。</p>
-                <Button link="/posts/nutrition" text="栄養に詳しくなる→" color="white" />
+                <Button link="/posts/nutrition" text="栄養に詳しくなる" color="white" />
               </div>
             </div>
           </div>
@@ -217,7 +217,7 @@
                 <p>チャンピオンのように最適な燃料を自分に供給するために <br>
                   必要なすべてのレシピ、食事計画、ヒント、 <br>
                   および回答を入手してください。</p>
-                <Button link="/posts/recipes" text="料理してみる→" color="white" />
+                <Button link="/posts/recipes" text="料理してみる" color="white" />
 
               </div>
             </div>
@@ -258,7 +258,7 @@
                 <p>ヴィーガン向けの飲食店は日本では <br>
                   まだまだ多くはありません。 <br>
                   わたしたちが見つけた　オススメの店を紹介していきます。</p>
-                <Button link="/posts/restaurants" text="食べに行こう→" color="white" />
+                <Button link="/posts/restaurants" text="食べに行こう" color="white" />
 
               </div>
             </div>
@@ -300,7 +300,7 @@
                 <p>タンパク質はどこで入手しますか？<br>
                   肉を食べなくても十分なエネルギーを得ることはできるの？<br>
                   などのよくある質問の問題を解決します。</p>
-                <Button link="/posts/faq" text="答えを探す→" color="white" />
+                <Button link="/posts/faq" text="答えを探す" color="white" />
               </div>
             </div>
           </div>
