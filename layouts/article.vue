@@ -66,7 +66,7 @@
     }
   }
   .head-bgc{
-    background-color: black;
+    background-color: #191919;
   }
   .layout{
     position: relative;

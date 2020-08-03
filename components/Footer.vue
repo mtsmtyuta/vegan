@@ -26,10 +26,7 @@
 
 <style lang="scss">
   footer{
-    background-color: #292929;
-    @media screen and (max-width: 768px){
-      background-color: #191919;
-    }
+    background-color: #191919;
     .ig{
       margin-right: get-vw(32px);
       @media screen and (max-width: 768px){

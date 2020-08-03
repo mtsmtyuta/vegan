@@ -31,16 +31,13 @@
   }
   .header {
     display: flex;
-    background-color: #292929;
+    background-color: #191919;
     width: 100%;
     z-index: 99;
     justify-content: space-between;
     position: fixed;
     align-items: center;
     height: get-vh(63px);
-    @media screen and (max-width: 768px){
-      background-color: #191919;
-    }
     a {
       @include font-en;
       font-size: get-vw(14px);
