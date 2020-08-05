@@ -145,7 +145,7 @@
     height: get-vh(158px);
   }
   &.why-vegan {
-    background-image: url("~@/assets/img/whyvegan.jpg");
+    background-image: url("~@/assets/img/cat-whyvegan.jpg");
   }
   &.top {
     background-image: url("~@/assets/img/top.jpg");
@@ -159,18 +159,18 @@
     }
   }
   &.nutrition {
-    background-image: url('~@/assets/img/nutrition.jpg');
+    background-image: url('~@/assets/img/cat-nutrition.jpg');
   }
 
   &.recipe {
-    background-image: url('~@/assets/img/recipe.jpg');
+    background-image: url('~@/assets/img/cat-recipe.jpg');
   }
 
   &.restaurant {
-    background-image: url('~@/assets/img/restaurant.jpg');
+    background-image: url('~@/assets/img/cat-restaurant.jpg');
   }
 
   &.faq {
-    background-image: url('~@/assets/img/faq.jpg');
+    background-image: url('~@/assets/img/cat-faq.jpg');
   }
 }

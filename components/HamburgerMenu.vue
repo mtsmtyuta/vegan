@@ -91,6 +91,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    height: 7vh;
   }
   .hamburger__line {
     position: absolute;
@@ -101,12 +102,12 @@
     transition: all .6s;
   }
   .hamburger__line--1 {
-    top: responsive-vw(14px);
-    width: responsive-vw(45px);
+    top: 35%;
+    width: responsive-vw(40px);
   }
   .hamburger__line--3 {
-    top: responsive-vw(26px);
-    width: responsive-vw(45px);
+    top: 55%;
+    width: responsive-vw(40px);
   }
   .wrapper{
     z-index: 10;
@@ -127,18 +128,19 @@
     }
     .hamburger{
       height: 70px;
+      top: 0;
       .logo{
         margin: 0 0 3vh 0 ;
       }
     }
     .hamburger__line--1 {
       transform: rotate(25deg);
-      top: 20px;
+      top: 3vh;
     }
 
     .hamburger__line--3 {
       transform: rotate(-25deg);
-      top: 20px;
+      top: 3vh;
     }
   }
 

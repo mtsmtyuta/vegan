@@ -78,10 +78,6 @@
       .header-nav{
         display: none;
       }
-      .header-logo{
-          position: absolute;
-          top: responsive-vw(14px);
-      }
     }
   }
 
