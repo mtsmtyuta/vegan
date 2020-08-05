@@ -452,8 +452,9 @@
       padding-top: get-vh(216px);
       line-height: 1;
       @media screen and (max-width: 768px){
-        font-size: get-vh(40px);
-        line-height: 1.5;
+        font-size: 6.4vh;
+        /*font-size: get-vh(40px);*/
+        line-height: 1.2;
         font-weight: 600;
         padding-top: get-vh(80px);
         letter-spacing: 4.5px;
@@ -472,8 +473,10 @@
         text-align: left;
         color: #d5d5d5;
         @media screen and (max-width: 768px){
-          font-size: get-vh(14px);
-          line-height: 3;
+          font-size: 1.6vh;
+          letter-spacing: 0.6vw;
+          /*font-size: get-vh(14px);*/
+          line-height: 2.1;
         }
       }
     }
@@ -519,7 +522,7 @@
       justify-content: center;
       @media screen and (max-width: 768px){
         margin-left: auto;
-        width: calc(100% - 11vh);
+        width: calc(100% - 18vw);
       }
       &-inner{
         display: flex;

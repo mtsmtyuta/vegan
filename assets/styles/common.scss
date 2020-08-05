@@ -73,7 +73,7 @@ ul{
 .smallest{
   font-size: get-vw(9px);
   @media screen and (max-width: 768px){
-    font-size: responsive-vw(9px);
+    font-size: responsive-vw(11px);
   }
 }
 
