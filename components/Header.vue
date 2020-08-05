@@ -2,7 +2,7 @@
   <header class="header"
 
   >
-    <nuxt-link to="/"><div class="img-container img-box logo"></div></nuxt-link>
+    <nuxt-link class="header-logo" to="/"><div class="img-container img-box logo"></div></nuxt-link>
     <ul class="header-nav pc">
 <!--      <li class="header-nav__item"><nuxt-link to="/about">ABOUT</nuxt-link></li>-->
       <li class="header-nav__item"><nuxt-link to="/posts/why-vegan">WHY VEGAN</nuxt-link></li>
@@ -77,6 +77,10 @@
       position: fixed;
       .header-nav{
         display: none;
+      }
+      .header-logo{
+          position: absolute;
+          top: responsive-vw(14px);
       }
     }
   }
