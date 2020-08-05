@@ -1,9 +1,9 @@
 <template>
   <div class="about-us single-post-page">
-    <div class="single-post ">
+    <div class="single-post">
       <div class="section">
 
-        <h2>ABOUT US</h2>
+        <h1 class="title">ABOUT US</h1>
         <br>
         <p>OX(オックス）は、ヴィーガンのライフスタイルに興味があるけれど、<br>
           何から始めたらいいか分からないという方のための情報サイトです。 <br>
@@ -47,6 +47,16 @@
   .about-us{
     padding: 10vh 0;
     margin-bottom: 0;
+
+    background-image: url('~assets/img/aboutus.jpg');
+    width: 100%;
+    /*height: 156vh;*/
+    background-size: cover;
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    background-attachment: fixed;
+    color: #fff;
   }
   .single-post{
     width: get-vw(620px);
