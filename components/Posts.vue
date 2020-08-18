@@ -98,7 +98,7 @@
 
     p,span{
       color: #292929;
-      font-size: 1.4vw;
+      font-size: 1.3vw;
       margin: get-vh(5px) 0;
       @media screen and (max-width: 768px){
         font-size: responsive-vw(14px);

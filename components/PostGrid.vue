@@ -62,7 +62,7 @@
       margin: auto;
     }
     .card-footer-item{
-      margin-bottom: get-vw(80px);
+      margin-bottom: get-vw(100px);
     }
     .slide-content{
       margin: 0 get-vw(21px);
