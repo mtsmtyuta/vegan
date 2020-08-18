@@ -17,7 +17,7 @@
 <!--                 v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"-->
 <!--            ></div>-->
             <img loading="lazy" class="img-box" :src="`${posts[index - 1].fields.thumbnail.fields.file.url}?fit=thumb&q=90&&w=330&h=273`" alt="">
-                      <p>        {{ posts[index - 1].fields.title }}</p>
+                      <p class="strong">        {{ posts[index - 1].fields.title }}</p>
 <!--            <span v-if="post.fields.publishDate" class="date">  {{-->
 <!--            ( new Date(post.fields.publishDate).toDateString())-->
 <!--            }}</span>-->
@@ -98,10 +98,10 @@
 
     p,span{
       color: #292929;
-      font-size: get-vw(12px);
+      font-size: get-vw(14px);
       margin: get-vh(5px) 0;
       @media screen and (max-width: 768px){
-        font-size: responsive-vw(12px);
+        font-size: responsive-vw(14px);
       }
     }
     .img-box{
