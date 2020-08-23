@@ -92,6 +92,13 @@
   .single-post{
     width: get-vw(620px);
     margin: auto;
+    iframe{
+      width: 100%;
+      height: get-vw(346px);
+      @media screen and (max-width: 768px){
+        height: responsive-vw(175px);
+      }
+    }
     br{
       margin-bottom: get-vw(30px);
     }
