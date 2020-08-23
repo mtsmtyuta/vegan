@@ -147,7 +147,7 @@
     background-position: center;
     width: get-vw(620px);
     /*height: 100%;*/
-    height: get-vw(400px);
+    height: get-vw(580px);
     /*max-width: 620px;*/
     margin-bottom: get-vw(62px);
     @media screen and (max-width: 768px){
