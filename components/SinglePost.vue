@@ -116,7 +116,7 @@
       color: rgb(46, 117, 212);
     }
     .title{
-      font-size: get-vw(50px);
+      font-size: get-vw(45px);
       line-height: 1.5;
       @media screen and (max-width: 768px){
         font-size: responsive-vw(25px);
@@ -131,7 +131,7 @@
       }
     }
     .content{
-      margin-top: get-vw(62px);
+      margin-top: get-vw(42px);
     }
 
     @media screen and (max-width: 768px){
@@ -154,9 +154,9 @@
     background-position: center;
     width: get-vw(620px);
     /*height: 100%;*/
-    height: get-vw(580px);
+    height: get-vw(430px);
     /*max-width: 620px;*/
-    margin-bottom: get-vw(62px);
+    margin-bottom: get-vw(42px);
     @media screen and (max-width: 768px){
       width: 100%;
       height: responsive-vw(450px);
