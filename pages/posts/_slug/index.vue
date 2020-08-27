@@ -32,11 +32,13 @@
             return {
                 title: this.currentPost.fields.title,
                 meta: [
-                    {
-                        hid: 'description',
-                        name: 'description',
-                        content: this.currentPost.fields.description
-                    }
+                    {content: this.currentPost.fields.description},
+                    { hid: 'description', content: this.currentPost.fields.description },
+                    { hid: 'og:description', property: 'og:description', content: this.currentPost.fields.description },
+                    { hid: 'og:url', property: 'og:url', content: 'https://ox-vegan.jp/' + this.currentPost.fields.slug },
+                    { hid: 'og:image', property: 'og:image', content: 'https:' + this.currentPost.fields.topImage.fields.file.url  },
+                    { hid: 'og:title', property: 'og:title', content: this.title },
+                    { name: 'twitter:card', content: 'summary' },
                 ]
             }
         },
