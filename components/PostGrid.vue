@@ -21,7 +21,7 @@
 <!--              <div class="img-box"-->
 <!--                   v-bind:style="{ backgroundImage: 'url(' + post.fields.thumbnail.fields.file.url +')' }"-->
 <!--              ></div>-->
-              <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&q=90&&w=270&h=230`" alt="">
+              <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&w=270&h=230`" alt="">
 
               <p class="strong">{{ post.fields.title }} <span v-if="post.fields.region" class="region"> | {{post.fields.region}}</span></p>
 <!--              <span v-if="post.fields.publishDate" class="date">  {{-->
@@ -72,7 +72,8 @@
         width: 100%;
         /*height: responsive-vw(350px);*/
         height: unset;
-
+        margin-left: 0;
+        margin-right: 0;
         margin-top: responsive-vw(43px);
       }
       .img-box{
@@ -85,6 +86,7 @@
         @media screen and (max-width: 768px){
           width: 100%;
           height: unset;
+
 
           /*height: responsive-vw(284px);*/
           /*height: auto;*/

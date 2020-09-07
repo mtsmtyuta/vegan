@@ -101,12 +101,25 @@
     }
     br{
       margin-bottom: get-vw(30px);
+      @media screen and (max-width: 768px){
+        margin-bottom: responsive-vw(15px);
+      }
     }
-    h2, h3{
+    h2{
       font-size: get-vw(22px);
       margin-top: get-vw(20px);
       @media screen and (max-width: 1280px) {
         font-size: 20px;
+      }
+        @media screen and (max-width: 768px){
+        font-size: responsive-vw(20px);
+      }
+    }
+    h3{
+      font-size: get-vw(20px);
+      margin-top: get-vw(20px);
+      @media screen and (max-width: 1280px) {
+        font-size: 18px;
       }
         @media screen and (max-width: 768px){
         font-size: responsive-vw(18px);

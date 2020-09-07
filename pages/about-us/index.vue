@@ -70,6 +70,7 @@
       line-height: 2;
       @media screen and (max-width: 768px){
         margin-bottom: responsive-vw(20px);
+        line-height: 1.6;
       }
     }
     .section{
