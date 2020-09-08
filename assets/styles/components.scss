@@ -73,7 +73,8 @@
 
       @media screen and (max-width: 768px) {
         margin: auto;
-        border-radius: 5px;
+        border-radius: 0;
+        //border-radius: 5px;
       }
       .content-container{
         //padding: get-vh(151px) 0 0 get-vw(187px);
@@ -94,7 +95,8 @@
       @media screen and (max-width: 768px) {
         box-shadow: none;
         margin: auto;
-        border-radius: 5px;
+        //border-radius: 5px;
+        border-radius: 0;
         padding: 0;
       }
     }
