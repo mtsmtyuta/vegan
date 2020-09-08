@@ -21,7 +21,7 @@
 <!--              <div class="img-box"-->
 <!--                   v-bind:style="{ backgroundImage: 'url(' + post.fields.thumbnail.fields.file.url +')' }"-->
 <!--              ></div>-->
-              <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&w=270&h=230`" alt="">
+              <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&w=540&h=460`" alt="">
 
               <p class="strong">{{ post.fields.title }} <span v-if="post.fields.region" class="region"> | {{post.fields.region}}</span></p>
 <!--              <span v-if="post.fields.publishDate" class="date">  {{-->
