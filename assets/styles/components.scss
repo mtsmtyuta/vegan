@@ -154,10 +154,11 @@
     }
   }
   &.top {
-    background-image: url("~@/assets/img/top.jpg");
+    background-image: url("~@/assets/img/cat-archive-pc.jpg");
     height: get-vh(388px);
     width: 100%;
     @media screen and (max-width: 768px){
+      background-image: url("~@/assets/img/cat-archive-sp.jpg");
       height: 34vh;
     }
     h1{
