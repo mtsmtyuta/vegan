@@ -496,7 +496,8 @@
       height: 30vh;
       @media screen and (max-width: 768px){
         bottom: -40vh;
-        height: get-vh(251px);
+        height: 30vh;
+        /*height: get-vh(251px);*/
       }
       &__title{
         margin-bottom: get-vh(32px);
