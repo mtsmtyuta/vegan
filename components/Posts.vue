@@ -93,7 +93,7 @@
     width: get-vw(330px);
 
     @media screen and (max-width: 768px) {
-      width: responsive-vw(340px);
+      width: responsive-vw(330px);
     }
 
     p,span{
