@@ -1,6 +1,6 @@
 <template>
   <article>
-    <div class="hero-banner top">
+    <div class="hero-banner archive">
       <h1 class="page-title">
         ARCHIVES
       </h1>
