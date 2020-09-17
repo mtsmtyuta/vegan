@@ -58,28 +58,6 @@
     background-attachment: fixed;
     color: #fff;
   }
-  .single-post{
-    width: get-vw(620px);
-    /*max-width: 620px;*/
-    margin: auto;
-    @media screen and (max-width: 768px){
-      width: 100%;
-    }
-    p{
-      margin-bottom: get-vw(30px);
-      line-height: 2;
-      @media screen and (max-width: 768px){
-        margin-bottom: responsive-vw(20px);
-        line-height: 1.6;
-      }
-    }
-    .section{
-      @media screen and (max-width: 768px){
-        width: responsive-vw(310px);
-        margin: auto;
-      }
-    }
-  }
 </style>
 
 <script>

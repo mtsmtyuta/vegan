@@ -88,15 +88,25 @@
   pre {
     white-space: unset;
   }
-
   .single-post{
     width: get-vw(620px);
     margin: auto;
+    @media screen and (max-width: 768px){
+      width: 100%;
+    }
+    p{
+      margin-bottom: get-vw(30px);
+      line-height: 2;
+      @media screen and (max-width: 768px){
+        margin-bottom: 30px;
+        line-height: 30px;
+      }
+    }
     iframe{
       width: 100%;
       height: get-vw(346px);
       @media screen and (max-width: 768px){
-        height: responsive-vw(175px);
+        height: responsive-vw(201px);
       }
     }
     br{
@@ -157,7 +167,7 @@
     }
     .section{
       @media screen and (max-width: 768px){
-        width: responsive-vw(310px);
+        width: responsive-vw(360px);
         margin: auto;
       }
     }
