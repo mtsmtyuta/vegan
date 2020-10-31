@@ -69,7 +69,7 @@
     }
     &-content{
       height: 100%;
-      justify-content: center;
+      justify-content: space-around;
     }
     ul{
       list-style: none;
