@@ -102,6 +102,12 @@
         line-height: 30px;
       }
     }
+    ul{
+      margin: get-vw(-30px) 0 get-vw(30px);
+      @media screen and (max-width: 768px){
+        margin: -30px 0 30px;
+      }
+    }
     iframe{
       width: 100%;
       height: get-vw(346px);

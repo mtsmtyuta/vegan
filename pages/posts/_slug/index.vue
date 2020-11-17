@@ -3,13 +3,8 @@
   <article>
     <div v-if="currentPost.fields.topImage" class="single-post-page">
       <SinglePost :post="currentPost"/>
-<!--      <SinglePost-->
-<!--        :title="currentPost.fields.title"-->
-<!--        :img="currentPost.fields.topImage.fields.file.url"-->
-<!--        :publishDate="( new Date(currentPost.fields.publishDate)).toDateString()"-->
-<!--        :body="currentPost.fields.body"-->
-<!--      />-->
       <Author :author="currentPost.fields.author"></Author>
+
     </div>
     <RecentPosts :posts="allPosts"></RecentPosts>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -115,7 +110,7 @@
     line-height: 2.6;
     letter-spacing: get-vw(1.5px);
     text-align: left;
-    color: #3e3e3e;
+    color: #2e2e2e;
     @media screen and (max-width: 768px){
       font-size: responsive-vw(13px);
     }
