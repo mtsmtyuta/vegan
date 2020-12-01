@@ -196,7 +196,7 @@
       width: get-vw(620px);
       /*max-width: 620px;*/
       @media screen and (max-width: 768px){
-        width: responsive-vw(310px);
+        width: responsive-vw(360px);
       }
     }
   }
