@@ -448,9 +448,9 @@
       background-attachment: scroll;
     }
     h1{
-      font-size: get-vw(76px);
-      padding-top: get-vh(216px);
-      line-height: 1;
+      font-size: 5vw;
+      padding-top: 20vh;
+      line-height: 1.2;
       @media screen and (max-width: 768px){
         font-size: 6.4vh;
         /*font-size: get-vh(40px);*/
@@ -467,8 +467,8 @@
         margin: auto;
       }
       p{
-        /*font-size: get-vh(14px);*/
-        line-height: 2.5;
+        font-size: get-vw(14px);
+        line-height: 2;
         /*letter-spacing: responsive-vw(2.6px);*/
         text-align: left;
         color: #d5d5d5;
