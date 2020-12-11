@@ -25,17 +25,17 @@
   height: responsive-vw($height);
 }
 @mixin font-en{
-  font-family: futura, Futura, "Futura", futura-pt,sans-serif;
+  font-family: futura-pt, futura, Futura, "Futura", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 @mixin font-en-demi{
-  font-family: futura, Futura, "Futura", futura-pt,sans-serif;
+  font-family: futura-pt, futura, Futura, "Futura", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 @mixin font-en-medi{
-  font-family: futura, Futura, "Futura", futura-pt,sans-serif;
+  font-family: futura-pt, futura, Futura, "Futura", sans-serif;
   font-weight: 500;
   font-style: normal;
 }

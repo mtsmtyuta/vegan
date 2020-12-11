@@ -12,7 +12,7 @@
                    data-aos="fade-in"
                    data-aos-duration="2000"
                    data-aos-delay="1000">
-                <h1 class="en-medi">THE <br class="sp"> ANSWER <br class="sp"> FOR <br class="pc">YOUR <br class="sp"> OPTIMAL <br class="sp"> HEALTH</h1>
+                <h1 class="en-medi">THE <br class="sp"> ANSWER <br class="sp"> FOR <br>YOUR <br class="sp"> OPTIMAL <br class="sp"> HEALTH</h1>
                 <p class="jp sub-title pc">
                   ヴィーガンのライフスタイルに興味はあるけど、<br>
                   何から始めたらいいか分からないという方の疑問に答えます。</p>
