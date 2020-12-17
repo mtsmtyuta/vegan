@@ -11,6 +11,7 @@ html, body{
   }
   @media screen and (max-width: 768px){
     font-size: responsive-vw(15px);
+    letter-spacing: responsive-vw(0.7px);
   }
   letter-spacing: get-vw(1.3px);
   &.strong{

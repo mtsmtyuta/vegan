@@ -4,6 +4,7 @@
     <div v-if="currentPost.fields.topImage" class="single-post-page">
       <SinglePost :post="currentPost"/>
       <Author :author="currentPost.fields.author"></Author>
+      <RelatedPosts :post="currentPost"></RelatedPosts>
 
     </div>
     <RecentPosts :posts="allPosts"></RecentPosts>
@@ -20,6 +21,7 @@
   import RecentPosts from "../../../components/RecentPosts";
     // const client = createClient()
   import client from "~/plugins/contentful";
+  import RelatedPosts from "../../../components/RelatedPosts";
 
   export default {
         layout: 'article',
@@ -45,6 +47,7 @@
             }
         },
         components: {
+            RelatedPosts,
             RecentPosts,
             VueMarkdown,
             SinglePost,
