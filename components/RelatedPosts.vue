@@ -6,7 +6,7 @@
 <!--          <div>{{article.fields.relatedArticles[index - 1].fields.title}}</div>-->
       <div class="post-container" v-for="(article, index) in post.fields.relatedArticles" v-bind:key="index"
       >
-          <nuxt-link :to="article.fields.slug" class="related-post flex">
+          <nuxt-link :to="article.fields.slug" class="related-post flex between">
             <img loading="lazy" class="img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=660&h=504`" alt="">
 
             <!--            <p>{{article.fields.title}}</p>-->
@@ -42,6 +42,8 @@
       width: responsive-vw(360px);
       margin: auto;
     }
+    /*.txt-box{*/
+    /*}*/
     h4{
       border-bottom: 1px solid #b2b2b2;
 
@@ -68,9 +70,20 @@
         border-top: 1px solid #b2b2b2;
       }
     }
+    .left{
+      width: 80%;
+      @media screen and (max-width: 768px){
+        width: 65%;
+      }
+    }
     img{
       width: get-vw(110px);
       height: get-vw(84px);
+      /*margin-right: get-vw(10px);*/
+      /*@media screen and (max-width: 768px){*/
+      /*  margin-right: responsive-vw(10px);*/
+      /*}*/
+
       @media screen and (max-width: 768px){
         @include res-width-height(110px, 91px);
       }
