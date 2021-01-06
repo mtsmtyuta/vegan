@@ -45,7 +45,7 @@
     /*.txt-box{*/
     /*}*/
     h4{
-      border-bottom: 1px solid #b2b2b2;
+      border-bottom: 1px solid #d9d9d9;
 
     }
     a:hover{
@@ -56,7 +56,7 @@
 
     }
     .post-container{
-      border-bottom: 1px solid #b2b2b2;
+      border-bottom: 1px solid #d9d9d9;
       /*margin-bottom: get-vw(15px);*/
       padding: get-vw(15px) 0;
       @media screen and (max-width: 768px){
@@ -67,7 +67,7 @@
         border-bottom: none;
       }
       &:first-child{
-        border-top: 1px solid #b2b2b2;
+        border-top: 1px solid #d9d9d9;
       }
     }
     .left{
