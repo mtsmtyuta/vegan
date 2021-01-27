@@ -195,7 +195,7 @@
     }
   }
   .access{
-    padding: get-vw(178px) 0 get-vw(160px);
+    padding: get-vw(178px) 0 0 0;
   }
   .map-box{
     width: get-vw(290px);

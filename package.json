@@ -26,7 +26,6 @@
     "nuxt": "^2.0.0",
     "nuxt-gmaps": "^1.1.8",
     "sass-loader": "^8.0.2",
-    "velocity-animate": "^1.5.2",
     "vue-carousel": "^0.18.0",
     "vue-markdown": "^2.2.4",
     "vue-slick-carousel": "^1.0.5",

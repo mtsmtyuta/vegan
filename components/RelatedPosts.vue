@@ -6,7 +6,7 @@
 <!--          <div>{{article.fields.relatedArticles[index - 1].fields.title}}</div>-->
       <div class="post-container" v-for="(article, index) in post.fields.relatedArticles" v-bind:key="index"
       >
-          <nuxt-link :to="article.fields.slug" class="related-post flex between">
+          <nuxt-link :to="'/' + article.fields.slug" class="related-post flex between">
             <img loading="lazy" class="img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=660&h=504`" alt="">
 
             <!--            <p>{{article.fields.title}}</p>-->
