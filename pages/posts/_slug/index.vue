@@ -35,7 +35,7 @@
                     { hid: 'og:url', property: 'og:url', content: 'https://ox-vegan.jp/' + this.currentPost.fields.slug },
                     { hid: 'og:image', property: 'og:image', content: 'https:' + this.currentPost.fields.topImage.fields.file.url  },
                     { hid: 'og:title', property: 'og:title', content: this.currentPost.fields.title },
-                    { name: 'twitter:card', content: 'summary_large' },
+                    { name: 'twitter:card', content: 'summary_large_image' },
                 ]
             }
         },
