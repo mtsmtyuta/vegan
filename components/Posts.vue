@@ -3,7 +3,7 @@
     <!-- render blog posts -->
     <!--    <ul>-->
 
-    <VueSlickCarousel v-bind="settings">
+    <VueSlickCarousel v-bind="settings" v-if="posts">
 
       <div v-for="index in 6"
            :key="index"
@@ -11,13 +11,13 @@
 <!--      <div v-for="post in posts"-->
 <!--           :key="post.id"-->
 <!--      >-->
-        <nuxt-link :to="{ name: 'posts-slug', params: { slug: posts[index - 1].fields.slug }}" class="card-footer-item">
+        <nuxt-link v-if="posts[index - 1].fields.slug" :to="{ name: 'posts-slug', params: { slug: posts[index - 1].fields.slug }}" class="card-footer-item">
           <div class="slide-content">
 <!--            <div class="img-box"-->
 <!--                 v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"-->
 <!--            ></div>-->
-            <img loading="lazy" class="img-box" :src="`${posts[index - 1].fields.thumbnail.fields.file.url}?fit=thumb&w=660&h=546`" alt="">
-                      <p class="strong">        {{ posts[index - 1].fields.title }}</p>
+            <img v-if="posts[index - 1].fields.thumbnail" loading="lazy" class="img-box" :src="`${posts[index - 1].fields.thumbnail.fields.file.url}?fit=thumb&w=660&h=546`" alt="">
+                      <p class="strong" v-if="posts[index - 1].fields.title">        {{ posts[index - 1].fields.title }}</p>
 <!--            <span v-if="post.fields.publishDate" class="date">  {{-->
 <!--            ( new Date(post.fields.publishDate).toDateString())-->
 <!--            }}</span>-->
@@ -29,8 +29,6 @@
       </div>
     </VueSlickCarousel>
 
-
-    <!--    </ul>-->
   </section>
 </template>
 

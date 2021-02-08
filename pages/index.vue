@@ -40,56 +40,31 @@
                       <div class="article__items flex">
                         <div class="article__item"
                              >
-<!--                             v-for="index in 2"-->
-<!--                             :key="index"-->
-<!--                        >-->
-<!--                          <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[index].fields.slug }}" >-->
+                          <nuxt-link v-if="posts[0].fields.slug" class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >
 
-<!--                            <p class="article__item__title bold">        {{ posts[index].fields.title }}-->
-<!--                              <span class="date en-medi">{{-->
-<!--                          ( new Date(posts[index].fields.publishDate).toDateString())-->
-<!--                          }}</span>-->
-<!--                            </p>-->
-<!--                            <p class="article__description">{{ posts[index].fields.description }}</p>-->
-<!--                          </nuxt-link>-->
-                          <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >
-
-                            <p class="article__item__title bold">        {{ posts[0].fields.title }}
+                            <p class="article__item__title bold" v-if="posts[0].fields.title">        {{ posts[0].fields.title }}
                             </p>
 
-                            <p class="article__description small">{{ posts[0].fields.description }}</p>
-                            <span class="date smallest en-medi">{{
+                            <p class="article__description small" v-if="posts[0].fields.description">{{ posts[0].fields.description }}</p>
+                            <span class="date smallest en-medi" v-if="posts[0].fields.publishDate">{{
                           ( new Date(posts[0].fields.publishDate).toDateString())
                           }}</span>
                           </nuxt-link>
                         </div>
                         <div class="article__item pc"
                              >
-                          <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[1].fields.slug }}" >
+                          <nuxt-link v-if="posts[1].fields.slug" class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[1].fields.slug }}" >
 
-                            <p class="article__item__title bold">        {{ posts[1].fields.title }}
+                            <p class="article__item__title bold" v-if="posts[1].fields.title">        {{ posts[1].fields.title }}
                             </p>
 
-                            <p class="article__description small">{{ posts[1].fields.description }}</p>
-                            <span class="date smallest en-medi">{{
+                            <p class="article__description small" v-if="posts[1].fields.description">{{ posts[1].fields.description }}</p>
+                            <span class="date smallest en-medi" v-if="posts[1].fields.publishDate">{{
                           ( new Date(posts[1].fields.publishDate).toDateString())
                           }}</span>
                           </nuxt-link>
                         </div>
                       </div>
-
-<!--                      <div class="article__items flex sp">-->
-<!--                        <nuxt-link class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >-->
-
-<!--                          <p class="article__item__title bold">        {{ posts[0].fields.title }}-->
-<!--                          </p>-->
-
-<!--                          <p class="article__description small">{{ posts[0].fields.description }}</p>-->
-<!--                          <span class="date smallest en-medi">{{-->
-<!--                          ( new Date(posts[0].fields.publishDate).toDateString())-->
-<!--                          }}</span>-->
-<!--                        </nuxt-link>-->
-<!--                      </div>-->
                     </div>
                   </div>
                   <div class="link">

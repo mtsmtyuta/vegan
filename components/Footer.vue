@@ -12,10 +12,10 @@
         <li class="footer-links__item pc"><nuxt-link class="pages" to="/contact">CONTACT</nuxt-link></li>
         <li class="footer-links__item pc"><nuxt-link class="pages" to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
       </ul>
-<!--      <div class="sns-links flex">-->
+      <div class="sns-links flex">
 <!--        <a href="https://www.instagram.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box ig"></div></a>-->
-<!--        <a href="https://twitter.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box tw"></div></a>-->
-<!--      </div>-->
+        <a href="https://twitter.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box tw"></div></a>
+      </div>
     </div>
   </footer>
 </template>

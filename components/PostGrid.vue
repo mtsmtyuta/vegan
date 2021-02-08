@@ -2,11 +2,11 @@
   <section>
     <div class="gray">
 
-      <div class="responsive-container post-grid">
+      <div class="responsive-container post-grid" v-if="posts">
         <div v-for="post in posts"
              :key="post.id"
         >
-          <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.fields.slug }}" class="card-footer-item">
+          <nuxt-link v-if="post.fields.slug" :to="{ name: 'posts-slug', params: { slug: post.fields.slug }}" class="card-footer-item">
             <div class="slide-content"
                  data-aos="fade-up"
                  data-aos-duration="500"
@@ -21,9 +21,9 @@
 <!--              <div class="img-box"-->
 <!--                   v-bind:style="{ backgroundImage: 'url(' + post.fields.thumbnail.fields.file.url +')' }"-->
 <!--              ></div>-->
-              <img loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&w=540&h=460`" alt="">
+              <img v-if="post.fields.thumbnail.fields.file.url" loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&w=540&h=460`" alt="">
 
-              <p class="strong">{{ post.fields.title }} <span v-if="post.fields.region" class="region"> | {{post.fields.region}}</span></p>
+              <p v-if="post.fields.title" class="strong">{{ post.fields.title }} <span v-if="post.fields.region" class="region"> | {{post.fields.region}}</span></p>
 <!--              <span v-if="post.fields.publishDate" class="date">  {{-->
 <!--            ( new Date(post.fields.publishDate).toDateString())-->
 <!--            }}</span>-->

@@ -12,11 +12,11 @@
 
     <article class="section">
       <div class="headline">
-        <h1 class="title has-text-centered">{{ post.fields.title }}</h1>
+        <h1 v-if="post.fields.title" class="title has-text-centered">{{ post.fields.title }}</h1>
         <p v-if="post.fields.publishDate"  class="date">{{ post.fields.publishDate }}</p>
       </div>
       <div class="content">
-        <vue-markdown>{{ post.fields.body }}</vue-markdown>
+        <vue-markdown v-if="post.fields.body">{{ post.fields.body }}</vue-markdown>
         <div v-if="post.fields.citation" class="citation">
           <div @click="citation = !citation" class="toggle">出典をみる <transition name="fade"><span v-if="citation">-</span> <span v-else>+</span></transition></div>
           <transition name="fade">
@@ -94,13 +94,21 @@
     @media screen and (max-width: 768px){
       width: 100%;
     }
-    p, ul{
+    p, ul, ol{
       margin-bottom: get-vw(30px);
       line-height: 2;
       @media screen and (max-width: 768px){
         margin-bottom: 30px;
         line-height: 30px;
       }
+    }
+    ol{
+     img{
+       @media screen and (max-width: 768px){
+        position: relative;
+         right: 40px;
+       }
+     }
     }
     iframe{
       width: 100%;
@@ -182,7 +190,7 @@
     margin-bottom: get-vw(42px);
     @media screen and (max-width: 768px){
       width: 100%;
-      height: responsive-vw(450px);
+      height: responsive-vw(250px);
     }
   }
   .content{

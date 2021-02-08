@@ -6,14 +6,14 @@
 <!--          <div>{{article.fields.relatedArticles[index - 1].fields.title}}</div>-->
       <div class="post-container" v-for="(article, index) in post.fields.relatedArticles" v-bind:key="index"
       >
-          <nuxt-link :to="'/' + article.fields.slug" class="related-post flex between">
-            <img loading="lazy" class="img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=660&h=504`" alt="">
+          <nuxt-link v-if="article.fields.slug" :to="'/' + article.fields.slug" class="related-post flex between">
+            <img v-if="article.fields.thumbnail" loading="lazy" class="img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=660&h=504`" alt="">
 
             <!--            <p>{{article.fields.title}}</p>-->
             <div class="flex column between left">
               <div class="txt-box">
-            <p class="strong">{{ article.fields.title }}</p>
-            <p class="pc small">{{ article.fields.description }}</p>
+            <p v-if="article.fields.title" class="strong">{{ article.fields.title }}</p>
+            <p v-if="article.fields.description" class="pc small">{{ article.fields.description }}</p>
               </div>
 
 <!--              <Button text="続きを読む" color="black" :link="`${article.fields.slug}`"></Button>-->
