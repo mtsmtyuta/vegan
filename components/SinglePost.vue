@@ -57,6 +57,28 @@
 </script>
 
 <style lang="scss">
+  .single-post-page{
+    /*background-color: #f2f2f2;*/
+    padding-top: get-vw(133px);
+    @media screen and (max-width: 768px){
+      padding-top: 0;
+    }
+    .content{
+      @include font-jp;
+      font-size: get-vw(15px);
+      line-height: 2.6;
+      letter-spacing: 0.4px;
+      /*letter-spacing: get-vw(1.5px);*/
+      text-align: left;
+      color: #191919;
+      font-weight: 200;
+      /*color: #2e2e2e;*/
+      @media screen and (max-width: 768px){
+        font-size: responsive-vw(13px);
+      }
+    }
+
+  }
 
   .citation{
     border-top: 1px solid #D9D9D9;
@@ -124,18 +146,22 @@
       }
     }
     h2{
-      font-size: get-vw(22px);
+      font-size: get-vw(30px);
       margin-top: get-vw(20px);
+      margin-bottom: get-vw(10px);
+      line-height: 1.23;
       @media screen and (max-width: 1280px) {
-        font-size: 20px;
+        font-size: 28px;
       }
         @media screen and (max-width: 768px){
         font-size: responsive-vw(20px);
+          margin: responsive-vw(20px) 0 responsive-vw(10px);
       }
     }
     h3{
       font-size: get-vw(20px);
       margin-top: get-vw(20px);
+      line-height: 1.23;
       @media screen and (max-width: 1280px) {
         font-size: 18px;
       }
@@ -147,7 +173,7 @@
       color: rgb(46, 117, 212);
     }
     .title{
-      font-size: get-vw(45px);
+      font-size: get-vw(40px);
       line-height: 1.5;
       @media screen and (max-width: 768px){
         font-size: responsive-vw(25px);
@@ -156,7 +182,8 @@
     .date{
       color: #999999;
       letter-spacing: 1px;
-      font-size: get-vw(10px);
+      font-size: get-vw(14px);
+      margin-top: get-vw(40px);
       @media screen and (max-width: 768px){
         font-size: responsive-vw(10px);
       }
@@ -182,10 +209,10 @@
   }
   .hero{
     background-size: cover;
-    background-position: center;
+    background-position: top;
     width: get-vw(620px);
     /*height: 100%;*/
-    height: get-vw(430px);
+    height: get-vw(412px);
     /*max-width: 620px;*/
     margin-bottom: get-vw(42px);
     @media screen and (max-width: 768px){
@@ -194,9 +221,19 @@
     }
   }
   .content{
+    p{
+      font-size: get-vw(18px);
+      @media screen and (max-width: 1440px){
+        font-size: 18px;
+      }
+      @media screen and (max-width: 768px){
+        font-size: responsive-vw(16px);
+      }
+    }
     img{
       width: get-vw(620px);
       /*max-width: 620px;*/
+      margin: get-vw(30px) 0;
       @media screen and (max-width: 768px){
         width: responsive-vw(360px);
       }

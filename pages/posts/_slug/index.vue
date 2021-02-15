@@ -101,27 +101,6 @@
 </script>
 
 <style lang="scss">
-  .single-post-page{
-    background-color: #f2f2f2;
-    padding-top: get-vw(133px);
-    @media screen and (max-width: 768px){
-      padding-top: 0;
-    }
-    .content{
-    @include font-jp;
-    font-size: get-vw(15px);
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.6;
-    letter-spacing: get-vw(1.5px);
-    text-align: left;
-    color: #2e2e2e;
-    @media screen and (max-width: 768px){
-      font-size: responsive-vw(13px);
-    }
-    }
 
-  }
 
 </style>

@@ -1,19 +1,23 @@
 <template>
     <section class="related-posts" v-if="post.fields.relatedArticles">
-      <h4 class="">関連記事</h4>
+      <h2 class="">こちらもおすすめ</h2>
 <!--        <div class="related-post flex">-->
 
 <!--          <div>{{article.fields.relatedArticles[index - 1].fields.title}}</div>-->
       <div class="post-container" v-for="(article, index) in post.fields.relatedArticles" v-bind:key="index"
       >
           <nuxt-link v-if="article.fields.slug" :to="'/posts/' + article.fields.slug" class="related-post flex between">
-            <img v-if="article.fields.thumbnail" loading="lazy" class="img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=660&h=504`" alt="">
+            <img v-if="article.fields.thumbnail" loading="lazy" class="pc img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=302&h=202`" alt="">
+            <img v-if="article.fields.thumbnail" loading="lazy" class="sp img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=210&h=212`" alt="">
 
             <!--            <p>{{article.fields.title}}</p>-->
             <div class="flex column between left">
               <div class="txt-box">
-            <p v-if="article.fields.title" class="strong">{{ article.fields.title }}</p>
-            <p v-if="article.fields.description" class="pc small">{{ article.fields.description }}</p>
+                <p class="sp" v-if="article.fields.category">{{ article.fields.category }}</p>
+            <h3 v-if="article.fields.title" class="strong">{{ article.fields.title }}</h3>
+            <p v-if="article.fields.description" class="pc small green"><span class="normal">{{ article.fields.description }}</span></p>
+                <p class="sp" v-if="article.fields.author">{{ article.fields.author.fields.name }}</p>
+
               </div>
 
 <!--              <Button text="続きを読む" color="black" :link="`${article.fields.slug}`"></Button>-->
@@ -42,23 +46,41 @@
       width: responsive-vw(360px);
       margin: auto;
     }
-    /*.txt-box{*/
-    /*}*/
-    h4{
-      border-bottom: 1px solid #d9d9d9;
-
+    h2, h3{
+      font-size: get-vw(18px);
+      line-height: 1.25;
+    }
+    h2{
+      margin-bottom: get-vw(35px);
+    }
+    .green{
+      color: $main-color;
+    }
+    .normal{
+      color: #191919;
+    }
+    p{
+      font-size: get-vw(14px);
+      font-weight: 200;
+      letter-spacing: 0.35px;
+      color: #191919;
+      margin-top: get-vw(10px);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     a:hover{
       color: $main-color;
     }
     .related-post{
       gap: get-vw(46px);
-
     }
     .post-container{
       border-bottom: 1px solid #d9d9d9;
       /*margin-bottom: get-vw(15px);*/
-      padding: get-vw(15px) 0;
+      padding: get-vw(21px) 0;
       @media screen and (max-width: 768px){
         /*margin-bottom: responsive-vw(15px);*/
         padding: responsive-vw(15px) 0;
@@ -77,15 +99,15 @@
       }
     }
     img{
-      width: get-vw(110px);
-      height: get-vw(84px);
+      width: get-vw(151px);
+      height: get-vw(100px);
       /*margin-right: get-vw(10px);*/
       /*@media screen and (max-width: 768px){*/
       /*  margin-right: responsive-vw(10px);*/
       /*}*/
 
       @media screen and (max-width: 768px){
-        @include res-width-height(110px, 91px);
+        @include res-width-height(105px, 106px);
       }
     }
   }
