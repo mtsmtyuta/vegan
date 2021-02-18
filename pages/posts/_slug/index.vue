@@ -3,7 +3,7 @@
   <article>
     <div v-if="currentPost.fields.topImage" class="single-post-page">
       <SinglePost :post="currentPost"/>
-      <Author :author="currentPost.fields.author"></Author>
+<!--      <Author :author="currentPost.fields.author"></Author>-->
       <RelatedPosts :post="currentPost"></RelatedPosts>
 
     </div>

@@ -34,6 +34,7 @@
 <style lang="scss">
   a.google-link{
     color: #427fed;
+    /*color: #191919 !important;*/
   }
   .GMap__Wrapper{
     width: get-vw(290px);

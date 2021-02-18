@@ -17,6 +17,7 @@
       </div>
       <div class="content">
         <vue-markdown v-if="post.fields.body">{{ post.fields.body }}</vue-markdown>
+        <Author :author="post.fields.author"></Author>
         <div v-if="post.fields.citation" class="citation">
           <div @click="citation = !citation" class="toggle">出典をみる <transition name="fade"><span v-if="citation">-</span> <span v-else>+</span></transition></div>
           <transition name="fade">
@@ -30,7 +31,6 @@
         <vue-markdown class="txt-box">{{ post.fields.access }}</vue-markdown>
         <Gmap class="map-box" :location="post.fields.location" :name="post.fields.title" />
       </div>
-
     </article>
   </div>
 
@@ -40,8 +40,10 @@
     import VueMarkdown from 'vue-markdown'
     import Gmap from "./Gmap";
     import Button from "./Button";
+    import Author from "./Author";
     export default {
         components: {
+            Author,
             Button,
             Gmap,
             VueMarkdown
@@ -240,7 +242,22 @@
     }
   }
   .access{
-    padding: get-vw(178px) 0 0 0;
+    padding: get-vw(40px) 0;
+    border-top: 1px solid #d5d5d5;
+    border-bottom: 1px solid #d5d5d5;
+    gap: 20px;
+    margin-bottom: get-vw(40px);
+    a strong{
+      color: #191919;
+      font-size: get-vw(18px);
+    }
+    a, p{
+      color: #191919;
+      font-weight: 200;
+    }
+    p:last-child{
+      margin: 0;
+    }
   }
   .map-box{
     width: get-vw(290px);

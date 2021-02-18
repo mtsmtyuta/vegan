@@ -12,7 +12,6 @@
         <a target="_blank" rel="noopener" v-if="author.fields.twitter" :href="author.fields.twitter" class="img-box tw"></a>
         <a target="_blank" rel="noopener" v-if="author.fields.instagram" :href="author.fields.instagram" class="img-box ig"></a>
       </div>
-
     </div>
   </div>
 
@@ -34,7 +33,7 @@
     width: get-vw(620px);
     /*max-width: 620px;*/
     margin: auto;
-    padding: get-vw(80px) 0;
+    padding: get-vw(60px) 0 get-vw(108px);
     @media screen and (max-width: 768px){
       width: responsive-vw(310px);
     }
