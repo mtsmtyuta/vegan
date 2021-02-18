@@ -18,8 +18,8 @@
   .button{
     text-align: center;
     line-height: get-vw(78px);
-    width: get-vw(202px);
-    height: get-vw(48px);
+    width: get-vw(225px);
+    height: get-vw(54px);
     -webkit-backdrop-filter: blur(1.5px);
     backdrop-filter: blur(1.5px);
     background-image: linear-gradient(to right, $main-color 50%, transparent 50%);
@@ -34,7 +34,7 @@
       color: #fff;
     }
     &.black{
-      border: solid 1px #cbcbcb;
+      border: solid 1px #b1b1b1;
     }
     &.white{
       border: solid 1px white;
@@ -45,8 +45,8 @@
     }
     @media screen and (max-width: 768px) {
       @include res-width-height(277px, 59px);
-      font-size: responsive-vw(14px);
-      border-radius: 30px;
+      font-size: responsive-vw(12px);
+      border-radius: 4px;
       a{
         line-height: get-vh(59px);
       }

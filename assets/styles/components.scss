@@ -107,12 +107,20 @@
 .comp-section-title{
   text-align: center;
   color: #292929;
+  @media screen and (max-width: 768px){
+    width: responsive-vw(305px);
+    text-align: left;
+    margin: auto;
+  }
   .section-title{
-    font-size: get-vw(25px);
-    letter-spacing: 3px;
+    font-size: get-vw(53px);
+    letter-spacing: get-vw(2.65px);
+    @include font-en();
     @media screen and (max-width: 768px) {
-      font-size: responsive-vw(22px);
+      font-size: responsive-vw(61px);
       letter-spacing: 2.2px;
+      line-height: 1.05;
+      font-family: 'Bebas Neue', cursive;
     }
   }
   @media screen and (max-width: 768px) {
@@ -121,15 +129,21 @@
   hr{
     width: get-vw(50px);
     margin: get-vh(30px) auto;
-    border: solid get-vh(1px) #22aa95;
-    background-color: #22aa95;
+    border: solid 1px $main-color;
+    background-color: $main-color;
     @media screen and (max-width: 768px){
       width: responsive-vw(45px);
-      margin: responsive-vw(23px) auto;
+      margin: responsive-vw(31px) auto responsive-vw(31px) 0;
     }
   }
   h3{
-    font-weight: 400;
+    font-weight: 100;
+    @media screen and (max-width: 768px){
+      width: responsive-vw(266px);
+      font-weight: 200;
+      letter-spacing: responsive-vw(0.33px);
+      line-height: 2;
+    }
   }
 }
 

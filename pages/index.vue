@@ -98,7 +98,13 @@
           <div class="comp-section-title">
             <h2 class="en-medi section-title">WHAT TO LEARN TODAY?</h2>
             <hr>
-            <h3>何をお探しですか？</h3>
+            <h3 class="pc">何をお探しですか？</h3>
+            <h3 class="sp">ヴィーガンのライフスタイルに興味はあるけ
+              ど、何から始めたらいいか分からないという
+              方の疑問に答えます。植物を中心とした食事
+              に切り替えパフォーマンスを大幅に向上させ
+              る為にヒントを手に入れて、毎日をエネルギ
+              ッシュに過ごしましょう。</h3>
           </div>
         </div>
 
@@ -716,16 +722,6 @@
     padding: get-vh(132px) 0 get-vh(115px);
     @media screen and (max-width: 768px){
       padding: get-vh(74px) 0 get-vh(61px);
-    }
-  }
-
-  .recent-posts{
-    .comp-section-title{
-      margin: get-vh(85px) 0;
-    }
-    div.button{
-      margin: get-vh(85px) auto;
-      border: 1px solid #cbcbcb;
     }
   }
 

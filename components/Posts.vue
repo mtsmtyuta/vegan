@@ -16,8 +16,9 @@
 <!--            <div class="img-box"-->
 <!--                 v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"-->
 <!--            ></div>-->
-            <img v-if="posts[index - 1].fields.thumbnail" loading="lazy" class="img-box" :src="`${posts[index - 1].fields.thumbnail.fields.file.url}?fit=thumb&w=660&h=546`" alt="">
+            <img v-if="posts[index - 1].fields.thumbnail" loading="lazy" class="img-box" :src="`${posts[index - 1].fields.thumbnail.fields.file.url}?fit=thumb&w=664&h=442`" alt="">
                       <p class="strong" v-if="posts[index - 1].fields.title">        {{ posts[index - 1].fields.title }}</p>
+            <p class=" description"><span class="normal"> {{posts[index - 1].fields.description}}</span></p>
 <!--            <span v-if="post.fields.publishDate" class="date">  {{-->
 <!--            ( new Date(post.fields.publishDate).toDateString())-->
 <!--            }}</span>-->
@@ -48,7 +49,9 @@
                     // "autoplaySpeed": 1000,
                     // "speed": 2000,
                     "arrows": false,
+                    "centerPadding": "40px",
                     "dots": true,
+                    "arrow" : true,
                     "responsive": [
                         {
                             "breakpoint": 768,
@@ -57,7 +60,7 @@
                                 "centerPadding": "30px",
                                 "slidesToScroll": 1,
                                 // "focusOnSelect": true,
-                                "centerMode": true,
+                                // "centerMode": true,
                                 "autoplay": false,
                                 // "arrows": false,
                             }
@@ -71,6 +74,9 @@
 
 
 <style lang="scss" >
+  .green{
+    color: $main-color;
+  }
   .post-preview{
     width: 80vw;
     margin: auto;
@@ -79,10 +85,18 @@
     }
     .slick-dots{
       bottom: -40px;
+      @media screen and (max-width: 768px){
+        bottom: responsive-vw(-48px);
+      }
     }
-    .slick-dots li button:before{
-      color: $main-color;
+    .slick-dots li {
+      margin: 0 get-vw(11px);
     }
+  }
+  .slick-slide{
+    /*margin: 0 get-vw(41px);*/
+  }
+  .slick-list{
   }
 
   .slide-content{
@@ -94,8 +108,17 @@
       width: responsive-vw(330px);
     }
 
+    p.description{
+      font-weight: 200;
+      color: $main-color;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
     p,span{
-      color: #292929;
+      color: #191919;
       font-size: 1.3vw;
       margin: get-vh(5px) 0;
       @media screen and (max-width: 768px){
@@ -104,10 +127,10 @@
     }
     .img-box{
       background-size: cover;
-      height: get-vw(273px);
-      width: get-vw(330px);
+      width: get-vw(300px);
+      height: get-vw(200px);
       @media screen and (max-width: 768px) {
-        @include res-width-height(330px, 273px);
+        @include res-width-height(326px, 217px);
       }
     }
     .date{
@@ -136,6 +159,39 @@
     }
   }
 
+  .slick-dots li.slick-active button{
+    width: get-vw(24px);
+    height: get-vw(24px);
+
+    &:before{
+      content: "";
+      border-radius: 50%;
+      border: 1px solid $main-color;
+      background-color: #fff;
+    }
+    @media screen and (max-width: 768px){
+      @include res-width-height(11px, 11px);
+    }
+  }
+  .slick-dots li button{
+    /*width: 6px;*/
+    /*height: 6px;*/
+    /*background-color: #b1b1b1;*/
+    /*border-radius: 50%;*/
+    margin: auto;
+    @media screen and (max-width: 768px){
+      @include res-width-height(11px, 11px);
+    }
+    &:before{
+      /*content: "";*/
+    @media screen and (max-width: 768px){
+      color: #191919;
+      @include font-en();
+      font-size: responsive-vw(12px);
+    }
+    }
+
+  }
 
   .card-footer-item{
     display: block;
