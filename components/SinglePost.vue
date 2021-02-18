@@ -247,9 +247,16 @@
     border-bottom: 1px solid #d5d5d5;
     gap: 20px;
     margin-bottom: get-vw(40px);
+    @media screen and (max-width: 768px){
+      padding: responsive-vw(40px) 0;
+      margin-bottom: responsive-vw(40px);
+    }
     a strong{
       color: #191919;
       font-size: get-vw(18px);
+      @media screen and (max-width: 768px){
+        font-size: responsive-vw(16px);
+      }
     }
     a, p{
       color: #191919;

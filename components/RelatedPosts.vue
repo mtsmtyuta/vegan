@@ -13,12 +13,13 @@
             <!--            <p>{{article.fields.title}}</p>-->
             <div class="flex column between left">
               <div class="txt-box">
-                <p class="sp" v-if="article.fields.category">{{ article.fields.category }}</p>
+                <p class="green sp" v-if="article.fields.category">{{ article.fields.category }}</p>
             <h3 v-if="article.fields.title" class="strong">{{ article.fields.title }}</h3>
             <p v-if="article.fields.description" class="pc small green"><span class="normal">{{ article.fields.description }}</span></p>
-                <p class="sp" v-if="article.fields.author">{{ article.fields.author.fields.name }}</p>
-
               </div>
+
+              <p class="sp" v-if="article.fields.author">By {{ article.fields.author.fields.name }}</p>
+
 
 <!--              <Button text="続きを読む" color="black" :link="`${article.fields.slug}`"></Button>-->
             </div>
@@ -49,12 +50,21 @@
     h2, h3{
       font-size: get-vw(18px);
       line-height: 1.25;
+      font-weight: 700;
+      @media screen and (max-width: 768px){
+        font-size: responsive-vw(14px);
+        margin-top: responsive-vw(11px);
+      }
     }
     h2{
       margin-bottom: get-vw(35px);
+      @media screen and (max-width: 768px){
+        font-weight: 500;
+      }
     }
     .green{
       color: $main-color;
+      text-transform: uppercase;
     }
     .normal{
       color: #191919;
@@ -70,6 +80,9 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+      @media screen and (max-width: 768px){
+        font-size: responsive-vw(12px);
+      }
     }
     a:hover{
       color: $main-color;
