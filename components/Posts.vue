@@ -168,6 +168,10 @@
       border-radius: 50%;
       border: 1px solid $main-color;
       background-color: #fff;
+      width: get-vw(24px);
+      height: get-vw(24px);
+      max-width: 30px;
+      max-height: 30px;
     }
     @media screen and (max-width: 768px){
       @include res-width-height(11px, 11px);
