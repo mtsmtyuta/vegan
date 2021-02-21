@@ -8,15 +8,15 @@
             <nuxt-link @click.native="hamburger()" to="/"><div class="title img-box logo"></div></nuxt-link>
 
             <ul>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/why-vegan">WHY VEGAN</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/nutrition">NUTRITION</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/recipes">RECIPES</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/restaurants">RESTAURANTS</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/faq">FAQ</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/">ARCHIVE</nuxt-link></li>
-              <li  class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/contact">CONTACT</nuxt-link></li>
-              <li class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/about-us">ABOUT US</nuxt-link></li>
-              <li class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/why-vegan">WHY VEGAN <span class="jp">どうしてヴィーガンなの？</span></nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/nutrition">NUTRITION <span class="jp">栄養について学ぶ</span></nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/recipes">RECIPES <span class="jp">ヴィーガン料理をつくる</span></nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/restaurants">RESTAURANTS <span class="jp">外でヴィーガン料理を食べる</span></nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/faq">FAQ <span class="jp">よくある疑問の答えを知る</span></nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/">ARCHIVE <span class="jp">記事一覧</span></nuxt-link></li>
+              <li  class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/contact">CONTACT <span class="jp">OXに声をかける</span></nuxt-link></li>
+              <li class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/about-us">ABOUT US <span class="jp">OXについて</span></nuxt-link></li>
+              <li class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/privacy-policy">PRIVACY POLICY <span class="jp">プライバシーポリシー</span></nuxt-link></li>
             </ul>
           </nav>
           <div class="sns-links flex">
@@ -49,7 +49,7 @@
     opacity: 0;
     transition: opacity .6s ease-in-out;
     overflow: hidden;
-    font-size: responsive-vw(14px);
+    font-size: responsive-vw(15px);
     z-index: -1;
     display: flex;
     align-items: center;
@@ -57,15 +57,20 @@
     height: 0;
     width: 0;
     pointer-events: none;
-    background-color: #292929;
+    background-color: #0f0f0f;
     .title a{
       font-size: responsive-vw(20px);
       display: block;
       margin-bottom:2vh;
 
     }
+    .jp{
+      font-weight: 100;
+      font-size: responsive-vw(12px);
+      margin-left: responsive-vw(16px);
+    }
     .nav-link{
-      margin: 1vh 0;
+      margin: get-vh(45px) 0;
     }
     &-content{
       height: 100%;
@@ -74,9 +79,9 @@
     ul{
       list-style: none;
       padding: 0;
-      margin: 0;
+      margin-top: get-vh(120px);
       a{
-        font-size: tab-vw(32px);
+        font-size: responsive-vw(15px);
         line-height: 2.22;
         /*letter-spacing: tab-vw(4.8px);*/
         letter-spacing: 4.5px;
@@ -102,11 +107,11 @@
     transition: all .6s;
   }
   .hamburger__line--1 {
-    top: 35%;
+    top: 60%;
     width: responsive-vw(40px);
   }
   .hamburger__line--3 {
-    top: 55%;
+    top: 80%;
     width: responsive-vw(40px);
   }
   .wrapper{
@@ -135,12 +140,12 @@
     }
     .hamburger__line--1 {
       transform: rotate(25deg);
-      top: 3vh;
+      top: 60%;
     }
 
     .hamburger__line--3 {
       transform: rotate(-25deg);
-      top: 3vh;
+      top: 60%;
     }
   }
 

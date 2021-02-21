@@ -2,7 +2,7 @@
   <header class="header"
 
   >
-    <nuxt-link class="header-logo" to="/"><div class="img-container img-box logo"></div></nuxt-link>
+    <nuxt-link class="header-logo" to="/"><div class="en logo">OX MAGAZINE</div></nuxt-link>
     <ul class="header-nav pc">
 <!--      <li class="header-nav__item"><nuxt-link to="/about">ABOUT</nuxt-link></li>-->
       <li class="header-nav__item"><nuxt-link to="/posts/why-vegan">WHY VEGAN</nuxt-link></li>
@@ -21,12 +21,16 @@
 </template>
 <style lang="scss">
   .logo {
-    background-image: url('~assets/icons/ox_title.svg');
+    /*background-image: url('~assets/icons/ox_title.svg');*/
     height: get-vw(18px);
-    width: get-vh(36px);
+    color: #fff;
+    font-size: 21px;
+    font-weight: 300;
+    letter-spacing: get-vw(2.1px);
+    /*width: get-vh(36px);*/
     @media screen and (max-width: 768px) {
-      width: responsive-vw(34px);
-      height: responsive-vw(17px);
+      /*width: responsive-vw(34px);*/
+      /*height: responsive-vw(17px);*/
     }
   }
   .header {
@@ -40,8 +44,9 @@
     height: get-vh(63px);
     a {
       @include font-en;
-      font-size: get-vw(14px);
-      letter-spacing: 4.5px;
+      font-size: get-vw(15px);
+      letter-spacing: get-vw(1.13px);
+      font-weight: 300;
       text-decoration: none;
       color: white;
       display: block;

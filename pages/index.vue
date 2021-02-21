@@ -20,15 +20,15 @@
                      data-aos="fade-in"
                      data-aos-duration="1500"
                      data-aos-delay="1500">
-                  ヴィーガンのライフスタイルに興味はあるけど、
-                  何から始めたらいいか分からないという方の疑問に答えます。
-                植物を中心とした食事に切り替え
-                    パフォーマンスを大幅に向上させる為に
-                    ヒントを手に入れて、
-                    毎日をエネルギッシュに過ごしましょう！
+<!--                  ヴィーガンのライフスタイルに興味はあるけど、-->
+<!--                  何から始めたらいいか分からないという方の疑問に答えます。-->
+<!--                植物を中心とした食事に切り替え-->
+<!--                    パフォーマンスを大幅に向上させる為に-->
+<!--                    ヒントを手に入れて、-->
+<!--                    毎日をエネルギッシュに過ごしましょう！-->
                   </p>
               </div>
-              <div class="new-posts"
+              <div class="new-posts pc"
                    data-aos="slide-left"
                    data-aos-duration="1000"
                    data-aos-delay="2000"
@@ -51,7 +51,7 @@
                           }}</span>
                           </nuxt-link>
                         </div>
-                        <div class="article__item pc"
+                        <div class="article__item"
                              >
                           <nuxt-link v-if="posts[1].fields.slug" class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[1].fields.slug }}" >
 
@@ -85,8 +85,14 @@
               <p>これらのメリットはアスリートだけでなく、自分の生活のあらゆる面で力になり、気分を高めます。</p>
               <p>その為に必要なすべてのレシピ、食事計画、ヒント、および疑問への回答をここで入手してください。</p>
             </div>
+            <div class="scroll flex sp vertical">
+              <p class="en">SCROLL</p>
+              <hr>
+            </div>
           </div>
         </div>
+        <RecentPosts class="sp" :posts="posts"></RecentPosts>
+
 
       </client-only>
 
@@ -310,7 +316,7 @@
         </nuxt-link>
       </div>
 
-      <RecentPosts :posts="posts"></RecentPosts>
+      <RecentPosts class="pc" :posts="posts"></RecentPosts>
 
 
     </div>
@@ -396,6 +402,22 @@
     }
   }
 
+  .vertical{
+    margin-left: auto;
+    margin-right: 5%;
+    color: #fff;
+    position: relative;
+    bottom: 10%;
+    align-items: center;
+    hr{
+      transform: rotate(90deg);
+      width: 40vh;
+      position: absolute;
+      top: 30vh;
+      height: 0.5px;
+      border-color: #888888;
+    }
+  }
   .main-content{
     background-color: #f2f2f2;
     padding-bottom: get-vh(10px);
@@ -410,7 +432,7 @@
       background: #1b1b1b;
       /*height: get-vh(1029px);*/
       /*width: 100%;*/
-      height: 120vh;
+      height: 100vh;
     }
   }
   .top{
@@ -429,16 +451,18 @@
       background-attachment: scroll;
     }
     h1{
-      font-size: 5vw;
-      padding-top: 20vh;
-      line-height: 1.2;
+      font-size: get-vh(102px);
+      padding-top: get-vh(164px);
+      letter-spacing: get-vh(5.1px);
+      line-height: 1.07;
+      font-family: 'Bebas Neue', cursive;
       @media screen and (max-width: 768px){
-        font-size: 6.4vh;
+        font-size: get-vh(99px);
         /*font-size: get-vh(40px);*/
-        line-height: 1.2;
-        font-weight: 600;
-        padding-top: get-vh(80px);
-        letter-spacing: 4.5px;
+        line-height: 0.99;
+        font-weight: normal;
+        padding-top: get-vh(126px);
+        letter-spacing: get-vh(4.55px);
         margin-bottom: get-vh(15px);
       }
     }
@@ -462,8 +486,10 @@
       }
     }
     .sub-title{
-      margin-top: get-vh(19px);
+      /*margin-top: get-vh(19px);*/
       line-height: 1.93;
+      font-weight: 100;
+      letter-spacing: get-vh(1.5px);
       @media screen and (max-width: 768px){
         margin-top: 0;
         width: 80%;

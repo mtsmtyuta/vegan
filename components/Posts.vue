@@ -172,6 +172,11 @@
       height: get-vw(24px);
       max-width: 30px;
       max-height: 30px;
+      @media screen and (max-width: 768px){
+          @include res-width-height(11px, 11px);
+        top: 2px;
+        position: absolute;
+      }
     }
     @media screen and (max-width: 768px){
       @include res-width-height(11px, 11px);
