@@ -7,7 +7,10 @@
       </h1>
     </div>
     <PostGrid :posts="category"></PostGrid>
-    <RecentPosts class="pc" :posts="posts"></RecentPosts>
+    <div class="section-recent">
+      <RecentPosts :posts="posts"></RecentPosts>
+    </div>
+
   </article>
 </template>
 <script>

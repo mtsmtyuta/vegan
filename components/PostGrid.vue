@@ -2,7 +2,7 @@
   <section>
     <div class="gray">
 
-      <div class="responsive-container post-grid" v-if="posts">
+      <div class="pc responsive-container post-grid" v-if="posts">
         <div v-for="post in posts"
              :key="post.id"
         >
@@ -21,7 +21,7 @@
 <!--              <div class="img-box"-->
 <!--                   v-bind:style="{ backgroundImage: 'url(' + post.fields.thumbnail.fields.file.url +')' }"-->
 <!--              ></div>-->
-              <img v-if="post.fields.thumbnail.fields.file.url" loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&w=540&h=460`" alt="">
+              <img v-if="post.fields.thumbnail.fields.file.url" loading="lazy" class="img-box" :src="`${post.fields.thumbnail.fields.file.url}?fit=thumb&w=572&h=380`" alt="">
 
               <p v-if="post.fields.title" class="strong">{{ post.fields.title }} <span v-if="post.fields.region" class="region"> | {{post.fields.region}}</span></p>
 <!--              <span v-if="post.fields.publishDate" class="date">  {{-->
@@ -34,13 +34,17 @@
 
         </div>
       </div>
+
+      <PostList class="sp" :post="posts" />
     </div>
 
   </section>
 </template>
 
 <script>
+    import PostList from "./PostList";
     export default {
+        components: {PostList},
         props: ['posts']
     }
 </script>
@@ -49,8 +53,8 @@
 <style lang="scss" >
   .gray{
     padding-top: get-vw(26px);
-    background-color: #f2f2f2;
-    padding-bottom: get-vw(300px);
+    /*background-color: #f2f2f2;*/
+    /*padding-bottom: get-vw(300px);*/
   }
 
   .post-grid{
@@ -79,8 +83,8 @@
       .img-box{
         /*width: unset;*/
         /*width: get-vw(270px);*/
-        width: get-vw(270px);
-        height: get-vw(230px);
+        width: get-vw(286px);
+        height: get-vw(190px);
 
 
         @media screen and (max-width: 768px){

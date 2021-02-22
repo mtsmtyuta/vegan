@@ -108,11 +108,11 @@
   }
   .hamburger__line--1 {
     top: 60%;
-    width: responsive-vw(40px);
+    width: responsive-vw(45px);
   }
   .hamburger__line--3 {
     top: 80%;
-    width: responsive-vw(40px);
+    width: responsive-vw(45px);
   }
   .wrapper{
     z-index: 10;
@@ -139,12 +139,12 @@
       }
     }
     .hamburger__line--1 {
-      transform: rotate(25deg);
+      transform: rotate(35deg);
       top: 60%;
     }
 
     .hamburger__line--3 {
-      transform: rotate(-25deg);
+      transform: rotate(-35deg);
       top: 60%;
     }
   }

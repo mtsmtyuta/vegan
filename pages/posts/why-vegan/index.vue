@@ -8,8 +8,10 @@
     </div>
     <PostGrid :posts="category"></PostGrid>
 
+    <div class="section-recent">
+      <RecentPosts :posts="posts"></RecentPosts>
+    </div>
 
-    <RecentPosts class="pc" :posts="posts"></RecentPosts>
 
   </article>
 </template>

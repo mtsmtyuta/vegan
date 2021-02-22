@@ -43,6 +43,7 @@
     justify-content: space-between;
     @media screen and (max-width: 768px) {
       height: get-vh(607px);
+      height: auto;
       flex-direction: column;
       justify-content: center;
       text-align: center;
@@ -55,13 +56,17 @@
         height: get-vh(349px);
       }
       .sns-links{
-        margin-top: get-vh(85px);
+        margin-top: get-vh(14px);
+        margin-bottom: get-vh(75px);
       }
     }
   }
   .footer-links{
     width: 75%;
     justify-content: space-between;
+    @media screen and (max-width: 768px){
+      margin: responsive-vw(84px) auto;
+    }
     a{
       @include font-en;
       display: block;
@@ -71,7 +76,7 @@
         font-size: 14px;
       }
       @media screen and (max-width: 768px){
-        font-size: responsive-vw(14px);
+        font-size: responsive-vw(15px);
         &.pages{
           font-size: responsive-vw(12px);
         }
