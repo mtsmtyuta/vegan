@@ -59,9 +59,13 @@
 </script>
 
 <style lang="scss">
+  .headline{
+    margin-bottom: 36px;
+  }
   .single-post-page{
     /*background-color: #f2f2f2;*/
     padding-top: get-vw(133px);
+
     @media screen and (max-width: 768px){
       padding-top: 0;
     }
@@ -86,6 +90,7 @@
     border-top: 1px solid #D9D9D9;
     border-bottom: 1px solid #D9D9D9;
     padding: 20px 0;
+    margin-bottom: get-vw(36px);
   }
   .toggle{
     cursor: pointer;
@@ -220,6 +225,7 @@
     @media screen and (max-width: 768px){
       width: 100%;
       height: responsive-vw(250px);
+      margin-bottom: responsive-vw(36px);
     }
   }
   .content{

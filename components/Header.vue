@@ -22,7 +22,7 @@
 <style lang="scss">
   .logo {
     /*background-image: url('~assets/icons/ox_title.svg');*/
-    height: get-vw(18px);
+    /*height: get-vw(18px);*/
     color: #fff;
     font-size: 21px;
     font-weight: 300;
@@ -42,6 +42,9 @@
     position: fixed;
     align-items: center;
     height: get-vh(63px);
+    @media screen and (max-width: 768px){
+      height: 9vh;
+    }
     a {
       @include font-en;
       font-size: get-vw(15px);

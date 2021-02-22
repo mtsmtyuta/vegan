@@ -5,9 +5,10 @@
       <SinglePost :post="currentPost"/>
 <!--      <Author :author="currentPost.fields.author"></Author>-->
       <RelatedPosts :post="currentPost"></RelatedPosts>
-
     </div>
-    <RecentPosts :posts="allPosts"></RecentPosts>
+    <div class="section-recent">
+      <RecentPosts :posts="allPosts"></RecentPosts>
+    </div>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </article>
 </template>
@@ -102,5 +103,17 @@
 
 <style lang="scss">
 
+  .section-recent{
+    width: 80vw;
+    margin: get-vw(115px) auto 0;
+    border-top: 1px solid #b7b7b7;
+    @media screen and (max-width: 768px){
+      margin: responsive-vw(76px) auto 0;
+      width: responsive-vw(326px);
+      .section-title{
+        margin-top: responsive-vw(78px);
+      }
+    }
+  }
 
 </style>

@@ -57,7 +57,7 @@
       }
     }
     h2{
-      margin-bottom: get-vw(35px);
+      margin-bottom: get-vw(15px);
       @media screen and (max-width: 768px){
         font-weight: 500;
       }
@@ -99,7 +99,7 @@
         padding: responsive-vw(15px) 0;
       }
       &:last-child{
-        border-bottom: none;
+        /*border-bottom: none;*/
       }
       &:first-child{
         border-top: 1px solid #d9d9d9;
