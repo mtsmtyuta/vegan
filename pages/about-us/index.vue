@@ -45,7 +45,7 @@
 
 <style lang="scss">
   .about-us{
-    padding: 10vh 0;
+    padding: 10vh 0 !important;
     margin-bottom: 0;
 
     background-image: url('~assets/img/aboutus.jpg');
