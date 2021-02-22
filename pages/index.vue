@@ -407,7 +407,7 @@
     margin-right: 5%;
     color: #fff;
     position: relative;
-    bottom: 10%;
+    bottom: 30%;
     align-items: center;
     hr{
       transform: rotate(90deg);
@@ -446,7 +446,7 @@
     /*margin-left: auto;*/
     @media screen and (max-width: 768px) {
       background-image: url('~assets/img/sptop.jpg');
-      height: get-vh(709px);
+      height: 100vh;
       width: 100%;
       background-attachment: scroll;
     }

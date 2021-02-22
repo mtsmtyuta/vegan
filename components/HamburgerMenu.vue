@@ -12,11 +12,11 @@
               <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/nutrition">NUTRITION <span class="jp">栄養について学ぶ</span></nuxt-link></li>
               <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/recipes">RECIPES <span class="jp">ヴィーガン料理をつくる</span></nuxt-link></li>
               <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/restaurants">RESTAURANTS <span class="jp">外でヴィーガン料理を食べる</span></nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/faq">FAQ <span class="jp">よくある疑問の答えを知る</span></nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/">ARCHIVE <span class="jp">記事一覧</span></nuxt-link></li>
-              <li  class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/contact">CONTACT <span class="jp">OXに声をかける</span></nuxt-link></li>
-              <li class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/about-us">ABOUT US <span class="jp">OXについて</span></nuxt-link></li>
-              <li class="nav-link"><nuxt-link class="pages" @click.native="hamburger()" to="/privacy-policy">PRIVACY POLICY <span class="jp">プライバシーポリシー</span></nuxt-link></li>
+              <li  class="nav-link bottom-line"><nuxt-link @click.native="hamburger()" to="/posts/faq">FAQ <span class="jp">よくある疑問の答えを知る</span></nuxt-link></li>
+              <li  class="nav-link bottom-line"><nuxt-link @click.native="hamburger()" to="/posts/">ARCHIVE <span class="jp">記事一覧</span></nuxt-link></li>
+              <li  class="nav-link bottom-line"><nuxt-link class="pages" @click.native="hamburger()" to="/contact">CONTACT <span class="jp">OXに声をかける</span></nuxt-link></li>
+              <li class="nav-link bottom-line"><nuxt-link class="pages" @click.native="hamburger()" to="/about-us">ABOUT US <span class="jp">OXについて</span></nuxt-link></li>
+              <li class="nav-link bottom-line"><nuxt-link class="pages" @click.native="hamburger()" to="/privacy-policy">PRIVACY POLICY <span class="jp">プライバシーポリシー</span></nuxt-link></li>
             </ul>
           </nav>
           <div class="sns-links flex">
@@ -70,7 +70,11 @@
       margin-left: responsive-vw(16px);
     }
     .nav-link{
-      margin: get-vh(45px) 0;
+      margin: 2.5vh 0;
+      padding-bottom: 2.5vh;
+      &.bottom-line{
+        border-bottom: 1px solid #212121;
+      }
     }
     &-content{
       height: 100%;
@@ -100,7 +104,7 @@
   }
   .hamburger__line {
     position: absolute;
-    height: 2px;
+    height: 1px;
     right: tab-vw(48px);
     background-color: #fff;
     /*background-color: #707070;*/
