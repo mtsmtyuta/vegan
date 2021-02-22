@@ -60,6 +60,7 @@
       margin-bottom: get-vw(15px);
       @media screen and (max-width: 768px){
         font-weight: 500;
+        margin-bottom: responsive-vw(15px);
       }
     }
     .green{

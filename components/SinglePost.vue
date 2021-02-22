@@ -89,8 +89,12 @@
   .citation{
     border-top: 1px solid #D9D9D9;
     border-bottom: 1px solid #D9D9D9;
-    padding: 20px 0;
+    padding: get-vw(36px) 0;
     margin-bottom: get-vw(36px);
+    @media screen and (max-width: 768px){
+      padding: responsive-vw(36px) 0;
+      margin-bottom: responsive-vw(36px);
+    }
   }
   .toggle{
     cursor: pointer;
@@ -101,9 +105,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    line-height: 1;
   }
   .links{
     margin-top: get-vw(30px);
+    div p{
+      margin: 0;
+    }
   }
   .fade-enter-active {
     transition: opacity .5s;
