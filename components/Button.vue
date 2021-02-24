@@ -2,7 +2,7 @@
 <!--  <transition name="fill">-->
     <div :class="color" class="button" >
       <nuxt-link :to="link">
-        <p> {{text}}</p>
+        <p class="en"> {{text}}</p>
       </nuxt-link>
     </div>
 <!--  </transition>-->
@@ -44,9 +44,14 @@
       width: 100%;
     }
     @media screen and (max-width: 768px) {
-      @include res-width-height(277px, 59px);
-      font-size: responsive-vw(12px);
-      border-radius: 4px;
+      @include res-width-height(305px, 51px);
+      background-color: $main-color;
+      color: #fff;
+      border-radius: responsive-vw(26px);
+      p{
+        font-size: responsive-vw(12px);
+        font-weight: normal;
+      }
       a{
         line-height: get-vh(59px);
       }

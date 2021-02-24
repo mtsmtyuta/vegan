@@ -111,6 +111,7 @@
               に切り替えパフォーマンスを大幅に向上させ
               る為にヒントを手に入れて、毎日をエネルギ
               ッシュに過ごしましょう。</h3>
+            <div class="img-box category-logo sp"></div>
           </div>
         </div>
 
@@ -401,6 +402,17 @@
       transition-delay: 0s !important;
     }
   }
+  .comp-section-title{
+    position: relative;
+  }
+  .category-logo{
+    @include res-width-height(287.5px, 294px);
+    background-image: url('~assets/img/categorylogo.svg');
+    position: absolute;
+    right: responsive-vw(-50px);
+    top: responsive-vw(-93px);
+    z-index: -1;
+  }
 
   .vertical{
     margin-left: auto;
@@ -419,9 +431,11 @@
     }
   }
   .main-content{
-    background-color: #f2f2f2;
+    background-color: #f0f0f0;
     padding-bottom: get-vh(10px);
-    /*overflow: hidden !important;*/
+@media screen and (max-width: 768px){
+  background-color: transparent;
+}
   }
   .fv-container {
     position: relative;

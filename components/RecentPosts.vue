@@ -34,7 +34,7 @@
     .comp-section-title{
       margin: get-vw(85px) auto;
       @media screen and (max-width: 768px){
-        margin: responsive-vw(57px) auto responsive-vw(47px);
+        margin: responsive-vw(57px) auto responsive-vw(31px);
       }
     }
     div.button{
