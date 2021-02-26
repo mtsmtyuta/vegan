@@ -8,15 +8,15 @@
             <nuxt-link @click.native="hamburger()" to="/"><div class="title img-box logo"></div></nuxt-link>
 
             <ul>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/why-vegan">WHY VEGAN <span class="jp">どうしてヴィーガンなの？</span></nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/nutrition">NUTRITION <span class="jp">栄養について学ぶ</span></nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/recipes">RECIPES <span class="jp">ヴィーガン料理をつくる</span></nuxt-link></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/restaurants">RESTAURANTS <span class="jp">外でヴィーガン料理を食べる</span></nuxt-link></li>
-              <li  class="nav-link bottom-line"><nuxt-link @click.native="hamburger()" to="/posts/faq">FAQ <span class="jp">よくある疑問の答えを知る</span></nuxt-link></li>
-              <li  class="nav-link bottom-line"><nuxt-link @click.native="hamburger()" to="/posts/">ARCHIVE <span class="jp">記事一覧</span></nuxt-link></li>
-              <li  class="nav-link bottom-line"><nuxt-link class="pages" @click.native="hamburger()" to="/contact">CONTACT <span class="jp">OXに声をかける</span></nuxt-link></li>
-              <li class="nav-link bottom-line"><nuxt-link class="pages" @click.native="hamburger()" to="/about-us">ABOUT US <span class="jp">OXについて</span></nuxt-link></li>
-              <li class="nav-link bottom-line"><nuxt-link class="pages" @click.native="hamburger()" to="/privacy-policy">PRIVACY POLICY <span class="jp">プライバシーポリシー</span></nuxt-link></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/why-vegan">WHY VEGAN </nuxt-link><span class="jp">どうしてヴィーガンなの？</span></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/nutrition">NUTRITION </nuxt-link><span class="jp">栄養について学ぶ</span></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/recipes">RECIPES </nuxt-link><span class="jp">ヴィーガン料理をつくる</span></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/restaurants">RESTAURANTS </nuxt-link><span class="jp">外でヴィーガン料理を食べる</span></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/faq">FAQ </nuxt-link><span class="jp">よくある疑問の答えを知る</span></li>
+              <li  class="nav-link additional-pages"><nuxt-link @click.native="hamburger()" to="/posts/">ARCHIVE <span class="jp">記事一覧</span></nuxt-link></li>
+              <li  class="nav-link additional-pages"><nuxt-link class="pages" @click.native="hamburger()" to="/contact">CONTACT <span class="jp">OXに声をかける</span></nuxt-link></li>
+              <li class="nav-link additional-pages"><nuxt-link class="pages" @click.native="hamburger()" to="/about-us">ABOUT US <span class="jp">OXについて</span></nuxt-link></li>
+              <li class="nav-link additional-pages"><nuxt-link class="pages" @click.native="hamburger()" to="/privacy-policy">PRIVACY POLICY <span class="jp">プライバシーポリシー</span></nuxt-link></li>
             </ul>
           </nav>
           <div class="sns-links flex">
@@ -58,6 +58,9 @@
     width: 0;
     pointer-events: none;
     background-color: #0f0f0f;
+    &-content{
+      margin: 0 auto 0 responsive-vw(36px);
+    }
     .title a{
       font-size: responsive-vw(20px);
       display: block;
@@ -67,13 +70,30 @@
     .jp{
       font-weight: 100;
       font-size: responsive-vw(12px);
-      margin-left: responsive-vw(16px);
+      color: $gray;
     }
     .nav-link{
-      margin: 2.5vh 0;
-      padding-bottom: 2.5vh;
-      &.bottom-line{
-        border-bottom: 1px solid #212121;
+      margin: get-spvh(10px) 0;
+      a{
+        font-size: responsive-vw(55px);
+        letter-spacing: responsive-vw(2.75px);
+        font-family: $bebas;
+        padding: 0;
+        border: 0;
+        .jp{
+          margin-left: responsive-vw(16px);
+        }
+      }
+      &:nth-child(5){
+        margin-bottom: get-spvh(60px);
+      }
+      &.additional-pages{
+        padding-bottom: get-spvh(19px);
+        a{
+          font-size: responsive-vw(16px);
+          letter-spacing: responsive-vw(0.8px);
+          @include font-en;
+        }
       }
     }
     &-content{
@@ -83,15 +103,7 @@
     ul{
       list-style: none;
       padding: 0;
-      margin-top: get-vh(120px);
-      a{
-        font-size: responsive-vw(15px);
-        line-height: 2.22;
-        /*letter-spacing: tab-vw(4.8px);*/
-        letter-spacing: 4.5px;
-        padding: 0;
-        border: 0;
-      }
+      margin-top: get-spvh(70px);
     }
 
   }

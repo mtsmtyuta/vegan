@@ -469,7 +469,7 @@
       padding-top: get-vh(164px);
       letter-spacing: get-vh(5.1px);
       line-height: 1.07;
-      font-family: 'Bebas Neue', cursive;
+      font-family: $bebas;
       @media screen and (max-width: 768px){
         font-size: get-vh(99px);
         /*font-size: get-vh(40px);*/
