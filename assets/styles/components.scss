@@ -120,7 +120,7 @@
       font-size: responsive-vw(61px);
       letter-spacing: 2.2px;
       line-height: 1.05;
-      font-family: 'Bebas Neue', cursive;
+      font-family: $bebas;
     }
   }
   @media screen and (max-width: 768px) {
@@ -143,6 +143,7 @@
       font-weight: 200;
       letter-spacing: responsive-vw(0.33px);
       line-height: 2;
+      font-size: responsive-vw(12px);
     }
   }
 }
