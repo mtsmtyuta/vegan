@@ -41,8 +41,11 @@
       margin: get-vw(85px) auto;
       border: 1px solid #cbcbcb;
       @media screen and (max-width: 768px){
-        margin: responsive-vw(90px) auto;
+        margin: 19vw auto responsive-vw(120px);
       }
+    }
+    .slick-track{
+      height: responsive-vw(300px);
     }
   }
 </style>

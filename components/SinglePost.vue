@@ -28,8 +28,8 @@
         </div>
       </div>
       <div v-if="post.fields.category === 'restaurants'" class="flex between access sp-column-reverse">
-        <vue-markdown class="txt-box">{{ post.fields.access }}</vue-markdown>
-        <Gmap class="map-box" :location="post.fields.location" :name="post.fields.title" />
+        <vue-markdown v-if="post.fields.access" class="txt-box">{{ post.fields.access }}</vue-markdown>
+        <Gmap v-if="post.fields.location" class="map-box" :location="post.fields.location" :name="post.fields.title" />
       </div>
     </article>
   </div>

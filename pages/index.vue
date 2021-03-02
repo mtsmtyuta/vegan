@@ -12,7 +12,7 @@
                    data-aos="fade-in"
                    data-aos-duration="2000"
                    data-aos-delay="1000">
-                <h1 class="en-medi">THE <br class="sp"> ANSWER <br class="sp"> FOR <br>YOUR <br class="sp"> OPTIMAL <br class="sp"> HEALTH</h1>
+                <h1 class="en-medi">THE <br class="sp"> ANSWER <br class="sp"> FOR<br>YOUR <br class="sp"> OPTIMAL <br class="sp"> HEALTH</h1>
                 <p class="jp sub-title pc">
                   ヴィーガンのライフスタイルに興味はあるけど、<br>
                   何から始めたらいいか分からないという方の疑問に答えます。</p>
@@ -105,12 +105,7 @@
             <h2 class="en-medi section-title">WHAT TO LEARN TODAY?</h2>
             <hr>
             <h3 class="pc">何をお探しですか？</h3>
-            <h3 class="sp">ヴィーガンのライフスタイルに興味はあるけ
-              ど、何から始めたらいいか分からないという
-              方の疑問に答えます。植物を中心とした食事
-              に切り替えパフォーマンスを大幅に向上させ
-              る為にヒントを手に入れて、毎日をエネルギ
-              ッシュに過ごしましょう。</h3>
+            <h3 class="sp">ヴィーガンのライフスタイルに興味はあるけど、何から始めたらいいか分からないという方の疑問に答えます。植物を中心とした食事に切り替えパフォーマンスを大幅に向上させる為にヒントを手に入れて、毎日をエネルギッシュに過ごしましょう。</h3>
             <div class="img-box category-logo sp"></div>
           </div>
         </div>
@@ -125,33 +120,36 @@
               <div class="txt-box flex column">
                 <h3 class="en-medi">WHY VEGAN</h3>
                 <p class="strong">どうしてヴィーガンなの？</p>
-                <p>病気のリスクを減らし、エネルギッシュで <br>
-                  パフォーマンスの高い生活をおくる為には <br>
+                <p>病気のリスクを減らし、エネルギッシュで<br>
+                  パフォーマンスの高い生活をおくる為には<br>
                   食生活を変えてみましょう。</p>
                 <Button link="/posts/why-vegan" text="理由を学ぶ" color="white" />
               </div>
             </div>
           </div>
         </div>
-        <nuxt-link to="/posts/why-vegan">
-          <div class="comp-category-card sp"
+        <section class="why-vegan category-item sp">
+          <div class="comp-category-card img-box whyvegan-bg sp"
                data-aos="fade-up"
                data-aos-duration="500"
                data-aos-delay="0"
           >
-            <div class="img-box whyvegan-bg">
-            </div>
-            <div class="content-container sp">
+            <div class="content-container">
               <div class="txt-box flex column">
-                <h3 class="en-medi">WHY VEGAN</h3>
-                <p class="strong">どうしてヴィーガンなの？</p>
-                <p>病気のリスクを減らし、エネルギッシュで <br>
-                  パフォーマンスの高い生活をおくる為には <br>
-                  食生活を変えてみましょう。</p>
+                <div class="flex center-align card-title"><p class="en">WHY VEGAN</p><div class="green">|</div><p>どうしてヴィーガンなの？</p></div>
+                <p class="bigTxt">食生活を変えることがあなたの健康やパフォーマンスを向上させます。</p>
+              </div>
+              <div class="flex between center-align category-link-text">
+                <nuxt-link to="/posts/why-vegan">
+                  理由を学ぶ</nuxt-link>
+                <div class="line"></div>
               </div>
             </div>
           </div>
-        </nuxt-link>
+          <PostList class=" sp" :post="whyVegan.slice(0,3)" />
+          <Button link="/posts/why-vegan" text="VIEW MORE" color="white" />
+        </section>
+
         <div class="comp-category-card pc"
              data-aos="slide-left"
              data-aos-duration="1000"
@@ -170,27 +168,27 @@
             </div>
           </div>
         </div>
-        <nuxt-link to="/posts/nutrition">
-
-          <div class="comp-category-card sp"
+        <section class="nutrition category-item sp">
+          <div class="comp-category-card img-box nutrition-bg sp"
                data-aos="fade-up"
                data-aos-duration="500"
                data-aos-delay="0"
           >
-            <div class="img-box nutrition-bg right">
-            </div>
             <div class="content-container">
               <div class="txt-box flex column">
-                <h3 class="en-medi">NUTRITION</h3>
-                <p class="strong">栄養について学ぶ</p>
-                <p>動物性食品から摂取できる必須栄養素の全ては、
-                  植物だけでも摂取できます。<br>
-                  神話に騙されないために栄養について学びましょう。</p>
+                <div class="flex center-align card-title"><p class="en">NUTRITION</p><div class="green">|</div><p>栄養について学ぶ</p></div>
+                <p class="bigTxt">動物性食品から摂取できる必須栄養素の全ては、植物だけでも摂取できます。</p>
               </div>
-
+              <div class="flex between center-align category-link-text">
+                <nuxt-link to="/posts/nutrition">
+                  栄養に詳しくなる</nuxt-link>
+                <div class="line"></div>
+              </div>
             </div>
           </div>
-        </nuxt-link>
+          <PostList class=" sp" :post="nutrition.slice(0,3)" />
+          <Button link="/posts/nutrition" text="VIEW MORE" color="white" />
+        </section>
         <div class="comp-category-card pc"
              data-aos="slide-right"
              data-aos-duration="1000"
@@ -202,8 +200,8 @@
                 <div class="img-box recipe-icon"></div>
                 <h3 class="en-medi">RECIPE</h3>
                 <p class="strong">ヴィーガン料理をつくる</p>
-                <p>チャンピオンのように最適な燃料を自分に供給するために <br>
-                  必要なすべてのレシピ、食事計画、ヒント、 <br>
+                <p>チャンピオンのように最適な燃料を自分に供給するために<br>
+                  必要なすべてのレシピ、食事計画、ヒント、<br>
                   および回答を入手してください。</p>
                 <Button link="/posts/recipes" text="料理してみる" color="white" />
 
@@ -211,28 +209,28 @@
             </div>
           </div>
         </div>
-        <nuxt-link to="/posts/recipes">
-
-          <div class="comp-category-card sp"
+        <section class="why-vegan category-item sp">
+          <div class="comp-category-card img-box recipe-bg sp"
                data-aos="fade-up"
                data-aos-duration="500"
                data-aos-delay="0"
           >
-            <div class="img-box recipe-bg left">
-            </div>
-            <div class="flex-part content-container">
+            <div class="content-container">
               <div class="txt-box flex column">
-                <div class="img-box recipe-icon"></div>
-                <h3 class="en-medi">RECIPE</h3>
-                <p class="strong">ヴィーガン料理をつくる</p>
-                <p>チャンピオンのように最適な燃料を自分に供給するために
-                  必要なすべてのレシピ、食事計画、ヒント、
-                  および回答を入手してください。</p>
+                <div class="flex center-align card-title"><p class="en">RECIPE</p><div class="green">|</div><p>ヴィーガン料理をつくる</p></div>
+                <p class="bigTxt">チャンピオンのような食事を実践する為のレシピやヒントを手に入れましょう。</p>
+              </div>
+              <div class="flex between center-align category-link-text">
+                <nuxt-link to="/posts/recipes">
+                  料理してみる</nuxt-link>
+                <div class="line"></div>
               </div>
             </div>
-
           </div>
-        </nuxt-link>
+          <PostList class=" sp" :post="recipes.slice(0,3)" />
+          <Button link="/posts/recipes" text="VIEW MORE" color="white" />
+        </section>
+
         <div class="comp-category-card pc"
              data-aos="slide-left"
              data-aos-duration="1000"
@@ -243,8 +241,8 @@
                 <div class="img-box restaurant-icon"></div>
                 <h3 class="en-medi">RESTAURANT</h3>
                 <p class="strong">外でヴィーガン料理を食べる</p>
-                <p>ヴィーガン向けの飲食店は日本では <br>
-                  まだまだ多くはありません。 <br>
+                <p>ヴィーガン向けの飲食店は日本では<br>
+                  まだまだ多くはありません。<br>
                   わたしたちが見つけたオススメの店を紹介していきます。</p>
                 <Button link="/posts/restaurants" text="食べに行こう" color="white" />
 
@@ -252,28 +250,27 @@
             </div>
           </div>
         </div>
-        <nuxt-link to="/posts/restaurants">
-
-          <div class="comp-category-card sp"
+        <section class="why-vegan category-item sp">
+          <div class="comp-category-card img-box restaurant-bg sp"
                data-aos="fade-up"
                data-aos-duration="500"
                data-aos-delay="0"
           >
-            <div class="img-box restaurant-bg right">
-            </div>
-            <div class="flex-part content-container">
+            <div class="content-container">
               <div class="txt-box flex column">
-                <div class="img-box restaurant-icon"></div>
-                <h3 class="en-medi">RESTAURANT</h3>
-                <p class="strong">外でヴィーガン料理を食べる</p>
-                <p>ヴィーガン向けの飲食店は日本では
-                  まだまだ多くはありません。
-                  わたしたちが見つけたオススメの店を紹介していきます。</p>
+                <div class="flex center-align card-title"><p class="en">RESTAURANTS</p><div class="green">|</div><p>外でヴィーガン料理を食べる</p></div>
+                <p class="bigTxt">ヴィーガン料理が楽しめるおすすめのレストラン情報を紹介します。</p>
+              </div>
+              <div class="flex between center-align category-link-text">
+                <nuxt-link to="/posts/restaurants">
+                  食べに行こう</nuxt-link>
+                <div class="line"></div>
               </div>
             </div>
-
           </div>
-        </nuxt-link>
+          <PostList class=" sp" :post="restaurants.slice(0,3)" />
+          <Button link="/posts/restaurants" text="VIEW MORE" color="white" />
+        </section>
         <div class="comp-category-card pc"
              data-aos="slide-right"
              data-aos-duration="1000"
@@ -293,28 +290,27 @@
             </div>
           </div>
         </div>
-        <nuxt-link to="/posts/faq">
-
-          <div class="comp-category-card sp"
+        <section class="why-vegan category-item sp">
+          <div class="comp-category-card img-box faq-bg sp"
                data-aos="fade-up"
                data-aos-duration="500"
                data-aos-delay="0"
           >
-            <div class="img-box faq-bg left">
-            </div>
-            <div class="flex-part content-container ">
+            <div class="content-container">
               <div class="txt-box flex column">
-                <div class="img-box faq-icon"></div>
-                <h3 class="en-medi">FAQ</h3>
-                <p class="strong">よくある質問</p>
-                <p>タンパク質はどこで入手しますか？
-                  肉を食べなくても十分なエネルギーを得ることはできるの？
-                  などのよくある質問の問題を解決します。</p>
+                <div class="flex center-align card-title"><p class="en">FAQ</p><div class="green">|</div><p>よくある質問</p></div>
+                <p class="bigTxt">エネルギーやタンパク質はどこから得るの？などのよくある疑問に答えます。</p>
+              </div>
+              <div class="flex between center-align category-link-text">
+                <nuxt-link to="/posts/faq">
+                  答えを探す</nuxt-link>
+                <div class="line"></div>
               </div>
             </div>
-
           </div>
-        </nuxt-link>
+          <PostList class=" sp" :post="faq.slice(0,3)" />
+          <Button link="/posts/faq" text="VIEW MORE" color="white" />
+        </section>
       </div>
 
       <RecentPosts class="pc" :posts="posts"></RecentPosts>
@@ -343,6 +339,7 @@
     import Button from "../components/Button";
     import Footer from "../components/Footer";
     import RecentPosts from "../components/RecentPosts";
+    import PostList from "../components/PostList";
 
     // const client = createClient();
 
@@ -353,6 +350,7 @@
         //     title: 'Home',
         // },
         components: {
+            PostList,
             RecentPosts,
             Button,
             Posts,
@@ -370,25 +368,36 @@
         // `env` is available in the context object
         asyncData ({env}) {
             return Promise.all([
-                // fetch the owner of the blog
-                // client.getEntries({
-                //     'sys.id': env.CTF_PERSON_ID
-                // }),
-                // fetch all blog posts sorted by creation date
                 client.getEntries({
-                    // 'content_type': 'article',
                     'content_type': env.CTF_BLOG_POST_TYPE_ID,
-                    // order: '-sys.createdAt'
                     order: '-fields.publishDate'
 
-                    // order: '-sys.createdAt'
                 })
             ]).then(([posts]) => {
-                // return data that should be available
-                // in the template
+                const items = posts.items
+                const whyVegan = items.filter(function (item){
+                    return item.fields.category === 'why-vegan'
+                })
+                const nutrition = items.filter(function (item){
+                    return item.fields.category === 'nutrition'
+                })
+                const recipes = items.filter(function (item){
+                    return item.fields.category === 'recipes'
+                })
+                const restaurants = items.filter(function (item){
+                    return item.fields.category === 'restaurants'
+                })
+                const faq = items.filter(function (item){
+                    return item.fields.category === 'faq'
+                })
                 return {
-                    // person: entries.items[0],
+                    whyVegan: whyVegan,
+                    nutrition: nutrition,
+                    recipes: recipes,
+                    restaurants: restaurants,
+                    faq: faq,
                     posts: posts.items
+                    // posts: posts.items
                 }
             }).catch(console.error);
         },
@@ -532,7 +541,6 @@
     .articles{
       height: 100%;
       display: flex;
-
     }
     .article{
       width: calc(100% - 5.70312vw);

@@ -45,7 +45,6 @@
             }).then(entries => {
                 const posts = entries.items
                 const category = posts.filter(function (item) {
-                    // return item.fields.category === 'nutrition'
                     return item.fields.category === 'faq'
                 })
                 return {

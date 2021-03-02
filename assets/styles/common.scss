@@ -47,8 +47,8 @@ html, body{
   line-height: 1.71;
   letter-spacing: get-vw(9px);
   @media screen and (max-width: 768px){
-    font-size: responsive-vw(40px);
-    letter-spacing: responsive-vw(8px);
+    font-size: responsive-vw(30px);
+    letter-spacing: responsive-vw(1.5px);
   }
 }
 

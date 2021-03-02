@@ -1,26 +1,64 @@
 @import "mixins";
 
+.category-item{
+  .button{
+    margin: responsive-vw(-30px) auto responsive-vw(96px);
+  }
+}
 .comp-category-card{
   margin-bottom: get-vh(46px);
   color: #fff;
   transition: all 0.2s ease-out;
-
   @media screen and (max-width: 768px) {
-    width: responsive-vw(363px);
+    //width: responsive-vw(363px);
     //height: responsive-vw(573px);
     margin: 0 auto get-vh(36px);
-    height: auto;
+    height: responsive-vw(562px);
+    background-size: cover;
     padding-bottom: 5vw;
     color:  #282828;
-    //&:active,
-    //:focus
-    //{
-      box-shadow: 9px 9px 50px 0 rgba(0, 0, 0, 0.16);
-      background-color: #fff;
-    //}
+    .category-link-text{
+      width: responsive-vw(340px);
+      margin-left: responsive-vw(35px);
+      a{
+        margin: 0;
+        font-weight: 300;
+        color: $main-color;
+        font-size: responsive-vw(12px);
+        white-space: nowrap;
+      }
+    }
     .txt-box{
-      margin: auto;
-      width: 90%;
+      margin: 0 auto 0 responsive-vw(35px);
+      width: responsive-vw(300px);
+      color: #fff;
+      padding-top: 65%;
+    }
+    .bigTxt{
+      font-size: responsive-vw(30px);
+      line-height: 1.37;
+      letter-spacing: 0.75px;
+      font-weight: 600;
+      margin: responsive-vw(13px) 0 responsive-vw(50px);
+    }
+    .card-title{
+      p{
+        font-size: responsive-vw(13px);
+        letter-spacing: 0.33px;
+        font-weight: 100;
+        &.en{
+          font-size: responsive-vw(14px);
+          letter-spacing: 0.7px;
+        }
+      }
+      .green {
+        margin: 0 responsive-vw(10px) responsive-vw(5px);
+      }
+    }
+    .line{
+      border-bottom: 1px solid $gray;
+      width: 46vw;
+      margin-right: responsive-vw(35px);
     }
   }
   .en-medi{
@@ -34,11 +72,6 @@
   }
   .strong{
     margin: get-vh(5px) 0 get-vh(25px);
-    @media screen and (max-width: 768px){
-      //color: #7b7b7b;
-      color: #3aaa98;
-      margin: 0 0 responsive-vw(16px) 0;
-    }
   }
   .column{
     justify-content: space-between;
@@ -56,11 +89,6 @@
     display: flex;
     align-items: center;
     background-size: cover;
-    @media screen and (max-width: 768px) {
-      width: responsive-vw(363px);
-      height: responsive-vw(362px);
-    }
-
 
     &.left{
       margin-right: auto;
@@ -160,7 +188,7 @@
   color: white;
   @media screen and (max-width: 768px){
     //height: get-vh(158px);
-    height: 34vh;
+    height: get-spvh(550px);
   }
   &.why-vegan {
     background-image: url("~@/assets/img/cat-whyvegan.jpg");
