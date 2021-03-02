@@ -173,13 +173,16 @@
       max-width: 30px;
       max-height: 30px;
       @media screen and (max-width: 768px){
-          @include res-width-height(11px, 11px);
-        top: 2px;
+        top: 5px;
+        left: 6px;
         position: absolute;
+        width: 11px;
+        height: 11px;
       }
     }
     @media screen and (max-width: 768px){
-      @include res-width-height(11px, 11px);
+      width: 11px;
+      height: 11px;
     }
   }
   .slick-dots li button{
@@ -189,7 +192,9 @@
     /*border-radius: 50%;*/
     margin: auto;
     @media screen and (max-width: 768px){
-      @include res-width-height(11px, 11px);
+      width: 11px;
+      height: 11px;
+
     }
     &:before{
       /*content: "";*/

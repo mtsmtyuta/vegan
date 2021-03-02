@@ -34,11 +34,9 @@
         asyncData ({ env }) {
             return client.getEntries({
                 'content_type': env.CTF_BLOG_POST_TYPE_ID,
-                // 'content_type': env.CTF_BLOG_POST_TYPE_ID,
-                // 'content_type': ,
                 order: '-fields.publishDate'
-
             }).then(entries => {
+
                 return {
                     posts: entries.items
                 }

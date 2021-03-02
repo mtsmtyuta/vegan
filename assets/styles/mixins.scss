@@ -12,7 +12,7 @@
 }
 
 @function responsive-vw($target) {
-  $vw-context: (414*.01) * 1px;
+  $vw-context: (375*.01) * 1px;
   @return ($target/$vw-context) * 1vw;
 }
 @function tab-vw($target) {
