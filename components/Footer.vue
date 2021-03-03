@@ -13,7 +13,7 @@
         <li class="footer-links__item pc"><nuxt-link class="pages" to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
       </ul>
       <div class="sns-links flex">
-<!--        <a href="https://www.instagram.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box ig"></div></a>-->
+        <a href="https://www.instagram.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box ig"></div></a>
         <a href="https://twitter.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box tw"></div></a>
       </div>
     </div>
@@ -28,7 +28,7 @@
   footer{
     background-color: #191919;
     .ig{
-      margin-right: get-vw(32px);
+      margin-right: get-vw(42px);
       @media screen and (max-width: 768px){
         margin-right: 9vw;
       }
@@ -42,7 +42,6 @@
     margin: auto;
     justify-content: space-between;
     @media screen and (max-width: 768px) {
-      height: get-vh(607px);
       height: auto;
       flex-direction: column;
       justify-content: center;

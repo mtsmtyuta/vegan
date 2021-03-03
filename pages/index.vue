@@ -36,21 +36,23 @@
                 <div class="articles">
                   <div class="article flex column">
                     <div class="article-inner">
-                      <p class="new-posts__title en-medi">NEW ARTICLE<span class="pc en-medi">S</span></p>
                       <div class="article__items flex">
-                        <div class="article__item"
-                             >
+                        <div class="green-border"></div>
+
+                        <div class="article__item">
                           <nuxt-link v-if="posts[0].fields.slug" class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >
 
                             <p class="article__item__title bold" v-if="posts[0].fields.title">        {{ posts[0].fields.title }}
                             </p>
 
                             <p class="article__description small" v-if="posts[0].fields.description">{{ posts[0].fields.description }}</p>
-                            <span class="date smallest en-medi" v-if="posts[0].fields.publishDate">{{
+                            <span class="date smallest" v-if="posts[0].fields.publishDate">{{
                           ( new Date(posts[0].fields.publishDate).toDateString())
                           }}</span>
                           </nuxt-link>
                         </div>
+                        <div class="green-border"></div>
+
                         <div class="article__item"
                              >
                           <nuxt-link v-if="posts[1].fields.slug" class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[1].fields.slug }}" >
@@ -74,16 +76,21 @@
 
                 </div>
               </div>
+              <div class="sns-links flex column pc">
+                <a href="https://www.instagram.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box ig"></div></a>
+                <a href="https://twitter.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box tw"></div></a>
+              </div>
+
             </div>
             <div class="txt-box bottom-ground pc"
                  data-aos="fade-up"
-                 data-aos-duration="3000"
-                 data-aos-delay="0"
+                 data-aos-duration="5000"
+                 data-aos-delay="1000"
             >
               <p>植物を中心とした食事に切り替えると、最適な燃料が得られることで、血流が増加し、</p>
               <p>筋肉がより効率的になり、パフォーマンスが大幅に向上し、炎症を抑えることで回復が速くなります。</p>
               <p>これらのメリットはアスリートだけでなく、自分の生活のあらゆる面で力になり、気分を高めます。</p>
-              <p>その為に必要なすべてのレシピ、食事計画、ヒント、および疑問への回答をここで入手してください。</p>
+              <p class="top-margin">その為に必要なすべてのレシピやヒント、疑問への答えをここで入手してください。</p>
             </div>
             <div class="scroll flex sp vertical">
               <p class="en">SCROLL</p>
@@ -120,9 +127,8 @@
               <div class="txt-box flex column">
                 <h3 class="en-medi">WHY VEGAN</h3>
                 <p class="strong">どうしてヴィーガンなの？</p>
-                <p>病気のリスクを減らし、エネルギッシュで<br>
-                  パフォーマンスの高い生活をおくる為には<br>
-                  食生活を変えてみましょう。</p>
+                <p class="category-description">病気のリスクを減らし、エネルギッシュでパフォーマンスの<br>
+                  高い生活をおくる為には食生活を変えてみましょう。</p>
                 <Button link="/posts/why-vegan" text="理由を学ぶ" color="white" />
               </div>
             </div>
@@ -160,9 +166,7 @@
               <div class="txt-box flex column">
                 <h3 class="en-medi">NUTRITION</h3>
                 <p class="strong">栄養について学ぶ</p>
-                <p>動物性食品から摂取できる必須栄養素の全ては、<br>
-                  植物だけでも摂取できます。<br>
-                  神話に騙されないために栄養について学びましょう。</p>
+                <p class="category-description">動物性食品から摂取できる必須栄養素の全ては、植物だけでも摂取できます。神話に騙されないために栄養について学びましょう。</p>
                 <Button link="/posts/nutrition" text="栄養に詳しくなる" color="white" />
               </div>
             </div>
@@ -200,9 +204,9 @@
                 <div class="img-box recipe-icon"></div>
                 <h3 class="en-medi">RECIPE</h3>
                 <p class="strong">ヴィーガン料理をつくる</p>
-                <p>チャンピオンのように最適な燃料を自分に供給するために<br>
-                  必要なすべてのレシピ、食事計画、ヒント、<br>
-                  および回答を入手してください。</p>
+                <p class="category-description">
+                  チャンピオンのような食事を実践する為のレシピやヒントを<br>
+                  手に入れましょう。</p>
                 <Button link="/posts/recipes" text="料理してみる" color="white" />
 
               </div>
@@ -241,8 +245,7 @@
                 <div class="img-box restaurant-icon"></div>
                 <h3 class="en-medi">RESTAURANT</h3>
                 <p class="strong">外でヴィーガン料理を食べる</p>
-                <p>ヴィーガン向けの飲食店は日本では<br>
-                  まだまだ多くはありません。<br>
+                <p class="category-description">ヴィーガン向けの飲食店は日本ではまだまだ多くはありません。<br>
                   わたしたちが見つけたオススメの店を紹介していきます。</p>
                 <Button link="/posts/restaurants" text="食べに行こう" color="white" />
 
@@ -282,9 +285,7 @@
                 <div class="img-box faq-icon"></div>
                 <h3 class="en-medi">FAQ</h3>
                 <p class="strong">よくある質問</p>
-                <p>タンパク質はどこで入手しますか？<br>
-                  肉を食べなくても十分なエネルギーを得ることはできるの？<br>
-                  などのよくある質問の問題を解決します。</p>
+                <p class="category-description">タンパク質はどこで入手しますか？肉を食べなくても十分なエネルギーを得ることはできるの？などのよくある質問の問題を解決します。</p>
                 <Button link="/posts/faq" text="答えを探す" color="white" />
               </div>
             </div>
@@ -449,7 +450,7 @@
   .fv-container {
     position: relative;
     width: 100%;
-    height: 156vh;
+    height: 200vh;
     display: flex;
     @media screen and (max-width: 768px) {
       background: #1b1b1b;
@@ -473,6 +474,12 @@
       width: 100%;
       background-attachment: scroll;
     }
+    .sns-links{
+      position: absolute;
+      bottom: 7vh;
+      left: 3.5vw;
+      gap: get-vw(45px);
+    }
     h1{
       font-size: get-vh(102px);
       padding-top: get-vh(164px);
@@ -490,6 +497,8 @@
       }
     }
     .txt-box {
+      width: 92vw;
+      margin-left: auto;
       @media screen and (max-width: 768px){
         width: $sp-contents;
         margin: auto;
@@ -521,9 +530,9 @@
     .new-posts{
       position: absolute;
       bottom: 0;
-      width: 100%;
-      /*height: get-vh(314px);*/
-      height: 30vh;
+      width: 92vw;
+      right: 0;
+      height: get-vh(208px);
       @media screen and (max-width: 768px){
         bottom: -40vh;
         height: 30vh;
@@ -537,6 +546,10 @@
           margin: get-vh(10px) 0;
         }
       }
+    }
+    .green-border{
+      border-left: 1px solid $main-color;
+      padding-bottom: get-vh(120px);
     }
     .articles{
       height: 100%;
@@ -568,14 +581,18 @@
         justify-content: space-between;
       }
       &__item{
-        width: 45%;
-        /*margin-left: get-vw(100px);*/
-        @media screen and (max-width: 768px){
-          width: unset;
-        }
+        width: get-vw(337px);
       }
       &__description{
         width: get-vw(368px);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 200;
+        font-size: get-vh(14px);
+        margin: get-vh(18px) 0 get-vh(16px) 0;
         @media screen and (max-width: 768px){
           margin: get-vh(5px) 0;
           width: 100%;
@@ -583,11 +600,8 @@
       }
     }
     .article__item__title{
-      margin: 0 0 get-vh(21px) 0;
-      font-weight: 600;
-      @media screen and (max-width: 768px){
-        margin: 0;
-      }
+      font-weight: 700;
+      font-size: get-vw(15px);
     }
     .link{
       width: get-vw(73px);
@@ -595,12 +609,7 @@
       writing-mode: vertical-lr;
       transform: rotate(180deg);
       position: relative;
-      /*<!--overflow: hidden;-->*/
-      /*<!--background-image: linear-gradient(to right, $main-color 50%, transparent 50%);-->*/
-      /*<!--background-size: 200% 100% ;-->*/
-      /*<!--background-position: bottom left;-->*/
-      transition: all .2s ease-out;
-      /*background-color: transparent;*/
+     transition: all .2s ease-out;
       &:before {
         content: "";
         position: absolute;
@@ -631,27 +640,6 @@
       @media screen and (max-width: 768px){
         width: responsive-vw(66px);
       }
-
-      /*.bgbar{*/
-      /*  width: 100%;*/
-      /*  height: 100%;*/
-      /*  position: absolute;*/
-      /*  top: 0;*/
-      /*  left: 0;*/
-      /*  transition: all 0.6s;*/
-      /*  margin-top: 100%;*/
-      /*  !*background-color: rgba(255,255,255,0.0902);*!*/
-      /*  !*background-color: black;*!*/
-      /*  !*backdrop-filter: blur(1px);*!*/
-      /*  !*background-color: transparent;*!*/
-      /*  !*z-index: 1000;*!*/
-      /*}*/
-      /*&:hover{*/
-      /*  .bgbar{*/
-      /*    !*height: 0;*!*/
-      /*    margin: 0;*/
-      /*  }*/
-      /*}*/
     }
     .new-posts-link{
       height: 100%;
@@ -672,7 +660,8 @@
     }
   }
   .date {
-    font-size: get-vw(9px);
+    font-size: get-vw(12px);
+    font-weight: 100;
     @media screen and (max-width: 768px) {
       font-size: responsive-vw(9px);
     }
@@ -680,7 +669,7 @@
   .background{
     background-image: url('~assets/img/topbackground.jpg');
     width: 100%;
-    height: 156vh;
+    height: 200vh;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -696,23 +685,22 @@
 
   .foreground {
     margin-left: auto;
-    width: get-vw(1172px);
-    @media screen and (max-width: 768px){
-      width: 100%;
-    }
+    width: 100%;
   }
 
   .bottom-ground{
-    /*width: 100%;*/
-    width: get-vw(1064px);
+    font-weight: 100;
     text-align: center;
-    height: 56vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     line-height: 2.57;
     letter-spacing: 1.4px;
     color: #fff;
+  }
+  .top-margin{
+    margin-top: get-vw(120px);
   }
 
   .ig{

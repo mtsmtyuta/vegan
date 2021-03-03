@@ -5,8 +5,14 @@
     margin: responsive-vw(-30px) auto responsive-vw(96px);
   }
 }
+.category-description{
+  font-size: get-vw(15px);
+  font-weight: 100;
+  letter-spacing: get-vw(0.75px);
+  width: get-vw(560px);
+}
 .comp-category-card{
-  margin-bottom: get-vh(46px);
+  margin-bottom: get-vh(12px);
   color: #fff;
   transition: all 0.2s ease-out;
   @media screen and (max-width: 768px) {
@@ -63,8 +69,9 @@
     }
   }
   .en-medi{
-    font-size: get-vw(45px);
-    letter-spacing: 4.5px;
+      font-size: get-vw(53px);
+      letter-spacing: get-vw(2.65px);
+    font-weight: normal;
     @media screen and (max-width: 768px) {
       font-size: responsive-vw(30px);
       font-weight: bold;
@@ -72,7 +79,11 @@
     }
   }
   .strong{
-    margin: get-vh(5px) 0 get-vh(25px);
+    margin: get-vw(22px) 0;
+    color: $main-color;
+    font-weight: 400;
+    font-size: get-vw(15px);
+    letter-spacing: get-vw(0.75px);
   }
   .column{
     justify-content: space-between;
@@ -85,7 +96,7 @@
     }
   }
   >div.img-box{
-    @include width-height(1214px, 434px);
+    @include width-height(1308px, 467px);
     //@include width-height(1461px, 642.6px);
     display: flex;
     align-items: center;
@@ -98,9 +109,6 @@
       box-shadow: 3px 15px 30px 0 rgba(0, 0, 0, 0.16);
       @media screen and (max-width: 768px) {
         box-shadow: none;
-      }
-
-      @media screen and (max-width: 768px) {
         margin: auto;
         border-radius: 0;
         //border-radius: 5px;
@@ -156,7 +164,7 @@
     line-height: 2.08;
   }
   hr{
-    width: get-vw(50px);
+    width: get-vw(88px);
     margin: get-vh(30px) auto;
     border: solid 1px $main-color;
     background-color: $main-color;
@@ -236,4 +244,9 @@
       background-image: url("~@/assets/img/sp-cat-faq.jpg");
     }
   }
+}
+
+body[data-aos-duration='5000'] [data-aos],
+[data-aos][data-aos][data-aos-duration='5000'] {
+  transition-duration: 5000ms;
 }
