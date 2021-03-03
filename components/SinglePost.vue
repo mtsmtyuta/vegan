@@ -237,7 +237,7 @@
     }
   }
   .content{
-    p{
+    p, strong{
       font-size: get-vw(18px);
       @media screen and (max-width: 1440px){
         font-size: 18px;
