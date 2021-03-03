@@ -20,6 +20,7 @@
     .category-link-text{
       width: responsive-vw(340px);
       margin-left: responsive-vw(35px);
+      gap: responsive-vw(30px);
       a{
         margin: 0;
         font-weight: 300;
@@ -57,7 +58,7 @@
     }
     .line{
       border-bottom: 1px solid $gray;
-      width: 46vw;
+      width: 100%;
       margin-right: responsive-vw(35px);
     }
   }
