@@ -44,8 +44,10 @@
         margin: 19vw auto responsive-vw(120px);
       }
     }
-    .slick-track{
-      height: responsive-vw(300px);
+    @media screen and (max-width: 768px){
+      .slick-track{
+        height: responsive-vw(300px);
+      }
     }
   }
 </style>
