@@ -44,7 +44,7 @@
     width: get-vw(620px);
     margin: auto;
     @media screen and (max-width: 768px){
-      width: responsive-vw(360px);
+      width: $sp-contents;
       margin: auto;
     }
     h2, h3{

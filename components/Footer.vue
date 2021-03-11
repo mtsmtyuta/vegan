@@ -70,12 +70,13 @@
       @include font-en;
       display: block;
       font-size: get-vw(10px);
-      letter-spacing: 4.5px;
+      letter-spacing: get-vw(1.13px);
       @media screen and (min-width: 1440px){
         font-size: 14px;
       }
       @media screen and (max-width: 768px){
         font-size: responsive-vw(15px);
+        letter-spacing: responsive-vw(0.8px);
         &.pages{
           font-size: responsive-vw(12px);
         }

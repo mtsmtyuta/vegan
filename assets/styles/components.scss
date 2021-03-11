@@ -16,9 +16,7 @@
   color: #fff;
   transition: all 0.2s ease-out;
   @media screen and (max-width: 768px) {
-    //width: responsive-vw(363px);
-    //height: responsive-vw(573px);
-    margin: 0 auto get-vh(36px);
+    margin: 0 auto;
     height: responsive-vw(562px);
     background-size: cover;
     padding-bottom: 5vw;
@@ -180,7 +178,7 @@
       font-weight: 200;
       letter-spacing: responsive-vw(0.33px);
       line-height: 2;
-      font-size: responsive-vw(12px);
+      font-size: responsive-vw(14px);
     }
   }
 }

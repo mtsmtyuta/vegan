@@ -87,12 +87,17 @@
                  data-aos-duration="5000"
                  data-aos-delay="1000"
             >
-              <p>植物を中心とした食事に切り替えると、最適な燃料が得られることで、血流が増加し、</p>
-              <p>筋肉がより効率的になり、パフォーマンスが大幅に向上し、炎症を抑えることで回復が速くなります。</p>
-              <p>これらのメリットはアスリートだけでなく、自分の生活のあらゆる面で力になり、気分を高めます。</p>
-              <p class="top-margin">その為に必要なすべてのレシピやヒント、疑問への答えをここで入手してください。</p>
+<!--              <p>植物を中心とした食事に切り替えると、最適な燃料が得られることで、血流が増加し、</p>-->
+<!--              <p>筋肉がより効率的になり、パフォーマンスが大幅に向上し、炎症を抑えることで回復が速くなります。</p>-->
+              <p>動物性食品の摂取を減らし、植物性食品中心の食事に切り替えることで、</p>
+              <p>あなたの全般的な健康だけでなく運動や知的パフォーマンスを大幅に向上させることができます。</p>
+              <p>そのことはアスリートだけでなく、人生と地球を愛する全ての人に手にしてもらいたいメリットです。</p>
+              <p class="top-margin">実践の為に必要なすべてのレシピやヒント、疑問への答えはここで入手してください。</p>
             </div>
-            <div class="scroll flex sp vertical">
+            <div class="scroll flex sp vertical"
+                 data-aos="slide-down"
+                 data-aos-duration="1000"
+                 data-aos-delay="5000">
               <p class="en">SCROLL</p>
               <hr>
             </div>
@@ -285,7 +290,7 @@
                 <div class="img-box faq-icon"></div>
                 <h3 class="en-medi">FAQ</h3>
                 <p class="strong">よくある質問</p>
-                <p class="category-description">タンパク質はどこで入手しますか？肉を食べなくても十分なエネルギーを得ることはできるの？などのよくある質問の問題を解決します。</p>
+                <p class="category-description">エネルギーやタンパク質はどこから得るの？などのよくある疑問に答えます。</p>
                 <Button link="/posts/faq" text="答えを探す" color="white" />
               </div>
             </div>
@@ -481,7 +486,7 @@
       gap: get-vw(45px);
     }
     h1{
-      font-size: get-vh(102px);
+      font-size: 15vh;
       padding-top: get-vh(164px);
       letter-spacing: get-vh(5.1px);
       line-height: 1.07;
