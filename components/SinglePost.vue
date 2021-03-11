@@ -217,7 +217,7 @@
     }
     .section{
       @media screen and (max-width: 768px){
-        width: responsive-vw(360px);
+        width: $sp-contents;
         margin: auto;
       }
     }
@@ -251,7 +251,8 @@
       /*max-width: 620px;*/
       margin: get-vw(30px) 0;
       @media screen and (max-width: 768px){
-        width: responsive-vw(360px);
+        width: responsive-vw(324px);
+        margin: auto;
       }
     }
   }
