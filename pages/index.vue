@@ -61,7 +61,7 @@
                             </p>
 
                             <p class="article__description small" v-if="posts[1].fields.description">{{ posts[1].fields.description }}</p>
-                            <span class="date smallest en-medi" v-if="posts[1].fields.publishDate">{{
+                            <span class="date smallest" v-if="posts[1].fields.publishDate">{{
                           ( new Date(posts[1].fields.publishDate).toDateString())
                           }}</span>
                           </nuxt-link>
