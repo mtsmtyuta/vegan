@@ -35,9 +35,15 @@
     }
     &.black{
       border: solid 1px #b1b1b1;
+      @media screen and (max-width: 768px){
+        border: none;
+      }
     }
     &.white{
       border: solid 0.5px #8b8b8b;
+      @media screen and (max-width: 768px){
+        border: none;
+      }
     }
     a{
       line-height: get-vw(48px);

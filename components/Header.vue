@@ -76,6 +76,9 @@
       &__item {
         margin: 0 get-vw(30px);
         font-size: get-vw(12px);
+        &:last-child{
+          margin-right: 3.14788vw;
+        }
       }
     }
     .logo {

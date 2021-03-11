@@ -13,7 +13,7 @@
         <div class="flex column between left">
           <div class="txt-box">
             <p class="green sp" v-if="article.fields.category">{{ article.fields.category }}</p>
-            <h3 v-if="article.fields.title" class="strong">{{ article.fields.title }}</h3>
+            <h3 v-if="article.fields.title" class="strong">{{ article.fields.title }}<span v-if="article.fields.region" class="region"> | {{article.fields.region}}</span></h3>
             <p v-if="article.fields.description" class="pc small green"><span class="normal">{{ article.fields.description }}</span></p>
           </div>
 
@@ -102,7 +102,7 @@
       }
       &:first-child{
         /*border-top: 1px solid #d9d9d9;*/
-        margin-top: responsive-vw(49px);
+        margin-top: 3vw;
       }
     }
     .left{

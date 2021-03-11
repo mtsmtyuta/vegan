@@ -33,9 +33,10 @@
       </div>
     </article>
   </div>
-
 </template>
+<component v-if="post" is="style">
 
+</component>
 <script>
     import VueMarkdown from 'vue-markdown'
     import Gmap from "./Gmap";
