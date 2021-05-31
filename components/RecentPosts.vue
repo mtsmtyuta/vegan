@@ -46,7 +46,7 @@
     }
     @media screen and (max-width: 768px){
       .slick-track{
-        height: responsive-vw(300px);
+        height: responsive-vw(312px);
       }
     }
   }
