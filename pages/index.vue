@@ -284,38 +284,38 @@
              data-aos-duration="1000"
              data-aos-delay="50"
         >
-          <div class="img-box faq-bg left">
+          <div class="img-box ox-life-bg left">
             <div class="flex-part content-container ">
               <div class="txt-box flex column">
-                <div class="img-box faq-icon"></div>
-                <h3 class="en-medi">FAQ</h3>
-                <p class="strong">よくある質問</p>
-                <p class="category-description">エネルギーやタンパク質はどこから得るの？などのよくある疑問に答えます。</p>
-                <Button link="/posts/faq" text="答えを探す" color="white" />
+                <div class="img-box ox-life-icon"></div>
+                <h3 class="en-medi">OX LIFE</h3>
+                <p class="strong">ヴィーガン生活</p>
+                <p class="category-description">ヴィーガン生活をする中で出てくる疑問に答えたり日々の生活に役立つ情報を紹介します。</p>
+                <Button link="/posts/ox-life" text="答えを探す" color="white" />
               </div>
             </div>
           </div>
         </div>
         <section class="why-vegan category-item sp">
-          <div class="comp-category-card img-box faq-bg sp"
+          <div class="comp-category-card img-box ox-life-bg sp"
                data-aos="fade-up"
                data-aos-duration="500"
                data-aos-delay="0"
           >
             <div class="content-container">
               <div class="txt-box flex column">
-                <div class="flex center-align card-title"><p class="en">FAQ</p><div class="green">|</div><p>よくある質問</p></div>
-                <p class="bigTxt">エネルギーやタンパク質はどこから得るの？などのよくある疑問に答えます。</p>
+                <div class="flex center-align card-title"><p class="en">OX LIFE</p><div class="green">|</div><p>ヴィーガン生活</p></div>
+                <p class="bigTxt">ヴィーガン生活をする中で出てくる疑問に答えたり日々の生活に役立つ情報を紹介します。</p>
               </div>
               <div class="flex between center-align category-link-text">
-                <nuxt-link to="/posts/faq">
+                <nuxt-link to="/posts/ox-life">
                   答えを探す</nuxt-link>
                 <div class="line"></div>
               </div>
             </div>
           </div>
-          <PostList class=" sp" :post="faq.slice(0,3)" />
-          <Button link="/posts/faq" text="VIEW MORE" color="white" />
+          <PostList class=" sp" :post="oxLife.slice(0,3)" />
+          <Button link="/posts/ox-life" text="VIEW MORE" color="white" />
         </section>
       </div>
 
@@ -393,15 +393,15 @@
                 const restaurants = items.filter(function (item){
                     return item.fields.category === 'restaurants'
                 })
-                const faq = items.filter(function (item){
-                    return item.fields.category === 'faq'
+                const oxLife = items.filter(function (item){
+                    return item.fields.category === 'ox-life'
                 })
                 return {
                     whyVegan: whyVegan,
                     nutrition: nutrition,
                     recipes: recipes,
                     restaurants: restaurants,
-                    faq: faq,
+                    oxLife: oxLife,
                     posts: posts.items
                     // posts: posts.items
                 }
@@ -752,7 +752,7 @@
     }
 
   }
-  .faq-bg{
+  .ox-life-bg{
     background-image: url('~assets/img/faq.jpg');
     @media screen and (max-width: 768px) {
       background-image: url('~assets/img/faq-sp.jpg');

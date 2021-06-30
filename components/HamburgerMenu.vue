@@ -12,7 +12,7 @@
               <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/nutrition">NUTRITION </nuxt-link><span class="jp">栄養について学ぶ</span></li>
               <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/recipes">RECIPES </nuxt-link><span class="jp">ヴィーガン料理をつくる</span></li>
               <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/restaurants">RESTAURANTS </nuxt-link><span class="jp">外でヴィーガン料理を食べる</span></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/faq">FAQ </nuxt-link><span class="jp">よくある疑問の答えを知る</span></li>
+              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/ox-life">OX LIFE </nuxt-link><span class="jp">よくある疑問の答えを知る</span></li>
               <li  class="nav-link additional-pages"><nuxt-link @click.native="hamburger()" to="/posts/">ARCHIVE <span class="jp">記事一覧</span></nuxt-link></li>
               <li  class="nav-link additional-pages"><nuxt-link class="pages" @click.native="hamburger()" to="/contact">CONTACT <span class="jp">OXに声をかける</span></nuxt-link></li>
               <li class="nav-link additional-pages"><nuxt-link class="pages" @click.native="hamburger()" to="/about-us">ABOUT US <span class="jp">OXについて</span></nuxt-link></li>

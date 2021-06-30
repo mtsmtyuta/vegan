@@ -8,7 +8,7 @@
         <li class="footer-links__item"><nuxt-link to="/posts/nutrition">NUTRITION</nuxt-link></li>
         <li class="footer-links__item"><nuxt-link to="/posts/recipes">RECIPES</nuxt-link></li>
         <li class="footer-links__item"><nuxt-link to="/posts/restaurants">RESTAURANTS</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/posts/faq">FAQ</nuxt-link></li>
+        <li class="footer-links__item"><nuxt-link to="/posts/ox-life">OX LIFE</nuxt-link></li>
         <li class="footer-links__item pc"><nuxt-link class="pages" to="/contact">CONTACT</nuxt-link></li>
         <li class="footer-links__item pc"><nuxt-link class="pages" to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
       </ul>

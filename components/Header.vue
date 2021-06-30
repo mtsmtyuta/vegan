@@ -9,7 +9,7 @@
       <li class="header-nav__item"><nuxt-link to="/posts/nutrition">NUTRITION</nuxt-link></li>
       <li class="header-nav__item"><nuxt-link to="/posts/recipes">RECIPES</nuxt-link></li>
       <li class="header-nav__item"><nuxt-link to="/posts/restaurants">RESTAURANTS</nuxt-link></li>
-      <li class="header-nav__item"><nuxt-link to="/posts/faq">FAQ</nuxt-link></li>
+      <li class="header-nav__item"><nuxt-link to="/posts/ox-life">OX LIFE</nuxt-link></li>
       <li class="header-nav__item"><nuxt-link to="/about-us">ABOUT US</nuxt-link></li>
     </ul>
     <div class="sp hamburger-menu">
