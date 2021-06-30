@@ -3,7 +3,7 @@
   <article>
     <div v-if="currentPost.fields.topImage" class="single-post-page">
       <SinglePost :post="currentPost"/>
-<!--      <Author :author="currentPost.fields.author"></Author>-->
+      <!--      <Author :author="currentPost.fields.author"></Author>-->
       <RelatedPosts :post="currentPost"></RelatedPosts>
     </div>
     <div class="section-recent">
@@ -14,17 +14,17 @@
 </template>
 
 <script>
-  import SinglePost from "../../../components/SinglePost";
-  import Author from "../../../components/Author";
-  // import SinglePostNoImage from "../../../components/SinglePostNoImage";
+    import SinglePost from "../../../components/SinglePost";
+    import Author from "../../../components/Author";
+    // import SinglePostNoImage from "../../../components/SinglePostNoImage";
     import VueMarkdown from 'vue-markdown'
     // import {createClient} from '~/plugins/contentful.js'
-  import RecentPosts from "../../../components/RecentPosts";
+    import RecentPosts from "../../../components/RecentPosts";
     // const client = createClient()
-  import client from "~/plugins/contentful";
-  import RelatedPosts from "../../../components/RelatedPosts";
+    import client from "~/plugins/contentful";
+    import RelatedPosts from "../../../components/RelatedPosts";
 
-  export default {
+    export default {
         layout: 'article',
         head () {
             return {

@@ -26,6 +26,15 @@
             </div>
           </transition>
         </div>
+        <section class="announce">
+          <p></p>
+          <p>OXでは菜食（ヴィーガン）に興味はあるけど具体的にどうすればいいか分からない、という人のためにレシピやレストラン、栄養、よくある疑問などについて発信しています。
+          </p>
+          <p>
+            なんで菜食なの？という方は<a href="/posts/why-vegan">なぜヴィーガンなの？</a>セクションを、<br>
+            そもそもヴィーガンとは？というかたは<a href="/posts/vegan-type">ヴィーガンとは？定義や種類、ベジタリアンとの違いを紹介</a>を読んでみてください！
+          </p>
+        </section>
       </div>
       <div v-if="post.fields.category === 'restaurants'" class="flex between access sp-column-reverse">
         <vue-markdown v-if="post.fields.access" class="txt-box">{{ post.fields.access }}</vue-markdown>
@@ -60,6 +69,8 @@
 </script>
 
 <style lang="scss">
+  .announce{
+  }
   .headline{
     margin-bottom: 36px;
   }
