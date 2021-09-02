@@ -239,7 +239,7 @@
     background-position: top;
     width: get-vw(620px);
     /*height: 100%;*/
-    height: get-vw(412px);
+    height: get-vw(413px);
     /*max-width: 620px;*/
     margin-bottom: get-vw(42px);
     @media screen and (max-width: 768px){

@@ -2,12 +2,12 @@
   <section class="post-list" v-if="post">
     <!--        <div class="related-post flex">-->
 
-    <!--          <div>{{article.fields.relatedArticles[index - 1].fields.title}}</div>-->
+    <!--          <div>{{articlefields.relatedArticles[index - 1].fields.title}}</div>-->
     <div class="post-container" v-for="(article, index) in post" v-bind:key="index"
     >
       <nuxt-link v-if="article.fields.slug" :to="'/posts/' + article.fields.slug" class="related-post flex between">
-        <img v-if="article.fields.thumbnail" loading="lazy" class="pc img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=302&h=202`" alt="">
-        <img v-if="article.fields.thumbnail" loading="lazy" class="sp img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=210&h=212`" alt="">
+        <img v-if="article.fields.thumbnail" loading="lazy" class="pc img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=300&h=200`" alt="">
+        <img v-if="article.fields.thumbnail" loading="lazy" class="sp img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=300&h=200`" alt="">
 
         <!--            <p>{{article.fields.title}}</p>-->
         <div class="flex column between left">
@@ -16,15 +16,9 @@
             <h3 v-if="article.fields.title" class="strong">{{ article.fields.title }}<span v-if="article.fields.region" class="region"> | {{article.fields.region}}</span></h3>
             <p v-if="article.fields.description" class="pc small green"><span class="normal">{{ article.fields.description }}</span></p>
           </div>
-
-          <p class="sp" v-if="article.fields.author">By {{ article.fields.author.fields.name }}</p>
-
-
-          <!--              <Button text="続きを読む" color="black" :link="`${article.fields.slug}`"></Button>-->
+<!--          <p class="sp" v-if="article.fields.author">By {{ article.fields.author.fields.name }}</p>-->
         </div>
-
       </nuxt-link>
-      <!--        <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.fields.slug }}" class="link"></nuxt-link>-->
     </div>
   </section>
 </template>
@@ -52,7 +46,7 @@
       font-weight: 700;
       @media screen and (max-width: 768px){
         font-size: responsive-vw(14px);
-        margin-top: responsive-vw(11px);
+        margin-top: responsive-vw(8px);
       }
     }
     h2{
@@ -64,6 +58,7 @@
     .green{
       color: $main-color;
       text-transform: uppercase;
+      margin-top: 0;
     }
     .normal{
       color: #191919;
@@ -113,7 +108,7 @@
     }
     img{
       @media screen and (max-width: 768px){
-        @include res-width-height(105px, 106px);
+        @include res-width-height(100px, 67px);
       }
     }
   }

@@ -1,28 +1,15 @@
 <template>
   <section class="post-preview">
-    <!-- render blog posts -->
-    <!--    <ul>-->
-
     <VueSlickCarousel v-bind="settings" v-if="posts">
 
       <div v-for="index in 6"
            :key="index"
       >
-<!--      <div v-for="post in posts"-->
-<!--           :key="post.id"-->
-<!--      >-->
         <nuxt-link v-if="posts[index - 1].fields.slug" :to="{ name: 'posts-slug', params: { slug: posts[index - 1].fields.slug }}" class="card-footer-item">
           <div class="slide-content">
-<!--            <div class="img-box"-->
-<!--                 v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"-->
-<!--            ></div>-->
-            <img v-if="posts[index - 1].fields.thumbnail" loading="lazy" class="img-box" :src="`${posts[index - 1].fields.thumbnail.fields.file.url}?fit=thumb&w=664&h=442`" alt="">
+            <img v-if="posts[index - 1].fields.thumbnail" loading="lazy" class="img-box" :src="`${posts[index - 1].fields.thumbnail.fields.file.url}?fit=thumb&w=600&h=400`" alt="">
                       <p class="strong" v-if="posts[index - 1].fields.title">        {{ posts[index - 1].fields.title }}</p>
             <p class=" description"><span class="normal"> {{posts[index - 1].fields.description}}</span></p>
-<!--            <span v-if="post.fields.publishDate" class="date">  {{-->
-<!--            ( new Date(post.fields.publishDate).toDateString())-->
-<!--            }}</span>-->
-
           </div>
 
         </nuxt-link>
