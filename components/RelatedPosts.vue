@@ -7,25 +7,18 @@
       <div class="post-container" v-for="(article, index) in post.fields.relatedArticles" v-bind:key="index"
       >
           <nuxt-link v-if="article.fields.slug" :to="'/posts/' + article.fields.slug" class="related-post flex between">
-            <img v-if="article.fields.thumbnail" loading="lazy" class="pc img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=302&h=202`" alt="">
-            <img v-if="article.fields.thumbnail" loading="lazy" class="sp img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=210&h=212`" alt="">
+            <img v-if="article.fields.thumbnail" loading="lazy" class="pc img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=300&h=200`" alt="">
+            <img v-if="article.fields.thumbnail" loading="lazy" class="sp img-box" :src="`${article.fields.thumbnail.fields.file.url}?fit=thumb&w=300&h=200`" alt="">
 
-            <!--            <p>{{article.fields.title}}</p>-->
             <div class="flex column between left">
               <div class="txt-box">
                 <p class="green sp" v-if="article.fields.category">{{ article.fields.category }}</p>
             <h3 v-if="article.fields.title" class="strong">{{ article.fields.title }}</h3>
             <p v-if="article.fields.description" class="pc small green"><span class="normal">{{ article.fields.description }}</span></p>
               </div>
-
-              <p class="sp" v-if="article.fields.author">By {{ article.fields.author.fields.name }}</p>
-
-
-<!--              <Button text="続きを読む" color="black" :link="`${article.fields.slug}`"></Button>-->
+<!--              <p class="sp" v-if="article.fields.author">By {{ article.fields.author.fields.name }}</p>-->
             </div>
-
           </nuxt-link>
-<!--        <nuxt-link :to="{ name: 'posts-slug', params: { slug: post.fields.slug }}" class="link"></nuxt-link>-->
       </div>
   </section>
 </template>
@@ -53,7 +46,7 @@
       font-weight: 700;
       @media screen and (max-width: 768px){
         font-size: responsive-vw(14px);
-        margin-top: responsive-vw(11px);
+        /*margin-top: responsive-vw(11px);*/
       }
     }
     h2{
@@ -66,6 +59,7 @@
     .green{
       color: $main-color;
       text-transform: uppercase;
+      margin-top: 0;
     }
     .normal{
       color: #191919;
@@ -109,19 +103,14 @@
     .left{
       width: 80%;
       @media screen and (max-width: 768px){
-        width: 65%;
+        width: 72%;
       }
     }
     img{
-      width: get-vw(151px);
+      width: get-vw(150px);
       height: get-vw(100px);
-      /*margin-right: get-vw(10px);*/
-      /*@media screen and (max-width: 768px){*/
-      /*  margin-right: responsive-vw(10px);*/
-      /*}*/
-
       @media screen and (max-width: 768px){
-        @include res-width-height(105px, 106px);
+        @include res-width-height(100px, 67px);
       }
     }
   }

@@ -84,7 +84,7 @@
         /*width: unset;*/
         /*width: get-vw(270px);*/
         width: get-vw(286px);
-        height: get-vw(190px);
+        height: get-vw(191px);
 
 
         @media screen and (max-width: 768px){
