@@ -279,14 +279,12 @@
       margin-bottom: responsive-vw(40px);
     }
     a strong{
-      color: #191919;
       font-size: get-vw(18px);
       @media screen and (max-width: 768px){
         font-size: responsive-vw(16px);
       }
     }
     a, p{
-      color: #191919;
       font-weight: 200;
     }
     p:last-child{
