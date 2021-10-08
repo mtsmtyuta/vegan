@@ -224,8 +224,8 @@
     }
     ul{
       list-style: unset;
-      padding-inline-start: get-vw(40px);
-      padding-left: get-vw(40px);
+      padding: 18px 25px 18px 40px;
+      background-color: #f7f9f9;
     }
     .section{
       @media screen and (max-width: 768px){
