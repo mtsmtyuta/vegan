@@ -68,7 +68,6 @@
 
     }
     .jp{
-      font-weight: 100;
       font-size: responsive-vw(12px);
       color: $gray;
     }

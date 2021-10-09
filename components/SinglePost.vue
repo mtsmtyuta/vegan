@@ -89,8 +89,6 @@
       /*letter-spacing: get-vw(1.5px);*/
       text-align: left;
       color: #191919;
-      font-weight: 200;
-      /*color: #2e2e2e;*/
       @media screen and (max-width: 768px){
         font-size: responsive-vw(13px);
       }
@@ -283,9 +281,6 @@
       @media screen and (max-width: 768px){
         font-size: responsive-vw(16px);
       }
-    }
-    a, p{
-      font-weight: 200;
     }
     p:last-child{
       margin: 0;

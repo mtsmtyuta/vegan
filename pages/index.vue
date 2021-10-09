@@ -517,9 +517,7 @@
       }
     }
     .sub-title{
-      /*margin-top: get-vh(19px);*/
       line-height: 1.93;
-      font-weight: 100;
       letter-spacing: get-vh(1.5px);
       @media screen and (max-width: 768px){
         margin-top: 0;
@@ -660,7 +658,6 @@
   }
   .date {
     font-size: get-vw(12px);
-    font-weight: 100;
     @media screen and (max-width: 768px) {
       font-size: responsive-vw(9px);
     }
@@ -688,7 +685,6 @@
   }
 
   .bottom-ground{
-    font-weight: 100;
     text-align: center;
     height: 100vh;
     display: flex;

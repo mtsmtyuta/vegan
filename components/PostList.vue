@@ -65,7 +65,6 @@
     }
     p{
       font-size: get-vw(14px);
-      font-weight: 200;
       letter-spacing: 0.35px;
       color: #191919;
       margin-top: get-vw(10px);
