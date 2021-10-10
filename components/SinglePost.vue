@@ -89,7 +89,7 @@
       /*letter-spacing: get-vw(1.5px);*/
       text-align: left;
       color: #191919;
-      font-weight: 200;
+      font-weight: 300;
       /*color: #2e2e2e;*/
       @media screen and (max-width: 768px){
         font-size: responsive-vw(13px);
@@ -175,14 +175,14 @@
     h2{
       font-size: get-vw(30px);
       margin-top: get-vw(20px);
-      margin-bottom: get-vw(10px);
+      margin-bottom: get-vw(30px);
       line-height: 1.23;
       @media screen and (max-width: 1280px) {
         font-size: 28px;
       }
-        @media screen and (max-width: 768px){
+      @media screen and (max-width: 768px){
         font-size: responsive-vw(20px);
-          margin: responsive-vw(20px) 0 responsive-vw(10px);
+        margin: responsive-vw(20px) 0 30px;
       }
     }
     h3{
