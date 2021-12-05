@@ -13,10 +13,20 @@
     <article class="section">
       <div class="headline">
         <h1 v-if="post.fields.title" class="title has-text-centered">{{ post.fields.title }}</h1>
-        <p v-if="post.fields.publishDate"  class="date">{{ post.fields.publishDate }}</p>
+        <div class="flex center-align between">
+          <span v-if="post.fields.publishDate"  class="date">{{ post.fields.publishDate }}</span>
+          <social-share :slug="post.fields.slug"
+                        :title="post.fields.title"></social-share>
+
+        </div>
+
       </div>
       <div class="content">
         <vue-markdown v-if="post.fields.body">{{ post.fields.body }}</vue-markdown>
+        <div class="flex center-align">
+          <social-share :slug="post.fields.slug"
+                        :title="post.fields.title"></social-share>
+        </div>
         <Author :author="post.fields.author"></Author>
         <div v-if="post.fields.citation" class="citation">
           <div @click="citation = !citation" class="toggle">出典をみる <transition name="fade"><span v-if="citation">-</span> <span v-else>+</span></transition></div>
@@ -51,8 +61,10 @@
     import Gmap from "./Gmap";
     import Button from "./Button";
     import Author from "./Author";
+    import SocialShare from "./SocialShare";
     export default {
         components: {
+          SocialShare,
             Author,
             Button,
             Gmap,
@@ -208,7 +220,6 @@
       color: #999999;
       letter-spacing: 1px;
       font-size: get-vw(14px);
-      margin-top: get-vw(40px);
       @media screen and (max-width: 768px){
         font-size: responsive-vw(10px);
       }
