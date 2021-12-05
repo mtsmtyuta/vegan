@@ -135,6 +135,9 @@
     position: relative;
   }
   .nav-open{
+    article{
+      display: none;
+    }
     .drawer{
       //height: 230px;
       opacity: 1;
@@ -145,7 +148,7 @@
       /*bottom: get-vh(40px);*/
       pointer-events: unset;
       z-index: 100;
-
+      overflow: scroll;
     }
     .hamburger{
       height: 70px;

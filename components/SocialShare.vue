@@ -46,6 +46,9 @@
   .social_box{
     a{
       color: $black !important;
+        @media screen and (max-width: 768px){
+          font-size: 12px;
+        }
     }
   }
   .social {
