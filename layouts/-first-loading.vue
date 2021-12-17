@@ -44,7 +44,7 @@
       z-index: -1;
     }
     .img-box{
-      background-image: url("/oxlogo.svg");
+      background-image: url("/logo_symbol.svg");
       /*background-image: url("/loading.svg");*/
       width: get-vh(150px);
       height: get-vh(150px);
