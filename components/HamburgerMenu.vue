@@ -68,7 +68,7 @@
 
     }
     .jp{
-      font-weight: 100;
+      font-weight: 200;
       font-size: responsive-vw(12px);
       color: $gray;
     }
@@ -135,6 +135,9 @@
     position: relative;
   }
   .nav-open{
+    article{
+      display: none;
+    }
     .drawer{
       //height: 230px;
       opacity: 1;
@@ -145,7 +148,7 @@
       /*bottom: get-vh(40px);*/
       pointer-events: unset;
       z-index: 100;
-
+      overflow: scroll;
     }
     .hamburger{
       height: 70px;

@@ -102,7 +102,6 @@
         font-size: responsive-vw(12px);
         color: #191919;
         letter-spacing: responsive-vw(0.25px);
-        font-weight: 100;
       }
     }
   }
