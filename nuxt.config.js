@@ -46,11 +46,11 @@ const dynamicRoutes = async () =>{
         { hid: 'og:url', property: 'og:url', content: 'https://ox-vegan.jp' },
         { hid: 'og:title', property: 'og:title', content: 'OX(オックス）| ヴィーガンWebマガジン' },
         { hid: 'og:description', property: 'og:description', content: 'ヴィーガンのライフスタイルに興味があるけれど、何から始めたらいいか分からないという方の疑問に答えます。' },
-        { hid: 'og:image', property: 'og:image', content: 'https://ox-vegan.jp/ogp.jpg' },
+        { hid: 'og:image', property: 'og:image', content: 'https://ox-vegan.jp/ogp.png' },
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
         { rel: "stylesheet", href: "https://use.typekit.net/dng4qey.css"},
         { rel: "preconnect", href: "https://fonts.gstatic.com"},
         { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"}
