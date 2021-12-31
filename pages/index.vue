@@ -375,7 +375,6 @@
                 })
             ]).then(([posts]) => {
                 const data = posts.items;
-                // const items = posts.items;
                 const today = new Date();
 
                 const items = data.filter(function(item){
