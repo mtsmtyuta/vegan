@@ -3,6 +3,7 @@
 
   >
     <nuxt-link class="header-logo" to="/"><div class="en logo">OX MAGAZINE</div></nuxt-link>
+<!--    <nuxt-link class="header-logo" to="/"><div class="en logo"><img src="~assets/img/logo_set.svg" alt=""></div></nuxt-link>-->
     <ul class="header-nav pc">
 <!--      <li class="header-nav__item"><nuxt-link to="/about">ABOUT</nuxt-link></li>-->
       <li class="header-nav__item"><nuxt-link to="/posts/why-vegan">WHY VEGAN</nuxt-link></li>
