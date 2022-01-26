@@ -374,7 +374,14 @@
 
                 })
             ]).then(([posts]) => {
-                const items = posts.items
+                const data = posts.items;
+                const today = new Date();
+
+                const items = data.filter(function(item){
+                    let published = new Date(item.fields.publishDate);
+                    return published < today
+                })
+
                 const whyVegan = items.filter(function (item){
                     return item.fields.category === 'why-vegan'
                 })
@@ -396,7 +403,7 @@
                     recipes: recipes,
                     restaurants: restaurants,
                     oxLife: oxLife,
-                    posts: posts.items
+                    posts: items
                     // posts: posts.items
                 }
             }).catch(console.error);
