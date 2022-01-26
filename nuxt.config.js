@@ -53,7 +53,7 @@ const dynamicRoutes = async () =>{
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
         { rel: "stylesheet", href: "https://use.typekit.net/dng4qey.css"},
         { rel: "preconnect", href: "https://fonts.gstatic.com"},
-        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"}
+        { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"},
       ]
     },
     generate: {

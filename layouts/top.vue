@@ -65,10 +65,11 @@
     background-color: transparent;
   }
   .head-bgc{
-    background-color: #191919;
+    background-color: $bg;
   }
   .layout{
     position: relative;
+    background-color: $bg;
   }
 </style>
 

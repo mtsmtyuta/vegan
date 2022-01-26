@@ -4,33 +4,19 @@ html, body{
 }
 
 * {
-  @include font-jp;
-  font-size: get-vw(15px);
-  //@media screen and (max-width: 1280px) {
-  //  font-size: 15px;
-  //}
+  font-family: $noto;
+  font-size: 20px;
+  font-weight: 400;
   @media screen and (max-width: 768px){
-    font-size: responsive-vw(15px);
-    letter-spacing: responsive-vw(0.7px);
-  }
-  letter-spacing: get-vw(1.3px);
-  &.strong{
-    font-weight: 600;
+    font-size: 16px;
   }
   &.bold{
     font-weight: bold;
   }
-  .en{
-    @include font-en;
-    &-demi{
-      @include font-en-demi;
-    }
-    &-medi{
-      @include font-en-medi;
-    }
+  .roboto{
+    font-family: $roboto;
   }
   @media screen and (max-width: 768px) {
-    letter-spacing: responsive-vw(1.3px);
     .pc{
       display: none;
     }
@@ -42,17 +28,15 @@ html, body{
   }
 }
 .page-title{
-  @include font-en-medi;
-  font-size: get-vw(45px);
-  line-height: 1.71;
-  letter-spacing: get-vw(9px);
+  font-size: 22px;
   @media screen and (max-width: 768px){
-    font-size: responsive-vw(30px);
-    letter-spacing: responsive-vw(1.5px);
+    font-size: 18px;
   }
 }
 
-
+.green{
+  color: $main-color;
+}
 a{
   text-decoration: none;
   color: unset;
@@ -62,59 +46,15 @@ ul{
   list-style: none;
 }
 
-.small{
-  font-size: get-vw(14px);
-  @media screen and (min-width: 1280px){
-    font-size: 14px;
-  }
-  @media screen and (max-width: 768px){
-    font-size: responsive-vw(12px);
-  }
-}
-.smallest{
-  font-size: get-vw(9px);
-  @media screen and (max-width: 768px){
-    font-size: responsive-vw(11px);
-  }
-}
-
 
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-
 .responsive-container{
-  width: get-vw(1250px);
+  width: $pc-contents;
+  max-width: $pc-max;
   @media screen and (max-width: 768px){
     width: responsive-vw(363px);
     margin: auto;
@@ -148,11 +88,7 @@ ul{
   writing-mode: vertical-lr;
 }
 
-a{
-  //display: block;
-}
 a:hover{
-  //transform: scale(1.01);
   transform: translate(1px,1px);
 }
 
@@ -175,7 +111,3 @@ a:hover{
 .slick-dots li button:focus:before {
   opacity: 0.25;
 }
-
-//.slick-dots li button:focus:before{
-//  opacity: 0.25 !important;
-//}

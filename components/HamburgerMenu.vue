@@ -77,7 +77,6 @@
       a{
         font-size: responsive-vw(55px);
         letter-spacing: responsive-vw(2.75px);
-        font-family: $bebas;
         padding: 0;
         border: 0;
         .jp{
@@ -92,7 +91,6 @@
         a{
           font-size: responsive-vw(16px);
           letter-spacing: responsive-vw(0.8px);
-          @include font-en;
         }
       }
     }

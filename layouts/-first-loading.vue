@@ -36,7 +36,7 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: #292929;
+    background: #fff;
     /*background: white;*/
     &.is-finish {
       transition: opacity 1s, z-index 0s 1.01s;
@@ -44,7 +44,7 @@
       z-index: -1;
     }
     .img-box{
-      background-image: url("/logo_symbol.svg");
+      background-image: url("/born.svg");
       /*background-image: url("/loading.svg");*/
       width: get-vh(150px);
       height: get-vh(150px);

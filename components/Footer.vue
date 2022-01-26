@@ -67,7 +67,6 @@
       margin: responsive-vw(84px) auto;
     }
     a{
-      @include font-en;
       display: block;
       font-size: get-vw(10px);
       letter-spacing: get-vw(1.13px);

@@ -1,33 +1,29 @@
 <template>
   <div>
     <div id="main-content">
-
-
       <client-only>
         <div class="fv-container">
-          <div class="img-box background pc"></div>
           <div class="foreground">
-            <div class="top img-box">
-              <div class="txt-box"
-                   data-aos="fade-in"
-                   data-aos-duration="2000"
-                   data-aos-delay="1000">
-                <h1 class="en-medi">THE <br class="sp"> ANSWER <br class="sp"> FOR<br>YOUR <br class="sp"> OPTIMAL <br class="sp"> HEALTH</h1>
-                <p class="jp sub-title pc">
-                  ヴィーガンのライフスタイルに興味はあるけど、<br>
-                  何から始めたらいいか分からないという方の疑問に答えます。</p>
-                  <p class="sub-title jp sp"
+            <div class="top">
+              <div class="top-hero">
+                <div class="txt-box"
                      data-aos="fade-in"
-                     data-aos-duration="1500"
-                     data-aos-delay="1500">
-                  </p>
+                     data-aos-duration="2000"
+                     data-aos-delay="1000">
+                  <h1 class=" green">THE ANSWER <br> FOR YOUR <br> OPTIMAL HEALTH</h1>
+                </div>
+                <img height="480px" width="684px" src="~assets/img/kv_1.jpg" alt="">
               </div>
-              <div class="new-posts pc"
-                   data-aos="slide-left"
+              <div class="flex vertical tag-line"
+                   data-aos="slide-down"
                    data-aos-duration="1000"
-                   data-aos-delay="2000"
-              >
+                   data-aos-delay="5000">
+                <p class="bold">健康をここから始める</p>
+                <p class="bold">ヴィーガンライフスタイルマガジン</p>
+              </div>
+              <div class="new-posts">
                 <div class="articles">
+                  <h2 class="new-posts_title">NEW ARTICLES</h2>
                   <div class="article flex column">
                     <div class="article-inner">
                       <div class="article__items flex">
@@ -88,16 +84,9 @@
               <p>そのことはアスリートだけでなく、人生と地球を愛する全ての人に手にしてもらいたいメリットです。</p>
               <p class="top-margin">実践の為に必要なすべてのレシピやヒント、疑問への答えはここで入手してください。</p>
             </div>
-            <div class="scroll flex sp vertical"
-                 data-aos="slide-down"
-                 data-aos-duration="1000"
-                 data-aos-delay="5000">
-              <p class="en">SCROLL</p>
-              <hr>
-            </div>
           </div>
         </div>
-        <RecentPosts class="sp" :posts="posts"></RecentPosts>
+<!--        <RecentPosts class="sp" :posts="posts"></RecentPosts>-->
 
 
       </client-only>
@@ -108,7 +97,7 @@
         <div class="introduction "
         >
           <div class="comp-section-title">
-            <h2 class="en-medi section-title">WHAT TO LEARN TODAY?</h2>
+            <h2 class=" section-title">WHAT TO LEARN TODAY?</h2>
             <hr>
             <h3 class="pc">何をお探しですか？</h3>
             <h3 class="sp">ヴィーガンのライフスタイルに興味はあるけど、何から始めたらいいか分からないという方の疑問に答えます。植物を中心とした食事に切り替えパフォーマンスを大幅に向上させる為にヒントを手に入れて、毎日をエネルギッシュに過ごしましょう。</h3>
@@ -124,7 +113,7 @@
           <div class="img-box whyvegan-bg left">
             <div class="content-container pc">
               <div class="txt-box flex column">
-                <h3 class="en-medi">WHY VEGAN</h3>
+                <h3 class="">WHY VEGAN</h3>
                 <p class="strong">どうしてヴィーガンなの？</p>
                 <p class="category-description">病気のリスクを減らし、エネルギッシュでパフォーマンスの<br>
                   高い生活をおくる為には食生活を変えてみましょう。</p>
@@ -163,7 +152,7 @@
           <div class="img-box nutrition-bg right">
             <div class="content-container pc">
               <div class="txt-box flex column">
-                <h3 class="en-medi">NUTRITION</h3>
+                <h3 class="">NUTRITION</h3>
                 <p class="strong">栄養について学ぶ</p>
                 <p class="category-description">動物性食品から摂取できる必須栄養素の全ては、植物だけでも摂取できます。神話に騙されないために栄養について学びましょう。</p>
                 <Button link="/posts/nutrition" text="栄養に詳しくなる" color="white" />
@@ -201,7 +190,7 @@
             <div class="flex-part content-container">
               <div class="txt-box flex column">
                 <div class="img-box recipe-icon"></div>
-                <h3 class="en-medi">RECIPE</h3>
+                <h3 class="">RECIPE</h3>
                 <p class="strong">ヴィーガン料理をつくる</p>
                 <p class="category-description">
                   チャンピオンのような食事を実践する為のレシピやヒントを<br>
@@ -242,7 +231,7 @@
             <div class="flex-part content-container">
               <div class="txt-box flex column">
                 <div class="img-box restaurant-icon"></div>
-                <h3 class="en-medi">RESTAURANT</h3>
+                <h3 class="">RESTAURANT</h3>
                 <p class="strong">外でヴィーガン料理を食べる</p>
                 <p class="category-description">ヴィーガン向けの飲食店は日本ではまだまだ多くはありません。<br>
                   わたしたちが見つけたオススメの店を紹介していきます。</p>
@@ -282,7 +271,7 @@
             <div class="flex-part content-container ">
               <div class="txt-box flex column">
                 <div class="img-box ox-life-icon"></div>
-                <h3 class="en-medi">OX LIFE</h3>
+                <h3 class="">OX LIFE</h3>
                 <p class="strong">ヴィーガン生活</p>
                 <p class="category-description">ヴィーガン生活をする中で出てくる疑問に答えたり日々の生活に役立つ情報を紹介します。</p>
                 <Button link="/posts/ox-life" text="答えを探す" color="white" />
@@ -411,8 +400,13 @@
       transition-delay: 0s !important;
     }
   }
-  .comp-section-title{
-    position: relative;
+  .tag-line{
+    position: absolute;
+    right: get-vw(108px);
+    top: get-vw(144px);
+    display: flex;
+    flex-flow: column-reverse;
+    gap: get-vw(16px);
   }
   .category-logo{
     @include res-width-height(287.5px, 294px);
@@ -422,29 +416,12 @@
     top: responsive-vw(-93px);
     z-index: -1;
   }
-
-  .vertical{
-    margin-left: auto;
-    margin-right: 5%;
-    color: #fff;
-    position: relative;
-    bottom: 30%;
-    align-items: center;
-    hr{
-      transform: rotate(90deg);
-      width: 40vh;
-      position: absolute;
-      top: 30vh;
-      height: 0.5px;
-      border-color: #888888;
-    }
-  }
   .main-content{
     background-color: #f0f0f0;
     padding-bottom: get-vh(10px);
-@media screen and (max-width: 768px){
-  background-color: transparent;
-}
+    @media screen and (max-width: 768px){
+      background-color: transparent;
+    }
   }
   .fv-container {
     position: relative;
@@ -452,23 +429,13 @@
     height: 200vh;
     display: flex;
     @media screen and (max-width: 768px) {
-      background: #1b1b1b;
-      /*height: get-vh(1029px);*/
-      /*width: 100%;*/
       height: 100vh;
     }
   }
   .top{
-    color: white;
-    background-image: url('~assets/img/top.jpg');
-    background-size: cover;
-    /*width: get-vw(1380px);*/
-    /*height: get-vw(804px);*/
     height: 100vh;
     position: relative;
-    /*margin-left: auto;*/
     @media screen and (max-width: 768px) {
-      background-image: url('~assets/img/sptop.jpg');
       height: 100vh;
       width: 100%;
       background-attachment: scroll;
@@ -480,19 +447,27 @@
       gap: get-vw(45px);
     }
     h1{
-      font-size: 15vh;
-      padding-top: get-vh(164px);
-      letter-spacing: get-vh(5.1px);
-      line-height: 1.07;
-      font-family: $bebas;
+      font-size: 50px;
+      width: 30px;
+      white-space: nowrap;
+      z-index: 999;
+      position: relative;
+      margin: 0 auto 0 0;
+      line-height: 64px;
       @media screen and (max-width: 768px){
-        font-size: get-vh(99px);
-        /*font-size: get-vh(40px);*/
-        line-height: 0.99;
-        font-weight: normal;
-        padding-top: get-vh(126px);
-        letter-spacing: get-vh(4.55px);
-        margin-bottom: get-vh(15px);
+        font-size: 30px;
+        /*padding-top: 260px;*/
+        line-height: 40px;
+      }
+    }
+    .top-hero{
+      padding-top: get-vw(144px);
+      display: flex;
+      align-items: center;
+      img{
+        margin-right: get-vw(258px);
+        width: get-vw(684px);
+        height: get-vw(480px);
       }
     }
     .txt-box {
@@ -524,120 +499,6 @@
         width: 80%;
       }
     }
-    .new-posts{
-      position: absolute;
-      bottom: 0;
-      width: 92vw;
-      right: 0;
-      height: get-vh(208px);
-      @media screen and (max-width: 768px){
-        bottom: -40vh;
-        height: 30vh;
-        /*height: get-vh(251px);*/
-      }
-      &__title{
-        margin-bottom: get-vh(32px);
-        color: #3aaa98;
-        letter-spacing: 4.5px;
-        @media screen and (max-width: 768px){
-          margin: get-vh(10px) 0;
-        }
-      }
-    }
-    .green-border{
-      border-left: 1px solid $main-color;
-      padding-bottom: get-vh(120px);
-    }
-    .articles{
-      height: 100%;
-      display: flex;
-    }
-    .article{
-      width: calc(100% - 5.70312vw);
-      height: 100%;
-      backdrop-filter: blur(1px);
-      background-color: #ffffff17;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      @media screen and (max-width: 768px){
-        margin-left: auto;
-        width: calc(100% - 18vw);
-      }
-      &-inner{
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        width: 80%;
-        @media screen and (max-width: 768px){
-          justify-content: center;
-          height: 100%;
-        }
-      }
-      &__items{
-        justify-content: space-between;
-      }
-      &__item{
-        width: get-vw(337px);
-      }
-      &__description{
-        width: get-vw(368px);
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-weight: 200;
-        font-size: get-vh(14px);
-        margin: get-vh(18px) 0 get-vh(16px) 0;
-        @media screen and (max-width: 768px){
-          margin: get-vh(5px) 0;
-          width: 100%;
-        }
-      }
-    }
-    .article__item__title{
-      font-weight: 700;
-      font-size: get-vw(15px);
-    }
-    .link{
-      width: get-vw(73px);
-      height: 100%;
-      writing-mode: vertical-lr;
-      transform: rotate(180deg);
-      position: relative;
-     transition: all .2s ease-out;
-      &:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: $main-color;
-        -webkit-transform: scaleY(1);
-        transform: scaleY(1);
-        -webkit-transform-origin: 50% 100%;
-        transform-origin: 50% 100%;
-        -webkit-transition-property: transform;
-        transition-property: transform;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-      }
-      &:hover:before {
-        -webkit-transform: scaleY(0);
-        transform: scaleY(0);
-      }
-      &:hover{
-        background-position:  right;
-      }
-      @media screen and (max-width: 768px){
-        width: responsive-vw(66px);
-      }
-    }
     .new-posts-link{
       height: 100%;
       width: 100%;
@@ -662,26 +523,12 @@
       font-size: responsive-vw(9px);
     }
   }
-  .background{
-    background-image: url('~assets/img/topbackground.jpg');
-    width: 100%;
-    height: 200vh;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background-attachment: fixed;
-    @media screen and (max-width: 768px) {
-      background: #1b1b1b;
-      height: get-vh(1029px);
-      width: 100%;
-    }
-  }
-
   .foreground {
     margin-left: auto;
-    width: 100%;
+    width: get-vw(1060px);
+    @media screen and (max-width: 1439px){
+      width: 100%;
+    }
   }
 
   .bottom-ground{

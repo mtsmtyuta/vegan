@@ -2,7 +2,7 @@
   <header class="header"
 
   >
-    <nuxt-link class="header-logo" to="/"><div class="en logo">OX MAGAZINE</div></nuxt-link>
+    <nuxt-link class="header-logo" to="/"><div class="en logo"><img src="~assets/img/logo_set.svg" alt=""></div></nuxt-link>
 <!--    <nuxt-link class="header-logo" to="/"><div class="en logo"><img src="~assets/img/logo_set.svg" alt=""></div></nuxt-link>-->
     <ul class="header-nav pc">
 <!--      <li class="header-nav__item"><nuxt-link to="/about">ABOUT</nuxt-link></li>-->
@@ -29,6 +29,10 @@
     font-weight: 300;
     letter-spacing: get-vw(2.1px);
     /*width: get-vh(36px);*/
+    img{
+      width: 210px;
+      height: 48px;
+    }
     @media screen and (max-width: 768px) {
       /*width: responsive-vw(34px);*/
       /*height: responsive-vw(17px);*/
@@ -36,7 +40,7 @@
   }
   .header {
     display: flex;
-    background-color: #191919;
+    background-color: #FCFBF8;
     width: 100%;
     z-index: 99;
     justify-content: space-between;
@@ -47,7 +51,6 @@
       height: 9vh;
     }
     a {
-      @include font-en;
       font-size: get-vw(15px);
       letter-spacing: get-vw(1.13px);
       font-weight: 300;

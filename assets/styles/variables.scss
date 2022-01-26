@@ -1,6 +1,12 @@
 @import "mixins";
-$main-color: #3aaa98;
+$main-color: #3A5F3E;
+$pc-contents: get-vw(840px);
+$pc-max: 840px;
 $sp-contents: responsive-vw(324px);
 $gray: #888;
 $black: #191919;
-$bebas: 'Bebas Neue', cursive;
+$noto: 'Noto Sans', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$bg: #FCFBF8;
+
+

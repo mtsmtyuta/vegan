@@ -5,20 +5,18 @@
 <!--      :src="img"-->
 <!--      :alt="alt"-->
 <!--    >-->
-    <div v-if="post.fields.topImage" class="img-box hero"
-         v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"></div>
-
-
 
     <article class="section">
       <div class="headline">
         <h1 v-if="post.fields.title" class="title has-text-centered">{{ post.fields.title }}</h1>
         <div class="flex center-align between">
           <span v-if="post.fields.publishDate"  class="date">{{ post.fields.publishDate }}</span>
-          <social-share :slug="post.fields.slug"
-                        :title="post.fields.title"></social-share>
-
+          <span v-if="post.fields.author" class="name">{{post.fields.author.fields.name}}</span>
         </div>
+        <social-share :slug="post.fields.slug" :title="post.fields.title"></social-share>
+        <div v-if="post.fields.topImage" class="img-box hero"
+             v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"></div>
+
 
       </div>
       <div class="content">
@@ -94,7 +92,6 @@
       padding-top: 0;
     }
     .content{
-      @include font-jp;
       font-size: get-vw(15px);
       line-height: 2.6;
       letter-spacing: 0.4px;
@@ -149,11 +146,7 @@
     white-space: unset;
   }
   .single-post{
-    width: get-vw(620px);
-    margin: auto;
-    @media screen and (max-width: 768px){
-      width: 100%;
-    }
+    @include content-container();
     p, ul, ol{
       margin-bottom: get-vw(30px);
       line-height: 2;
@@ -247,14 +240,12 @@
   .hero{
     background-size: cover;
     background-position: top;
-    width: get-vw(620px);
-    /*height: 100%;*/
-    height: get-vw(413px);
+    height: get-vw(600px);
     /*max-width: 620px;*/
     margin-bottom: get-vw(42px);
     @media screen and (max-width: 768px){
       width: 100%;
-      height: responsive-vw(250px);
+      height: responsive-vw(275px);
       margin-bottom: responsive-vw(36px);
     }
   }
@@ -269,13 +260,8 @@
       }
     }
     img{
-      width: get-vw(620px);
-      /*max-width: 620px;*/
+      @include content-container();
       margin: get-vw(30px) 0;
-      @media screen and (max-width: 768px){
-        width: responsive-vw(324px);
-        margin: auto;
-      }
     }
   }
   .access{

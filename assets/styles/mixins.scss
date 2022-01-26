@@ -20,6 +20,15 @@
   @return ($target/$vw-context) * 1vw;
 }
 
+@mixin content-container(){
+  width: $pc-contents;
+  max-width: $pc-max;
+  margin: auto;
+  @media screen and (max-width: 767px){
+    width: 100%;
+  }
+}
+
 @mixin width-height($width,$height){
   width: get-vw($width);
   height: get-vw($height);
@@ -27,22 +36,4 @@
 @mixin res-width-height($width,$height){
   width: responsive-vw($width);
   height: responsive-vw($height);
-}
-@mixin font-en{
-  font-family: futura-pt, futura, Futura, "Futura", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-@mixin font-en-demi{
-  font-family: futura-pt, futura, Futura, "Futura", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
-@mixin font-en-medi{
-  font-family: futura-pt, futura, Futura, "Futura", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-@mixin font-jp{
-  font-family: -apple-system, 'Hiragino Sans',BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', 'Hiragino Kaku Gothic ProN', YuGothic, 'Yu Gothic Medium', Meiryo, sans-serif;
 }

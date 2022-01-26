@@ -148,12 +148,10 @@
   .section-title{
     font-size: get-vw(53px);
     letter-spacing: get-vw(2.65px);
-    @include font-en();
     @media screen and (max-width: 768px) {
       font-size: responsive-vw(61px);
       letter-spacing: 2.2px;
       line-height: 1.05;
-      font-family: $bebas;
     }
   }
   @media screen and (max-width: 768px) {

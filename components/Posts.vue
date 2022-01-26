@@ -187,7 +187,6 @@
       /*content: "";*/
     @media screen and (max-width: 768px){
       color: #191919;
-      @include font-en();
       font-size: responsive-vw(12px);
     }
     }

@@ -3,7 +3,7 @@
     <a
       target="_blank" rel="noopener"
       class="twitter_share flex center-align"
-      :href="'https://twitter.com/intent/tweet?url=https://ox-vegan.jp/'
+      :href="'https://twitter.com/intent/tweet?url=https://ox-vegan.jp/posts'
                + slug
                + '&text='
                + title
