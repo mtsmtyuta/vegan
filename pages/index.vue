@@ -23,47 +23,44 @@
               </div>
               <div class="new-posts">
                 <div class="articles">
-                  <h2 class="new-posts_title">NEW ARTICLES</h2>
+                  <div class="flex between">
+                    <div class="title_box">
+                      <h2 class="new-posts_title">NEW ARTICLES</h2>
+                      <p>最新の記事を見る</p>
+                    </div>
+                    <nuxt-link class="to-archive en" to="/posts">VIEW MORE</nuxt-link>
+                  </div>
                   <div class="article flex column">
                     <div class="article-inner">
                       <div class="article__items flex">
-                        <div class="green-border"></div>
-
                         <div class="article__item">
-                          <nuxt-link v-if="posts[0].fields.slug" class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >
-
-                            <p class="article__item__title bold" v-if="posts[0].fields.title">        {{ posts[0].fields.title }}
-                            </p>
-
-                            <p class="article__description small" v-if="posts[0].fields.description">{{ posts[0].fields.description }}</p>
-                            <span class="date smallest" v-if="posts[0].fields.publishDate">{{
-                          ( new Date(posts[0].fields.publishDate).toDateString())
-                          }}</span>
+                          <nuxt-link v-if="posts[0].fields.slug" class="flex" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >
+                            <img v-if="posts[0].fields.thumbnail" loading="lazy" class="img-box" :src="`${posts[0].fields.thumbnail.fields.file.url}?fit=thumb&w=300&h=200`" alt="">
+                            <div class="article_detail flex column">
+                              <p class="article__item__title bold" v-if="posts[0].fields.title">        {{ posts[0].fields.title }}
+                              </p>
+                              <p class="article__description" v-if="posts[0].fields.description">{{ posts[0].fields.description }}</p>
+                              <span class="date" v-if="posts[0].fields.publishDate">{{( new Date(posts[0].fields.publishDate).toDateString())}}
+                              </span>
+                            </div>
                           </nuxt-link>
                         </div>
-                        <div class="green-border"></div>
-
-                        <div class="article__item"
-                             >
-                          <nuxt-link v-if="posts[1].fields.slug" class="block grow" :to="{ name: 'posts-slug', params: { slug: posts[1].fields.slug }}" >
-
-                            <p class="article__item__title bold" v-if="posts[1].fields.title">        {{ posts[1].fields.title }}
-                            </p>
-
-                            <p class="article__description small" v-if="posts[1].fields.description">{{ posts[1].fields.description }}</p>
-                            <span class="date smallest" v-if="posts[1].fields.publishDate">{{
-                          ( new Date(posts[1].fields.publishDate).toDateString())
-                          }}</span>
+                        <div class="article__item">
+                          <nuxt-link v-if="posts[1].fields.slug" class="flex" :to="{ name: 'posts-slug', params: { slug: posts[1].fields.slug }}" >
+                            <img v-if="posts[1].fields.thumbnail" loading="lazy" class="img-box" :src="`${posts[1].fields.thumbnail.fields.file.url}?fit=thumb&w=300&h=200`" alt="">
+                            <div class="article_detail flex column">
+                              <p class="article__item__title bold" v-if="posts[1].fields.title">        {{ posts[1].fields.title }}
+                              </p>
+                              <p class="article__description" v-if="posts[1].fields.description">{{ posts[1].fields.description }}</p>
+                              <span class="date" v-if="posts[1].fields.publishDate">{{
+                                                      ( new Date(posts[1].fields.publishDate).toDateString())
+                                                      }}</span>
+                            </div>
                           </nuxt-link>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="link">
-                    <nuxt-link class="new-posts-link en" to="/posts">VIEW MORE</nuxt-link>
-                    <div class="bgbar"></div>
-                  </div>
-
                 </div>
               </div>
               <div class="sns-links flex column pc">
@@ -403,33 +400,17 @@
   .tag-line{
     position: absolute;
     right: get-vw(108px);
-    top: get-vw(144px);
+    top: get-vh(108px);
     display: flex;
     flex-flow: column-reverse;
     gap: get-vw(16px);
   }
-  .category-logo{
-    @include res-width-height(287.5px, 294px);
-    background-image: url('~assets/img/categorylogo.svg');
-    position: absolute;
-    right: responsive-vw(-50px);
-    top: responsive-vw(-93px);
-    z-index: -1;
-  }
+
   .main-content{
     background-color: #f0f0f0;
     padding-bottom: get-vh(10px);
     @media screen and (max-width: 768px){
       background-color: transparent;
-    }
-  }
-  .fv-container {
-    position: relative;
-    width: 100%;
-    height: 200vh;
-    display: flex;
-    @media screen and (max-width: 768px) {
-      height: 100vh;
     }
   }
   .top{
@@ -439,12 +420,6 @@
       height: 100vh;
       width: 100%;
       background-attachment: scroll;
-    }
-    .sns-links{
-      position: absolute;
-      bottom: 7vh;
-      left: 3.5vw;
-      gap: get-vw(45px);
     }
     h1{
       font-size: 50px;
@@ -456,18 +431,17 @@
       line-height: 64px;
       @media screen and (max-width: 768px){
         font-size: 30px;
-        /*padding-top: 260px;*/
         line-height: 40px;
       }
     }
     .top-hero{
-      padding-top: get-vw(144px);
+      padding-top: get-vh(108px);
       display: flex;
       align-items: center;
       img{
         margin-right: get-vw(258px);
-        width: get-vw(684px);
-        height: get-vw(480px);
+        width: get-vh(615px);
+        height: get-vh(432px);
       }
     }
     .txt-box {
@@ -477,56 +451,53 @@
         width: $sp-contents;
         margin: auto;
       }
-      p{
-        font-size: get-vw(14px);
-        line-height: 2;
-        /*letter-spacing: responsive-vw(2.6px);*/
-        text-align: left;
-        color: #d5d5d5;
-        @media screen and (max-width: 768px){
-          font-size: 1.6vh;
-          letter-spacing: 0.6vw;
-          /*font-size: get-vh(14px);*/
-          line-height: 2.1;
+    }
+    .new-posts{
+      margin-top: get-vh(60px);
+      img{
+        width: get-vh(300px);
+        height: get-vh(200px);
+      }
+      .title_box{
+        h2{
+          font-weight: 700;
+          font-size: get-vh(24px);
+        }
+        p{
+          font-weight: 700;
+          font-size: get-vh(16px);
+          margin: get-vh(8px) 0 get-vh(20px);
         }
       }
     }
-    .sub-title{
-      line-height: 1.93;
-      letter-spacing: get-vh(1.5px);
-      @media screen and (max-width: 768px){
-        margin-top: 0;
-        width: 80%;
-      }
+    .article__items{
+      overflow-x: scroll;
     }
-    .new-posts-link{
-      height: 100%;
-      width: 100%;
-      line-height: get-vw(73px);
-      white-space: nowrap;
-      text-align: center;
-      display: block;
-      position: relative;
-      z-index: 99;
-      &:hover{
-        transform: unset;
-      }
-      @media screen and (max-width: 768px){
-        line-height: responsive-vw(66px);
-      }
-
+    .article__description{
+      margin: get-vh(8px) 0 auto;
+    }
+    .article_detail{
+      width: get-vw(287px);
+      margin: 0 get-vw(24px);
+    }
+    .to-archive{
+      color: $accent_red;
+      font-family: $roboto;
+      font-size: get-vh(23px);
+      border-bottom: 3px solid $accent_red;
+      padding: get-vh(8px) 0;
+      height: fit-content;
+      margin: 0 get-vh(32px);
     }
   }
   .date {
-    font-size: get-vw(12px);
-    @media screen and (max-width: 768px) {
-      font-size: responsive-vw(9px);
-    }
+    font-size: 20px;
+    font-family: $roboto;
   }
   .foreground {
     margin-left: auto;
     width: get-vw(1060px);
-    @media screen and (max-width: 1439px){
+    @media screen and (max-width: 767px){
       width: 100%;
     }
   }
