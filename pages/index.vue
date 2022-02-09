@@ -12,7 +12,7 @@
                      data-aos-delay="1000">
                   <h1 class=" green">THE ANSWER <br> FOR YOUR <br> OPTIMAL HEALTH</h1>
                 </div>
-                <img height="480px" width="684px" src="~assets/img/kv_1.jpg" alt="">
+                <img class="kv_img" height="480px" width="684px" src="~assets/img/kv_1.jpg" alt="">
               </div>
               <div class="flex vertical tag-line"
                    data-aos="slide-down"
@@ -32,9 +32,9 @@
                   </div>
                   <div class="article flex column">
                     <div class="article-inner">
-                      <div class="article__items flex">
+                      <div class="article__items flex row-to-column">
                         <div class="article__item">
-                          <nuxt-link v-if="posts[0].fields.slug" class="flex" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >
+                          <nuxt-link v-if="posts[0].fields.slug" class="flex row-to-column" :to="{ name: 'posts-slug', params: { slug: posts[0].fields.slug }}" >
                             <img v-if="posts[0].fields.thumbnail" loading="lazy" class="img-box" :src="`${posts[0].fields.thumbnail.fields.file.url}?fit=thumb&w=300&h=200`" alt="">
                             <div class="article_detail flex column">
                               <p class="article__item__title bold" v-if="posts[0].fields.title">        {{ posts[0].fields.title }}
@@ -46,7 +46,7 @@
                           </nuxt-link>
                         </div>
                         <div class="article__item">
-                          <nuxt-link v-if="posts[1].fields.slug" class="flex" :to="{ name: 'posts-slug', params: { slug: posts[1].fields.slug }}" >
+                          <nuxt-link v-if="posts[1].fields.slug" class="flex row-to-column" :to="{ name: 'posts-slug', params: { slug: posts[1].fields.slug }}" >
                             <img v-if="posts[1].fields.thumbnail" loading="lazy" class="img-box" :src="`${posts[1].fields.thumbnail.fields.file.url}?fit=thumb&w=300&h=200`" alt="">
                             <div class="article_detail flex column">
                               <p class="article__item__title bold" v-if="posts[1].fields.title">        {{ posts[1].fields.title }}
@@ -69,7 +69,7 @@
               </div>
 
             </div>
-            <div class="txt-box bottom-ground pc"
+            <div class="txt-box bottom-ground"
                  data-aos="fade-up"
                  data-aos-duration="5000"
                  data-aos-delay="1000"
@@ -91,16 +91,6 @@
 
       <div class="main-content">
 
-        <div class="introduction "
-        >
-          <div class="comp-section-title">
-            <h2 class=" section-title">WHAT TO LEARN TODAY?</h2>
-            <hr>
-            <h3 class="pc">何をお探しですか？</h3>
-            <h3 class="sp">ヴィーガンのライフスタイルに興味はあるけど、何から始めたらいいか分からないという方の疑問に答えます。植物を中心とした食事に切り替えパフォーマンスを大幅に向上させる為にヒントを手に入れて、毎日をエネルギッシュに過ごしましょう。</h3>
-            <div class="img-box category-logo sp"></div>
-          </div>
-        </div>
 
         <div class="comp-category-card pc"
              data-aos="slide-right"
@@ -404,6 +394,9 @@
     display: flex;
     flex-flow: column-reverse;
     gap: get-vw(16px);
+    @media screen and (max-width: 767px){
+      top: get-spvh(80px);
+    }
   }
 
   .main-content{
@@ -414,12 +407,9 @@
     }
   }
   .top{
-    height: 100vh;
     position: relative;
     @media screen and (max-width: 768px) {
-      height: 100vh;
       width: 100%;
-      background-attachment: scroll;
     }
     h1{
       font-size: 50px;
@@ -432,16 +422,25 @@
       @media screen and (max-width: 768px){
         font-size: 30px;
         line-height: 40px;
+        bottom: get-spvh(150px);
+        left: responsive-vw(20px);
       }
     }
     .top-hero{
       padding-top: get-vh(108px);
       display: flex;
       align-items: center;
+      @media screen and (max-width: 767px){
+        padding-top: get-spvh(260px);
+      }
       img{
         margin-right: get-vw(258px);
         width: get-vh(615px);
         height: get-vh(432px);
+        @media screen and (max-width: 767px){
+          width: get-spvh(296px);
+          height: get-spvh(207px);
+        }
       }
     }
     .txt-box {
@@ -454,9 +453,17 @@
     }
     .new-posts{
       margin-top: get-vh(60px);
+      @media screen and (max-width: 767px){
+        width: $sp-contents;
+        margin: get-spvh(63px) auto;
+      }
       img{
         width: get-vh(300px);
         height: get-vh(200px);
+        @media screen and (max-width: 767px){
+          width: 100%;
+          height: auto;
+        }
       }
       .title_box{
         h2{
@@ -475,10 +482,17 @@
     }
     .article__description{
       margin: get-vh(8px) 0 auto;
+      @media screen and (max-width: 767px){
+        margin: get-spvh(8px) 0;
+      }
     }
     .article_detail{
       width: get-vw(287px);
       margin: 0 get-vw(24px);
+      @media screen and (max-width: 767px){
+        width: 100%;
+        margin: get-spvh(12px) 0 get-spvh(32px);
+      }
     }
     .to-archive{
       color: $accent_red;
@@ -488,6 +502,9 @@
       padding: get-vh(8px) 0;
       height: fit-content;
       margin: 0 get-vh(32px);
+      @media screen and (max-width: 767px){
+        margin: unset;
+      }
     }
   }
   .date {
@@ -510,7 +527,6 @@
     justify-content: center;
     line-height: 2.57;
     letter-spacing: 1.4px;
-    color: #fff;
   }
   .top-margin{
     margin-top: get-vw(120px);

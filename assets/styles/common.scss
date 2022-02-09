@@ -7,7 +7,7 @@ html, body{
   font-family: $noto;
   font-size: 20px;
   font-weight: 400;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 767px){
     font-size: 16px;
   }
   &.bold{
@@ -16,7 +16,7 @@ html, body{
   .roboto{
     font-family: $roboto;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .pc{
       display: none;
     }
@@ -29,7 +29,7 @@ html, body{
 }
 .page-title{
   font-size: 22px;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 767px){
     font-size: 18px;
   }
 }
@@ -55,7 +55,7 @@ ul{
 .responsive-container{
   width: $pc-contents;
   max-width: $pc-max;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 767px){
     width: responsive-vw(363px);
     margin: auto;
   }
@@ -73,8 +73,13 @@ ul{
   &.center-align{
     align-items: center;
   }
+  &.row-to-column{
+    @media screen and (max-width: 767px){
+      flex-flow: column;
+    }
+  }
   &.sp-column-reverse{
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       flex-flow: column-reverse;
     }
   }
@@ -92,7 +97,7 @@ a:hover{
   transform: translate(1px,1px);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
   .pc{
     display: none !important;
   }
