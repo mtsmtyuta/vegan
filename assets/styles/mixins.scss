@@ -7,7 +7,7 @@
   @return ($target/$vw-context) * 1vh;
 }
 @function get-spvh($target) {
-  $vw-context: (813*.01) * 1px;
+  $vw-context: (844*.01) * 1px;
   @return ($target/$vw-context) * 1vh;
 }
 

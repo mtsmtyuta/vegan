@@ -2,7 +2,7 @@
   <header class="header"
 
   >
-    <nuxt-link class="header-logo" to="/"><div class="en logo"><img src="~assets/img/logo_set.svg" alt=""></div></nuxt-link>
+    <nuxt-link class="header-logo" to="/"><div class="en logo"><img class="pc" src="~assets/img/logo_set.svg" alt=""><img class="sp" src="~assets/img/logo_symbol.svg" alt=""></div></nuxt-link>
 <!--    <nuxt-link class="header-logo" to="/"><div class="en logo"><img src="~assets/img/logo_set.svg" alt=""></div></nuxt-link>-->
     <ul class="header-nav pc">
 <!--      <li class="header-nav__item"><nuxt-link to="/about">ABOUT</nuxt-link></li>-->
@@ -33,13 +33,16 @@
     img{
       width: 210px;
       height: 48px;
+      @media screen and (max-width: 768px){
+       width: 100.24px;
+       height: 48.5px;
+      }
     }
     @media screen and (max-width: 768px) {
     }
   }
   .header {
     display: flex;
-    background-color: #FCFBF8;
     z-index: 99;
     position: absolute;
     flex-flow: column;
@@ -57,6 +60,9 @@
       align-items: center;
       img{
         margin-right: get-vw(12px);
+        @media screen and (max-width: 767px){
+          margin-right: responsive-vw(12px);
+        }
       }
       @media screen and (min-width: 1280px){
         font-size: 16px;
@@ -76,18 +82,21 @@
       list-style: none;
       &__item {
         margin: get-vw(24px) get-vw(36px);
+        @media screen and (max-width: 768px){
+            margin: responsive-vw(24px) 0;
+        }
       }
       &.bottom{
         margin-top: get-vh(240px);
+        @media screen and (max-width: 767px){
+          margin-top: get-spvh(146px);
+        }
       }
     }
     .logo {
       margin:get-vw(36px);
-    }
-    @media screen and (max-width: 768px) {
-      position: fixed;
-      .header-nav{
-        display: none;
+      @media screen and (max-width: 768px){
+        margin: responsive-vw(20px);
       }
     }
   }

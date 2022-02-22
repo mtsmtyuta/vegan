@@ -2,30 +2,25 @@
   <div class="sp hamburger">
     <nav>
       <div class="drawer">
-        <div class="drawer-content flex column">
-          <!--          <div class="img-box logo"></div>-->
-          <nav>
-            <nuxt-link @click.native="hamburger()" class="header-logo" to="/"><div class="en logo"><img src="~assets/img/logo_set.svg" alt=""></div></nuxt-link>
-
-            <ul>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/why-vegan">WHY VEGAN </nuxt-link><span class="jp">どうしてヴィーガンなの？</span></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/nutrition">NUTRITION </nuxt-link><span class="jp">栄養について学ぶ</span></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/recipes">RECIPES </nuxt-link><span class="jp">ヴィーガン料理をつくる</span></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/restaurants">RESTAURANTS </nuxt-link><span class="jp">外でヴィーガン料理を食べる</span></li>
-              <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/ox-life">OX LIFE </nuxt-link><span class="jp">よくある疑問の答えを知る</span></li>
-              <li  class="nav-link additional-pages"><nuxt-link @click.native="hamburger()" to="/posts/">ARCHIVE <span class="jp">記事一覧</span></nuxt-link></li>
-              <li  class="nav-link additional-pages"><nuxt-link class="pages" @click.native="hamburger()" to="/contact">CONTACT <span class="jp">OXに声をかける</span></nuxt-link></li>
-              <li class="nav-link additional-pages"><nuxt-link class="pages" @click.native="hamburger()" to="/about-us">ABOUT US <span class="jp">OXについて</span></nuxt-link></li>
-              <li class="nav-link additional-pages"><nuxt-link class="pages" @click.native="hamburger()" to="/privacy-policy">PRIVACY POLICY <span class="jp">プライバシーポリシー</span></nuxt-link></li>
+        <div class="drawer-content">
+          <nuxt-link @click.native="hamburger()" class="header-logo" to="/"><div class="en logo"><img src="~assets/img/logo_set.svg" alt=""></div></nuxt-link>
+            <ul class="header-nav">
+              <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/posts/why-vegan"><img src="~assets/icons/category_why_vegan.svg" alt="why_vegan">WHY VEGAN</nuxt-link></li>
+              <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/posts/nutrition"><img src="~assets/icons/category_nutrition.svg" alt="nutrition">NUTRITION</nuxt-link></li>
+              <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/posts/recipes"><img src="~assets/icons/category_recipes.svg" alt="recipes">RECIPES</nuxt-link></li>
+              <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/posts/restaurants"><img src="~assets/icons/category_restaurants.svg" alt="restaurants">RESTAURANTS</nuxt-link></li>
+              <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/posts/ox-life"><img src="~assets/icons/category_ox_life.svg" alt="ox_life">OX LIFE</nuxt-link></li>
             </ul>
-          </nav>
-          <div class="sns-links flex">
-          </div>
-          <!--          <a href="/privacy-policy" class="en policy">PRIVACY POLICY</a>-->
+            <ul class="header-nav bottom">
+              <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/posts">ARCHIVE</nuxt-link></li>
+              <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/writers">WRITER</nuxt-link></li>
+              <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/about-us">ABOUT US</nuxt-link></li>
+            </ul>
         </div>
       </div>
-      <div class="hamburger" @click="hamburger()">
+      <div class="hamburger_button" @click="hamburger()">
         <span class="hamburger__line hamburger__line--1"></span>
+        <span class="hamburger__line hamburger__line--2"></span>
         <span class="hamburger__line hamburger__line--3"></span>
       </div>
     </nav>
@@ -51,15 +46,12 @@
     overflow: hidden;
     font-size: responsive-vw(15px);
     z-index: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 0;
     width: 0;
     pointer-events: none;
     background-color: $bg;
     &-content{
-      margin: 0 auto 0 responsive-vw(36px);
+      margin: responsive-vw(20px);
     }
     .title a{
       font-size: responsive-vw(20px);
@@ -105,33 +97,42 @@
 
   }
   .hamburger{
-    z-index: 1000;
+    z-index: 800;
     position: absolute;
     top: 0;
-    right: 0;
-    height: 7vh;
+  }
+  .hamburger_button{
+    position: absolute;
+    z-index: 999;
+    top: get-spvh(90px);
+    left: responsive-vw(20px);
+    height: get-spvh(48px);
   }
   .hamburger__line {
     position: absolute;
-    height: 1px;
-    right: tab-vw(48px);
+    height: 2px;
     background-color: $black;
-    /*background-color: #707070;*/
     transition: all .6s;
   }
   .hamburger__line--1 {
-    top: 60%;
-    width: responsive-vw(45px);
+    top: 50%;
+    width: responsive-vw(24px);
+  }
+  .hamburger__line--2 {
+    top: 65%;
+    width: responsive-vw(24px);
   }
   .hamburger__line--3 {
     top: 80%;
-    width: responsive-vw(45px);
+    width: responsive-vw(24px);
   }
   .wrapper{
     z-index: 10;
     position: relative;
   }
   .nav-open{
+    height: 100vh;
+    overflow: hidden;
     article{
       display: none;
     }
@@ -158,7 +159,9 @@
       transform: rotate(35deg);
       top: 60%;
     }
-
+    .hamburger__line--2{
+      display: none;
+    }
     .hamburger__line--3 {
       transform: rotate(-35deg);
       top: 60%;

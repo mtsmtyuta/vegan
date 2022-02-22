@@ -53,15 +53,9 @@
         // }
     }
 </script>
-<!--<style lang="scss">-->
-
-<!--  #header {-->
-<!--    transition: .6s cubic-bezier(.4, 1, .2, 1);-->
-<!--  }-->
-
-<!--  .head-animation {-->
-<!--    transform: translateY(-100%);-->
-<!--  }-->
-
-<!--</style>-->
+<style lang="scss">
+  .layout{
+    background-color: $bg;
+  }
+</style>
 
