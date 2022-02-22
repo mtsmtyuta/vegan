@@ -393,7 +393,9 @@
     top: get-vh(108px);
     display: flex;
     flex-flow: column-reverse;
-    gap: get-vw(16px);
+    p + p{
+      margin-right: get-vw(16px);
+    }
     @media screen and (max-width: 767px){
       top: get-spvh(80px);
     }
@@ -415,7 +417,7 @@
       font-size: 50px;
       width: 30px;
       white-space: nowrap;
-      z-index: 999;
+      /*z-index: 999;*/
       position: relative;
       margin: 0 auto 0 0;
       line-height: 64px;

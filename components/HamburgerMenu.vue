@@ -5,7 +5,7 @@
         <div class="drawer-content flex column">
           <!--          <div class="img-box logo"></div>-->
           <nav>
-            <nuxt-link @click.native="hamburger()" to="/"><div class="title img-box logo"></div></nuxt-link>
+            <nuxt-link @click.native="hamburger()" class="header-logo" to="/"><div class="en logo"><img src="~assets/img/logo_set.svg" alt=""></div></nuxt-link>
 
             <ul>
               <li  class="nav-link"><nuxt-link @click.native="hamburger()" to="/posts/why-vegan">WHY VEGAN </nuxt-link><span class="jp">どうしてヴィーガンなの？</span></li>
@@ -57,7 +57,7 @@
     height: 0;
     width: 0;
     pointer-events: none;
-    background-color: #0f0f0f;
+    background-color: $bg;
     &-content{
       margin: 0 auto 0 responsive-vw(36px);
     }
@@ -70,7 +70,6 @@
     .jp{
       font-weight: 200;
       font-size: responsive-vw(12px);
-      color: $gray;
     }
     .nav-link{
       margin: get-spvh(10px) 0;
@@ -116,7 +115,7 @@
     position: absolute;
     height: 1px;
     right: tab-vw(48px);
-    background-color: #fff;
+    background-color: $black;
     /*background-color: #707070;*/
     transition: all .6s;
   }
