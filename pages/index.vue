@@ -70,20 +70,27 @@
 
             </div>
             <div class="txt-box bottom-ground"
-                 data-aos="fade-up"
-                 data-aos-duration="5000"
-                 data-aos-delay="1000"
             >
-<!--              <p>植物を中心とした食事に切り替えると、最適な燃料が得られることで、血流が増加し、</p>-->
-<!--              <p>筋肉がより効率的になり、パフォーマンスが大幅に向上し、炎症を抑えることで回復が速くなります。</p>-->
+<!--              <div class="txt-box bottom-ground"-->
+<!--                 data-aos="fade-up"-->
+<!--                 data-aos-duration="5000"-->
+<!--                 data-aos-delay="1000"-->
+<!--            >-->
+              <div class="img-box berries">
+                <img src="~assets/img/berries.jpg" alt="berries">
+              </div>
+              <h2 class="green">UNLEASH YOUR POTENTIAL</h2>
               <p>動物性食品の摂取を減らし、植物性食品中心の食事に切り替えることで、</p>
               <p>あなたの全般的な健康だけでなく運動や知的パフォーマンスを大幅に向上させることができます。</p>
               <p>そのことはアスリートだけでなく、人生と地球を愛する全ての人に手にしてもらいたいメリットです。</p>
-              <p class="top-margin">実践の為に必要なすべてのレシピやヒント、疑問への答えはここで入手してください。</p>
-            </div>
+              <p>実践の為に必要なすべてのレシピやヒント、疑問への答えはここで入手してください。</p>
+              </div>
           </div>
         </div>
-<!--        <RecentPosts class="sp" :posts="posts"></RecentPosts>-->
+        <div class="img-box greens">
+          <img src="~assets/img/greens.jpg" alt="greens">
+        </div>
+        <!--        <RecentPosts class="sp" :posts="posts"></RecentPosts>-->
 
 
       </client-only>
@@ -530,18 +537,32 @@
   }
 
   .bottom-ground{
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: left;
     line-height: 2.57;
     letter-spacing: 1.4px;
+    .green{
+      font-size: get-vw(42px);
+      position: relative;
+      z-index: 11;
+    }
+    .berries{
+      width: fit-content;
+      margin-left: auto;
+      position: relative;
+      top: 106px;
+      img{
+        width: get-vw(636px);
+        height: get-vw(393px);
+      }
+    }
   }
-  .top-margin{
-    margin-top: get-vw(120px);
+  .greens{
+    margin: 72px 0 104px;
+    img{
+      width: get-vw(720px);
+      height: get-vw(449px);
+    }
   }
-
   .ig{
     @include width-height(15.4px, 15.4px);
     background-image: url('~assets/icons/instagram-icon.svg');
