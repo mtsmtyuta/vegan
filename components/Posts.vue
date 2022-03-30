@@ -41,7 +41,7 @@
                     "arrow" : true,
                     "responsive": [
                         {
-                            "breakpoint": 768,
+                            "breakpoint": 767,
                             "settings": {
                                 "slidesToShow": 1,
                                 "centerPadding": "30px",
@@ -67,12 +67,12 @@
   .post-preview{
     width: 80vw;
     margin: auto;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: 100%;
     }
     .slick-dots{
       bottom: -40px;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         bottom: responsive-vw(-48px);
       }
     }
@@ -91,7 +91,7 @@
     /*width: get-vw(350px);*/
     width: get-vw(330px);
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       width: responsive-vw(330px);
     }
 
@@ -108,7 +108,7 @@
       color: #191919;
       font-size: 1.3vw;
       margin: get-vh(5px) 0;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(14px);
       }
     }
@@ -116,7 +116,7 @@
       background-size: cover;
       width: get-vw(300px);
       height: get-vw(200px);
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         @include res-width-height(326px, 217px);
       }
     }
@@ -124,7 +124,7 @@
       color: #999999;
       letter-spacing: 1px;
       font-size: get-vw(10px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(10px);
       }
     }
@@ -159,7 +159,7 @@
       height: get-vw(24px);
       max-width: 30px;
       max-height: 30px;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         top: 5px;
         left: 6px;
         position: absolute;
@@ -167,7 +167,7 @@
         height: 11px;
       }
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: 11px;
       height: 11px;
     }
@@ -178,14 +178,14 @@
     /*background-color: #b1b1b1;*/
     /*border-radius: 50%;*/
     margin: auto;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: 11px;
       height: 11px;
 
     }
     &:before{
       /*content: "";*/
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       color: #191919;
       font-size: responsive-vw(12px);
     }

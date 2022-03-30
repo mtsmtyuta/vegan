@@ -88,7 +88,7 @@
     /*background-color: #f2f2f2;*/
     padding-top: get-vw(133px);
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       padding-top: 0;
     }
     .content{
@@ -99,7 +99,7 @@
       text-align: left;
       color: #191919;
       font-weight: 300;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(13px);
       }
     }
@@ -111,7 +111,7 @@
     border-bottom: 1px solid #D9D9D9;
     padding: get-vw(36px) 0;
     margin-bottom: get-vw(36px);
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       padding: responsive-vw(36px) 0;
       margin-bottom: responsive-vw(36px);
     }
@@ -150,14 +150,14 @@
     p, ul, ol{
       margin-bottom: get-vw(30px);
       line-height: 40px;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         margin-bottom: 30px;
         line-height: 30px;
       }
     }
     ol{
      img{
-       @media screen and (max-width: 768px){
+       @media screen and (max-width: 767px){
         position: relative;
          right: 40px;
        }
@@ -166,13 +166,13 @@
     iframe{
       width: 100%;
       height: get-vw(346px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         height: responsive-vw(201px);
       }
     }
     br{
       margin-bottom: get-vw(30px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         margin-bottom: responsive-vw(15px);
       }
     }
@@ -184,7 +184,7 @@
       @media screen and (max-width: 1280px) {
         font-size: 28px;
       }
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(20px);
         margin: responsive-vw(20px) 0 30px;
       }
@@ -196,7 +196,7 @@
       @media screen and (max-width: 1280px) {
         font-size: 18px;
       }
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 767px){
         font-size: responsive-vw(18px);
       }
     }
@@ -206,7 +206,7 @@
     .title{
       font-size: get-vw(40px);
       line-height: 1.5;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(25px);
       }
     }
@@ -214,7 +214,7 @@
       color: #999999;
       letter-spacing: 1px;
       font-size: get-vw(14px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(10px);
       }
     }
@@ -222,7 +222,7 @@
       margin-top: get-vw(42px);
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: 100%;
     }
     ul{
@@ -231,7 +231,7 @@
       background-color: #f7f9f9;
     }
     .section{
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         width: $sp-contents;
         margin: auto;
       }
@@ -243,7 +243,7 @@
     height: get-vw(600px);
     /*max-width: 620px;*/
     margin-bottom: get-vw(42px);
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: 100%;
       height: responsive-vw(275px);
       margin-bottom: responsive-vw(36px);
@@ -255,7 +255,7 @@
       @media screen and (max-width: 1440px){
         font-size: 18px;
       }
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(16px);
       }
     }
@@ -270,13 +270,13 @@
     border-bottom: 1px solid #d5d5d5;
     gap: 20px;
     margin-bottom: get-vw(40px);
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       padding: responsive-vw(40px) 0;
       margin-bottom: responsive-vw(40px);
     }
     a strong{
       font-size: get-vw(18px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(16px);
       }
     }
@@ -286,7 +286,7 @@
   }
   .map-box{
     width: get-vw(290px);
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: 100%;
       margin-bottom: responsive-vw(30px);
     }

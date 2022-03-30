@@ -389,7 +389,7 @@
 
 <style lang="scss">
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 767px){
     [data-aos][data-aos][data-aos-delay="2000"].aos-animate{
       transition-delay: 0s !important;
     }
@@ -414,13 +414,13 @@
   .main-content{
     background-color: #f0f0f0;
     padding-bottom: get-vh(10px);
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       background-color: transparent;
     }
   }
   .top{
     position: relative;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       width: 100%;
     }
     h1{
@@ -431,7 +431,7 @@
       position: relative;
       margin: 0 auto 0 0;
       line-height: 64px;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: 30px;
         line-height: 40px;
         bottom: get-spvh(150px);
@@ -458,7 +458,7 @@
     .txt-box {
       width: 92vw;
       margin-left: auto;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         width: $sp-contents;
         margin: auto;
       }
@@ -540,19 +540,34 @@
     text-align: left;
     line-height: 2.57;
     letter-spacing: 1.4px;
+    @media screen and (max-width: 767px){
+      padding: 0 30px;
+    }
     .green{
       font-size: get-vw(42px);
       position: relative;
       z-index: 11;
+      @media screen and (max-width: 767px){
+        font-size: 28px;
+        line-height: 1.8;
+      }
     }
     .berries{
       width: fit-content;
       margin-left: auto;
       position: relative;
       top: 106px;
+      @media screen and (max-width: 767px){
+          top: 0;
+          left: 30px;
+      }
       img{
         width: get-vw(636px);
         height: get-vw(393px);
+        @media screen and (max-width: 767px){
+            width: responsive-vw(290px);
+            height: responsive-vw(179px);
+        }
       }
     }
   }
@@ -561,12 +576,16 @@
     img{
       width: get-vw(720px);
       height: get-vw(449px);
+      @media screen and (max-width: 767px){
+          width: responsive-vw(290px);
+          height: responsive-vw(180px);
+      }
     }
   }
   .ig{
     @include width-height(15.4px, 15.4px);
     background-image: url('~assets/icons/instagram-icon.svg');
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       @include res-width-height(15px, 15px)
     }
   }
@@ -574,7 +593,7 @@
   .tw{
     @include width-height(15.4px, 12.5px);
     background-image: url('~assets/icons/twitter-icon.svg');
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       @include res-width-height(15.8px, 12.8px)
     }
 
@@ -582,41 +601,41 @@
 
   .whyvegan-bg{
     background-image: url('~assets/img/whyvegan.jpg');
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       background-image: url('~assets/img/whyvegan-sp.jpg');
     }
   }
   .nutrition-bg{
     background-image: url('~assets/img/nutrition.jpg');
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       background-image: url('~assets/img/nutrition-sp.jpg');
     }
 
   }
   .recipe-bg{
     background-image: url('~assets/img/recipe.jpg');
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       background-image: url('~assets/img/recipe-sp.jpg');
     }
 
   }
   .restaurant-bg{
     background-image: url('~assets/img/restaurant.jpg');
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       background-image: url('~assets/img/restaurant-sp.jpg');
     }
 
   }
   .ox-life-bg{
     background-image: url('~assets/img/faq.jpg');
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       background-image: url('~assets/img/faq-sp.jpg');
     }
 
   }
   .introduction{
     padding: get-vh(132px) 0 get-vh(115px);
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       padding: get-vh(74px) 0 get-vh(61px);
     }
   }

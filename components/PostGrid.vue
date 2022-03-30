@@ -61,7 +61,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       display: block;
       margin: auto;
     }
@@ -72,7 +72,7 @@
       margin: 0 get-vw(21px);
       width: get-vw(270px);
       height: get-vw(230px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         width: 100%;
         /*height: responsive-vw(350px);*/
         height: unset;
@@ -87,7 +87,7 @@
         height: get-vw(191px);
 
 
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 767px){
           width: 100%;
           height: unset;
 

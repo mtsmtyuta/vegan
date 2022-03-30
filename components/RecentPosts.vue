@@ -28,18 +28,18 @@
   .recent-posts{
     .comp-section-title{
       margin: get-vw(85px) auto;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         margin: responsive-vw(57px) auto responsive-vw(31px);
       }
     }
     div.button{
       margin: get-vw(85px) auto;
       border: 1px solid #cbcbcb;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         margin: 19vw auto responsive-vw(120px);
       }
     }
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       .slick-track{
         height: responsive-vw(312px);
       }

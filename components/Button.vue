@@ -35,13 +35,13 @@
     }
     &.black{
       border: solid 1px #b1b1b1;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         border: none;
       }
     }
     &.white{
       border: solid 0.5px #8b8b8b;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         border: none;
       }
     }
@@ -54,7 +54,7 @@
       font-size: get-vw(13px);
       letter-spacing: get-vw(0.65px);
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       @include res-width-height(305px, 51px);
       background-color: $main-color;
       color: #fff;

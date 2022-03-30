@@ -60,7 +60,7 @@
   }
 </script>
 <style lang="scss" scoped>
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 767px){
     .header{
       background-color: transparent;
     }

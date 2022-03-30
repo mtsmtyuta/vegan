@@ -39,7 +39,7 @@
   .GMap__Wrapper{
     width: get-vw(290px);
     height: get-vw(224px);
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: 100%;
       height: responsive-vw(190px);
     }

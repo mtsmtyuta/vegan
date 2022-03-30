@@ -36,7 +36,7 @@
     .author{
       .flex-right{
         width: 85%;
-        @media screen and (max-width: 768px){
+        @media screen and (max-width: 767px){
           width: 80%;
         }
       }
@@ -52,20 +52,20 @@
     /*max-width: 620px;*/
     margin: auto;
     padding: get-vw(60px) 0 get-vw(108px);
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       /*width: responsive-vw(310px);*/
       width: 100%;
     }
     .txt-box{
       width: get-vw(400px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         width: responsive-vw(186px);
       }
     }
     /*.sns{*/
     /*  !*width: get-vw(62px);*!*/
     /*  margin-left: get-vw(62px);*/
-    /*  @media screen and (max-width: 768px){*/
+    /*  @media screen and (max-width: 767px){*/
     /*    !*width: responsive-vw(44px);*!*/
     /*    margin-left: get-vw(30px);*/
     /*  }*/
@@ -73,7 +73,7 @@
     .ig{
       background-image: url('~assets/icons/instagram-icon_black.svg');
       margin-left: get-vw(26px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         margin-left: responsive-vw(30px);
 
       }
@@ -85,7 +85,7 @@
       font-size: get-vw(15px);
       font-weight: 700;
       color: #191919;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(15px);
         font-weight: 700;
       }
@@ -98,7 +98,7 @@
       margin-top: get-vw(12px);
       letter-spacing: get-vw(0.3px);
       font-size: get-vw(13px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(12px);
         color: #191919;
         letter-spacing: responsive-vw(0.25px);
@@ -109,7 +109,7 @@
     width: get-vw(62px);
     height: get-vw(62px);
     border-radius: 50%;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: responsive-vw(60px);
       height: responsive-vw(60px);
     }

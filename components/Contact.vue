@@ -71,7 +71,7 @@
         border: solid 0.5px #f2f2f260;
       }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       /*padding: get-vh(89px) 0;*/
       .form{
         width: responsive-vw(362px);

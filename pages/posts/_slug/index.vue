@@ -107,7 +107,7 @@
     width: 80vw;
     margin: get-vw(115px) auto 0;
     border-top: 1px solid #b7b7b7;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       margin: responsive-vw(76px) auto 0;
       width: responsive-vw(326px);
       .section-title{

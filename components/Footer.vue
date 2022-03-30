@@ -29,7 +29,7 @@
     background-color: #191919;
     .ig{
       margin-right: get-vw(42px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         margin-right: 9vw;
       }
     }
@@ -41,7 +41,7 @@
     width: 90%;
     margin: auto;
     justify-content: space-between;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       height: auto;
       flex-direction: column;
       justify-content: center;
@@ -63,7 +63,7 @@
   .footer-links{
     width: 75%;
     justify-content: space-between;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       margin: responsive-vw(84px) auto;
     }
     a{
@@ -73,7 +73,7 @@
       @media screen and (min-width: 1440px){
         font-size: 14px;
       }
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(15px);
         letter-spacing: responsive-vw(0.8px);
         &.pages{

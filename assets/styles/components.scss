@@ -14,7 +14,7 @@
   margin-bottom: get-vh(12px);
   color: #fff;
   transition: all 0.2s ease-out;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin: 0 auto;
     height: responsive-vw(562px);
     background-size: cover;
@@ -68,7 +68,7 @@
       font-size: get-vw(53px);
       letter-spacing: get-vw(2.65px);
     font-weight: normal;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: responsive-vw(30px);
       font-weight: bold;
       margin: responsive-vw(26px) 0 responsive-vw(6px);
@@ -87,7 +87,7 @@
   }
   .button{
     margin-top: get-vh(30px);
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
   }
@@ -103,7 +103,7 @@
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       box-shadow: 3px 15px 30px 0 rgba(0, 0, 0, 0.16);
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         box-shadow: none;
         margin: auto;
         border-radius: 0;
@@ -112,7 +112,7 @@
       .content-container{
         //padding: get-vh(151px) 0 0 get-vw(187px);
         padding-left: get-vw(187px);
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           padding: 0;
         }
       }
@@ -125,7 +125,7 @@
       padding-left: get-vw(680px);
       box-shadow: -3px 15px 30px 0 rgba(0, 0, 0, 0.16);
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         box-shadow: none;
         margin: auto;
         //border-radius: 5px;
@@ -140,7 +140,7 @@
 .comp-section-title{
   text-align: center;
   color: #292929;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 767px){
     width: responsive-vw(305px);
     text-align: left;
     margin: auto;
@@ -148,13 +148,13 @@
   .section-title{
     font-size: get-vw(53px);
     letter-spacing: get-vw(2.65px);
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: responsive-vw(61px);
       letter-spacing: 2.2px;
       line-height: 1.05;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     line-height: 2.08;
   }
   hr{
@@ -162,13 +162,13 @@
     margin: get-vh(30px) auto;
     border: solid 1px $main-color;
     background-color: $main-color;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: responsive-vw(45px);
       margin: responsive-vw(31px) auto responsive-vw(31px) 0;
     }
   }
   h3{
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: responsive-vw(266px);
       font-weight: 200;
       letter-spacing: responsive-vw(0.33px);
@@ -188,13 +188,13 @@
   align-items: center;
   display: flex;
   color: white;
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 767px){
     //height: get-vh(158px);
     height: get-spvh(550px);
   }
   &.why-vegan {
     background-image: url("~@/assets/img/cat-whyvegan.jpg");
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       background-image: url("~@/assets/img/sp-cat-whyvegan.jpg");
     }
   }
@@ -202,7 +202,7 @@
     background-image: url("~@/assets/img/cat-archive-pc.jpg");
     height: get-vh(388px);
     width: 100%;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       background-image: url("~@/assets/img/cat-archive-sp.jpg");
       height: 34vh;
     }
@@ -212,28 +212,28 @@
   }
   &.nutrition {
     background-image: url('~@/assets/img/cat-nutrition.jpg');
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       background-image: url("~@/assets/img/sp-cat-nutrition.jpg");
     }
   }
 
   &.recipe {
     background-image: url('~@/assets/img/cat-recipe.jpg');
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       background-image: url("~@/assets/img/sp-cat-recipe.jpg");
     }
   }
 
   &.restaurant {
     background-image: url('~@/assets/img/cat-restaurant.jpg');
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       background-image: url("~@/assets/img/sp-cat-restaurant.jpg");
     }
   }
 
   &.faq {
     background-image: url('~@/assets/img/cat-faq.jpg');
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       background-image: url("~@/assets/img/sp-cat-faq.jpg");
     }
   }

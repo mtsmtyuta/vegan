@@ -36,7 +36,7 @@
   .related-posts{
     width: get-vw(620px);
     margin: auto;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: $sp-contents;
       margin: auto;
     }
@@ -44,14 +44,14 @@
       font-size: get-vw(18px);
       line-height: 1.25;
       font-weight: 700;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(14px);
         /*margin-top: responsive-vw(11px);*/
       }
     }
     h2{
       margin-bottom: get-vw(15px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-weight: 500;
         margin-bottom: responsive-vw(15px);
       }
@@ -75,7 +75,7 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(12px);
       }
     }
@@ -89,7 +89,7 @@
       border-bottom: 1px solid #d9d9d9;
       /*margin-bottom: get-vw(15px);*/
       padding: get-vw(21px) 0;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         /*margin-bottom: responsive-vw(15px);*/
         padding: responsive-vw(15px) 0;
       }
@@ -102,14 +102,14 @@
     }
     .left{
       width: 80%;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         width: 72%;
       }
     }
     img{
       width: get-vw(150px);
       height: get-vw(100px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         @include res-width-height(100px, 67px);
       }
     }

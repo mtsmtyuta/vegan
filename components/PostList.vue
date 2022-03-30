@@ -36,7 +36,7 @@
   .post-list{
     width: get-vw(620px);
     margin: auto;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
       width: responsive-vw(326px);
       margin: 0 auto responsive-vw(78px);
     }
@@ -44,14 +44,14 @@
       font-size: get-vw(18px);
       line-height: 1.25;
       font-weight: 700;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(14px);
         margin-top: responsive-vw(8px);
       }
     }
     h2{
       margin-bottom: get-vw(15px);
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-weight: 500;
       }
     }
@@ -73,7 +73,7 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         font-size: responsive-vw(12px);
       }
     }
@@ -87,7 +87,7 @@
       border-bottom: 1px solid #d9d9d9;
       /*margin-bottom: get-vw(15px);*/
       padding: get-vw(21px) 0;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         /*margin-bottom: responsive-vw(15px);*/
         padding: responsive-vw(15px) 0;
       }
@@ -101,12 +101,12 @@
     }
     .left{
       width: 80%;
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         width: 65%;
       }
     }
     img{
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767px){
         @include res-width-height(100px, 67px);
       }
     }
