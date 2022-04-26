@@ -97,59 +97,72 @@
 
 
             <div class="category_container">
+                <div class="txt-box">
+                    <h2>WHAT TO LEARN TODAY?</h2>
+                    <p>何をお探しですか？</p>
+                </div>
                 <div class="content-container">
-                    <div class="txt-box flex column">
-                        <h3 class="">WHY VEGAN</h3>
-                        <p class="strong">どうしてヴィーガンなの？</p>
-                        <p class="category-description">病気のリスクを減らし、エネルギッシュでパフォーマンスの<br>
-                            高い生活をおくる為には食生活を変えてみましょう。</p>
-                        <Button link="/posts/why-vegan" text="理由を学ぶ" color="white" />
+                    <div class="category_item">
+                        <img src="~assets/icons/category_why_vegan_white.svg" alt="why_vegan">
+                        <div class="txt-box flex column">
+                            <h3 class="">WHY VEGAN</h3>
+                            <p class="strong">どうしてヴィーガンなの？</p>
+                            <p class="category-description">病気のリスクを減らし、エネルギッシュでパフォーマンスの
+                                高い生活をおくる為には食生活を変えてみましょう。</p>
+                            <Button link="/posts/why-vegan" text="理由を学ぶ" color="white" />
+                        </div>
+                    </div>
+
+                    <div class="category_item">
+                        <img src="~assets/icons/category_nutrition_white.svg" alt="nutrition">
+
+                        <div class="txt-box flex column">
+                            <h3 class="">NUTRITION</h3>
+                            <p class="strong">栄養について学ぶ</p>
+                            <p class="category-description">動物性食品から摂取できる必須栄養素の全ては、植物だけでも摂取できます。神話に騙されないために栄養について学びましょう。</p>
+                            <Button link="/posts/nutrition" text="栄養に詳しくなる" color="white" />
+                        </div>
+                    </div>
+                    <div class="category_item">
+                        <img src="~assets/icons/category_recipes_white.svg" alt="recipes">
+
+                        <div class="txt-box flex column">
+                            <div class="img-box recipe-icon"></div>
+                            <h3 class="">RECIPE</h3>
+                            <p class="strong">ヴィーガン料理をつくる</p>
+                            <p class="category-description">
+                                チャンピオンのような食事を実践する為のレシピやヒントを
+                                手に入れましょう。</p>
+                            <Button link="/posts/recipes" text="料理してみる" color="white" />
+
+                        </div>
+                    </div>
+
+                    <div class="category_item">
+                        <img src="~assets/icons/category_restaurants_white.svg" alt="restaurants">
+                        <div class="txt-box flex column">
+                            <div class="img-box restaurant-icon"></div>
+                            <h3 class="">RESTAURANT</h3>
+                            <p class="strong">外でヴィーガン料理を食べる</p>
+                            <p class="category-description">ヴィーガン向けの飲食店は日本ではまだまだ多くはありません。
+                                わたしたちが見つけたオススメの店を紹介していきます。</p>
+                            <Button link="/posts/restaurants" text="食べに行こう" color="white" />
+
+                        </div>
+                    </div>
+
+                    <div class="category_item">
+                        <img src="~assets/icons/category_ox_life_white.svg" alt="ox_life">
+                        <div class="txt-box flex column">
+                            <div class="img-box ox-life-icon"></div>
+                            <h3 class="">OX LIFE</h3>
+                            <p class="strong">ヴィーガン生活</p>
+                            <p class="category-description">ヴィーガン生活をする中で出てくる疑問に答えたり日々の生活に役立つ情報を紹介します。</p>
+                            <Button link="/posts/ox-life" text="答えを探す" color="white" />
+                        </div>
                     </div>
                 </div>
 
-
-                <div class="content-container">
-                    <div class="txt-box flex column">
-                        <h3 class="">NUTRITION</h3>
-                        <p class="strong">栄養について学ぶ</p>
-                        <p class="category-description">動物性食品から摂取できる必須栄養素の全ては、植物だけでも摂取できます。神話に騙されないために栄養について学びましょう。</p>
-                        <Button link="/posts/nutrition" text="栄養に詳しくなる" color="white" />
-                    </div>
-                </div>
-                <div class="flex-part content-container">
-                    <div class="txt-box flex column">
-                        <div class="img-box recipe-icon"></div>
-                        <h3 class="">RECIPE</h3>
-                        <p class="strong">ヴィーガン料理をつくる</p>
-                        <p class="category-description">
-                            チャンピオンのような食事を実践する為のレシピやヒントを<br>
-                            手に入れましょう。</p>
-                        <Button link="/posts/recipes" text="料理してみる" color="white" />
-
-                    </div>
-                </div>
-
-                <div class="flex-part content-container">
-                    <div class="txt-box flex column">
-                        <div class="img-box restaurant-icon"></div>
-                        <h3 class="">RESTAURANT</h3>
-                        <p class="strong">外でヴィーガン料理を食べる</p>
-                        <p class="category-description">ヴィーガン向けの飲食店は日本ではまだまだ多くはありません。<br>
-                            わたしたちが見つけたオススメの店を紹介していきます。</p>
-                        <Button link="/posts/restaurants" text="食べに行こう" color="white" />
-
-                    </div>
-                </div>
-
-                <div class="flex-part content-container ">
-                    <div class="txt-box flex column">
-                        <div class="img-box ox-life-icon"></div>
-                        <h3 class="">OX LIFE</h3>
-                        <p class="strong">ヴィーガン生活</p>
-                        <p class="category-description">ヴィーガン生活をする中で出てくる疑問に答えたり日々の生活に役立つ情報を紹介します。</p>
-                        <Button link="/posts/ox-life" text="答えを探す" color="white" />
-                    </div>
-                </div>
                 <!--          <PostList class=" sp" :post="whyVegan.slice(0,3)" />-->
                 <!--      <RecentPosts class="pc" :posts="posts"></RecentPosts>-->
             </div>
@@ -160,9 +173,6 @@
         </div>
 
     </div>
-
-
-
 </template>
 
 
@@ -452,44 +462,44 @@ export default {
 
 }
 
-.whyvegan-bg{
-    background-image: url('~assets/img/whyvegan.jpg');
-    @media screen and (max-width: 767px) {
-        background-image: url('~assets/img/whyvegan-sp.jpg');
-    }
-}
-.nutrition-bg{
-    background-image: url('~assets/img/nutrition.jpg');
-    @media screen and (max-width: 767px) {
-        background-image: url('~assets/img/nutrition-sp.jpg');
-    }
-
-}
-.recipe-bg{
-    background-image: url('~assets/img/recipe.jpg');
-    @media screen and (max-width: 767px) {
-        background-image: url('~assets/img/recipe-sp.jpg');
+.category_container{
+    background-color: $main-color;
+    color: white;
+    padding: 80px;
+    h2, h3{
+        font-size: 32px;
+        margin-bottom: 8px;
+        @media screen and (max-width: 767px){
+            font-size: 24px;
+        }
     }
 
-}
-.restaurant-bg{
-    background-image: url('~assets/img/restaurant.jpg');
-    @media screen and (max-width: 767px) {
-        background-image: url('~assets/img/restaurant-sp.jpg');
+    .txt-box{
+        margin-left: auto;
+        width: get-vw(1020px);
     }
-
-}
-.ox-life-bg{
-    background-image: url('~assets/img/faq.jpg');
-    @media screen and (max-width: 767px) {
-        background-image: url('~assets/img/faq-sp.jpg');
+    .content-container{
+        margin-left: auto;
+        width: get-vw(1060px);
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (max-width: 767px){
+            width: 100%;
+            padding: 30px;
+        }
     }
-
-}
-.introduction{
-    padding: get-vh(132px) 0 get-vh(115px);
-    @media screen and (max-width: 767px){
-        padding: get-vh(74px) 0 get-vh(61px);
+    .category_item{
+        width: calc(50% - 80px);
+        margin: 40px;
+        display: flex;
+        img{
+            width: 44px;
+            height: 44px;
+            margin-right: 24px;
+        }
+    }
+    .category-description{
+        margin: 24px 0;
     }
 }
 

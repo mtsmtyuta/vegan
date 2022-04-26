@@ -5,10 +5,10 @@ html, body{
 
 * {
   font-family: $noto;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   @media screen and (max-width: 767px){
-    font-size: 16px;
+    font-size: 14px;
   }
   &.bold{
     font-weight: bold;

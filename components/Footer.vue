@@ -1,91 +1,53 @@
 <template>
-  <footer>
-    <div class="footer-content flex"
+    <footer class="footer"
+
     >
-      <nuxt-link to="/"><div class="img-container img-box logo"></div></nuxt-link>
-      <ul class="footer-links flex">
-        <li class="footer-links__item"><nuxt-link to="/posts/why-vegan">WHY VEGAN</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/posts/nutrition">NUTRITION</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/posts/recipes">RECIPES</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/posts/restaurants">RESTAURANTS</nuxt-link></li>
-        <li class="footer-links__item"><nuxt-link to="/posts/ox-life">OX LIFE</nuxt-link></li>
-        <li class="footer-links__item pc"><nuxt-link class="pages" to="/contact">CONTACT</nuxt-link></li>
-        <li class="footer-links__item pc"><nuxt-link class="pages" to="/privacy-policy">PRIVACY POLICY</nuxt-link></li>
-      </ul>
-      <div class="sns-links flex">
-        <a href="https://www.instagram.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box ig"></div></a>
-        <a href="https://twitter.com/ox_vegan_jp" target="_blank" rel="noopener"><div class="img-box tw"></div></a>
-      </div>
-    </div>
-  </footer>
+        <nuxt-link class="footer-logo" to="/"><div class="en logo"><img class="pc" src="~assets/img/logo_set.svg" alt=""><img class="sp" src="~assets/img/logo_symbol.svg" alt=""></div></nuxt-link>
+        <!--    <nuxt-link class="footer-logo" to="/"><div class="en logo"><img src="~assets/img/logo_set.svg" alt=""></div></nuxt-link>-->
+        <div>
+            <ul class="footer-nav pc">
+                <!--      <li class="footer-nav__item"><nuxt-link to="/about">ABOUT</nuxt-link></li>-->
+                <li class="footer-nav__item"><nuxt-link to="/posts/why-vegan"><img src="~assets/icons/category_why_vegan.svg" alt="why_vegan">WHY VEGAN</nuxt-link></li>
+                <li class="footer-nav__item"><nuxt-link to="/posts/nutrition"><img src="~assets/icons/category_nutrition.svg" alt="nutrition">NUTRITION</nuxt-link></li>
+                <li class="footer-nav__item"><nuxt-link to="/posts/recipes"><img src="~assets/icons/category_recipes.svg" alt="recipes">RECIPES</nuxt-link></li>
+                <li class="footer-nav__item"><nuxt-link to="/posts/restaurants"><img src="~assets/icons/category_restaurants.svg" alt="restaurants">RESTAURANTS</nuxt-link></li>
+                <li class="footer-nav__item"><nuxt-link to="/posts/ox-life"><img src="~assets/icons/category_ox_life.svg" alt="ox_life">OX LIFE</nuxt-link></li>
+            </ul>
+            <ul class="footer-nav bottom pc">
+                <li class="footer-nav__item"><nuxt-link to="/posts">ARCHIVE</nuxt-link></li>
+                <li class="footer-nav__item"><nuxt-link to="/writers">WRITER</nuxt-link></li>
+                <li class="footer-nav__item"><nuxt-link to="/about-us">ABOUT US</nuxt-link></li>
+            </ul>
+        </div>
+        <p>&copy; OX</p>
+    </footer>
 </template>
-
-<script>
-  export default { }
-</script>
-
 <style lang="scss">
-  footer{
-    background-color: #191919;
-    .ig{
-      margin-right: get-vw(42px);
-      @media screen and (max-width: 767px){
-        margin-right: 9vw;
-      }
-    }
-  }
-  .footer-content{
-    height: get-vh(307px);
-    align-items: center;
-    color: #fff;
-    width: 90%;
-    margin: auto;
-    justify-content: space-between;
-    @media screen and (max-width: 767px) {
-      height: auto;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      .logo{
-        display: none;
-      }
-      .footer-links{
-        flex-direction: column;
+    .footer{
+        display: flex;
+        padding: get-vw(36px);
         justify-content: space-between;
-        height: get-vh(349px);
-      }
-      .sns-links{
-        margin-top: get-vh(14px);
-        margin-bottom: get-vh(75px);
-      }
-    }
-  }
-  .footer-links{
-    width: 75%;
-    justify-content: space-between;
-    @media screen and (max-width: 767px){
-      margin: responsive-vw(84px) auto;
-    }
-    a{
-      display: block;
-      font-size: get-vw(10px);
-      letter-spacing: get-vw(1.13px);
-      @media screen and (min-width: 1440px){
-        font-size: 14px;
-      }
-      @media screen and (max-width: 767px){
-        font-size: responsive-vw(15px);
-        letter-spacing: responsive-vw(0.8px);
-        &.pages{
-          font-size: responsive-vw(12px);
+        &-nav{
+            display: flex;
+            &.bottom{
+                margin-top: 28px;
+                a{
+                    font-size: 16px;
+                }
+            }
+            a{
+                font-size: get-vw(20px);
+                margin: 0 get-vw(30px);
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: get-vw(16px);
+                }
+            }
         }
-      }
-      &:hover{
-        color: $main-color ;
-      }
     }
-    .nuxt-link-exact-active{
-      color: $main-color;
-    }
-  }
 </style>
+<script>
+export default {
+}
+</script>
