@@ -22,21 +22,18 @@ export default {
     background-color: white;
     display: flex;
     align-items: center;
+    @media screen and (max-width: 767px){
+        padding: 8px 30px;
+    }
     &:hover{
         background-position: left bottom;
         color: #fff;
     }
     &.black{
         border: solid 1px #b1b1b1;
-        @media screen and (max-width: 767px){
-            border: none;
-        }
     }
     &.white{
         color: $accent-red;
-        @media screen and (max-width: 767px){
-            border: none;
-        }
     }
     a{
         line-height: get-vw(48px);
@@ -48,19 +45,6 @@ export default {
         text-decoration: underline;
         text-decoration-thickness: 3px;
         text-underline-position: under;
-    }
-    @media screen and (max-width: 767px) {
-        @include res-width-height(305px, 51px);
-        background-color: $main-color;
-        color: #fff;
-        border-radius: responsive-vw(26px);
-        p{
-            font-size: responsive-vw(12px);
-            font-weight: normal;
-        }
-        a{
-            line-height: get-vh(59px);
-        }
     }
 }
 

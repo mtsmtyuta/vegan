@@ -466,6 +466,9 @@ export default {
     background-color: $main-color;
     color: white;
     padding: 80px;
+    @media screen and (max-width: 767px){
+        padding: 40px 20px;
+    }
     h2, h3{
         font-size: 32px;
         margin-bottom: 8px;
@@ -477,6 +480,9 @@ export default {
     .txt-box{
         margin-left: auto;
         width: get-vw(1020px);
+        @media screen and (max-width: 767px){
+            width: 100%;
+        }
     }
     .content-container{
         margin-left: auto;
@@ -485,13 +491,19 @@ export default {
         flex-wrap: wrap;
         @media screen and (max-width: 767px){
             width: 100%;
-            padding: 30px;
         }
     }
     .category_item{
         width: calc(50% - 80px);
         margin: 40px;
         display: flex;
+        @media screen and (max-width: 767px){
+            width: 100%;
+            margin: 24px 0;
+            .txt-box{
+                width: responsive-vw(270px);
+            }
+        }
         img{
             width: 44px;
             height: 44px;

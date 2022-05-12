@@ -33,10 +33,10 @@
     img{
       width: 210px;
       height: 48px;
-      @media screen and (max-width: 767px){
-       width: 100.24px;
-       height: 48.5px;
-      }
+       &.sp{
+           width: 100.24px;
+           height: 48.5px;
+       }
     }
     @media screen and (max-width: 767px) {
     }

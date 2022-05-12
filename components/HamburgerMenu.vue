@@ -104,7 +104,7 @@
   .hamburger_button{
     position: absolute;
     z-index: 999;
-    top: get-spvh(90px);
+    top: 80px;
     left: responsive-vw(20px);
     height: get-spvh(48px);
   }
