@@ -52,7 +52,7 @@
 
 <style lang="scss" >
   .gray{
-    padding-top: get-vw(26px);
+    padding-top: get-vw(14px);
     /*background-color: #f2f2f2;*/
     /*padding-bottom: get-vw(300px);*/
   }
@@ -69,9 +69,9 @@
       margin-bottom: get-vw(100px);
     }
     .slide-content{
-      margin: 0 get-vw(21px);
-      width: get-vw(270px);
-      height: get-vw(230px);
+      margin: 0 get-vw(8px);
+      width: get-vw(180px);
+      height: get-vw(178px);
       @media screen and (max-width: 767px){
         width: 100%;
         /*height: responsive-vw(350px);*/
@@ -81,10 +81,8 @@
         margin-top: responsive-vw(43px);
       }
       .img-box{
-        /*width: unset;*/
-        /*width: get-vw(270px);*/
-        width: get-vw(286px);
-        height: get-vw(191px);
+        width: get-vw(180px);
+        height: get-vw(120px);
 
 
         @media screen and (max-width: 767px){

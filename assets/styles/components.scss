@@ -40,66 +40,68 @@
   }
 }
 
-
-.hero-banner {
-  height: get-vh(388px);
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  color: white;
-  @media screen and (max-width: 767px){
-    //height: get-vh(158px);
-    height: get-spvh(550px);
-  }
-  &.why-vegan {
-    background-image: url("~@/assets/img/cat-whyvegan.jpg");
-    @media screen and (max-width: 767px){
-      background-image: url("~@/assets/img/sp-cat-whyvegan.jpg");
-    }
-  }
-  &.archive {
-    background-image: url("~@/assets/img/cat-archive-pc.jpg");
-    height: get-vh(388px);
-    width: 100%;
-    @media screen and (max-width: 767px){
-      background-image: url("~@/assets/img/cat-archive-sp.jpg");
-      height: 34vh;
-    }
-    h1{
-      padding-top: 0;
-    }
-  }
-  &.nutrition {
-    background-image: url('~@/assets/img/cat-nutrition.jpg');
-    @media screen and (max-width: 767px){
-      background-image: url("~@/assets/img/sp-cat-nutrition.jpg");
-    }
-  }
-
-  &.recipe {
-    background-image: url('~@/assets/img/cat-recipe.jpg');
-    @media screen and (max-width: 767px){
-      background-image: url("~@/assets/img/sp-cat-recipe.jpg");
-    }
-  }
-
-  &.restaurant {
-    background-image: url('~@/assets/img/cat-restaurant.jpg');
-    @media screen and (max-width: 767px){
-      background-image: url("~@/assets/img/sp-cat-restaurant.jpg");
-    }
-  }
-
-  &.faq {
-    background-image: url('~@/assets/img/cat-faq.jpg');
-    @media screen and (max-width: 767px){
-      background-image: url("~@/assets/img/sp-cat-faq.jpg");
-    }
-  }
+.hero-banner{
+  height: 140px;
 }
+//.hero-banner {
+//  height: get-vh(388px);
+//  width: 100%;
+//  background-size: cover;
+//  background-position: center;
+//  justify-content: center;
+//  align-items: center;
+//  display: flex;
+//  color: white;
+//  @media screen and (max-width: 767px){
+//    //height: get-vh(158px);
+//    height: get-spvh(550px);
+//  }
+//  &.why-vegan {
+//    background-image: url("~@/assets/img/cat-whyvegan.jpg");
+//    @media screen and (max-width: 767px){
+//      background-image: url("~@/assets/img/sp-cat-whyvegan.jpg");
+//    }
+//  }
+//  &.archive {
+//    background-image: url("~@/assets/img/cat-archive-pc.jpg");
+//    height: get-vh(388px);
+//    width: 100%;
+//    @media screen and (max-width: 767px){
+//      background-image: url("~@/assets/img/cat-archive-sp.jpg");
+//      height: 34vh;
+//    }
+//    h1{
+//      padding-top: 0;
+//    }
+//  }
+//  &.nutrition {
+//    background-image: url('~@/assets/img/cat-nutrition.jpg');
+//    @media screen and (max-width: 767px){
+//      background-image: url("~@/assets/img/sp-cat-nutrition.jpg");
+//    }
+//  }
+//
+//  &.recipe {
+//    background-image: url('~@/assets/img/cat-recipe.jpg');
+//    @media screen and (max-width: 767px){
+//      background-image: url("~@/assets/img/sp-cat-recipe.jpg");
+//    }
+//  }
+//
+//  &.restaurant {
+//    background-image: url('~@/assets/img/cat-restaurant.jpg');
+//    @media screen and (max-width: 767px){
+//      background-image: url("~@/assets/img/sp-cat-restaurant.jpg");
+//    }
+//  }
+//
+//  &.faq {
+//    background-image: url('~@/assets/img/cat-faq.jpg');
+//    @media screen and (max-width: 767px){
+//      background-image: url("~@/assets/img/sp-cat-faq.jpg");
+//    }
+//  }
+//}
 
 body[data-aos-duration='5000'] [data-aos],
 [data-aos][data-aos][data-aos-duration='5000'] {
