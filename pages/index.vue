@@ -221,27 +221,27 @@ export default {
             })
         ]).then(([posts]) => {
             const items = posts.items
-            const whyVegan = items.filter(function (item){
-                return item.fields.category === 'why-vegan'
-            })
-            const nutrition = items.filter(function (item){
-                return item.fields.category === 'nutrition'
-            })
-            const recipes = items.filter(function (item){
-                return item.fields.category === 'recipes'
-            })
-            const restaurants = items.filter(function (item){
-                return item.fields.category === 'restaurants'
-            })
-            const oxLife = items.filter(function (item){
-                return item.fields.category === 'ox-life'
-            })
+            // const whyVegan = items.filter(function (item){
+            //     return item.fields.category === 'why-vegan'
+            // })
+            // const nutrition = items.filter(function (item){
+            //     return item.fields.category === 'nutrition'
+            // })
+            // const recipes = items.filter(function (item){
+            //     return item.fields.category === 'recipes'
+            // })
+            // const restaurants = items.filter(function (item){
+            //     return item.fields.category === 'restaurants'
+            // })
+            // const oxLife = items.filter(function (item){
+            //     return item.fields.category === 'ox-life'
+            // })
             return {
-                whyVegan: whyVegan,
-                nutrition: nutrition,
-                recipes: recipes,
-                restaurants: restaurants,
-                oxLife: oxLife,
+                // whyVegan: whyVegan,
+                // nutrition: nutrition,
+                // recipes: recipes,
+                // restaurants: restaurants,
+                // oxLife: oxLife,
                 posts: posts.items
                 // posts: posts.items
             }
