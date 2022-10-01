@@ -38,6 +38,7 @@
             return client.getEntries({
                 'content_type': env.CTF_BLOG_POST_TYPE_ID,
                 order: '-fields.publishDate',
+                limit: 1000
                 // 'fields.category': 'recipes'
             }).then(entries => {
                 const data = entries.items;
