@@ -10,7 +10,7 @@
                                      data-aos="fade-in"
                                      data-aos-duration="2000"
                                      data-aos-delay="1000">
-                                    <h1 class=" green">THE ANSWER <br> FOR YOUR <br> OPTIMAL HEALTH</h1>
+                                    <h1 class=" green">GAIN YOUR <br> OPTIMAL HEALTH</h1>
                                 </div>
                                 <img class="kv_img" height="480px" width="684px" src="~assets/img/kv_1.jpg" alt="">
                             </div>

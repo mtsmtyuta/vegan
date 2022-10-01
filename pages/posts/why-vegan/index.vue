@@ -33,12 +33,14 @@
         asyncData ({ env }) {
             return client.getEntries({
                 'content_type': env.CTF_BLOG_POST_TYPE_ID,
-                order: '-fields.publishDate'
+                order: '-fields.publishDate',
+                limit: 1000
             }).then(entries => {
                 const posts = entries.items;
                 const category = posts.filter(function (item) {
                     return item.fields.category === 'why-vegan'
                 });
+                console.log(posts)
                 return {
                     category: category,
                     posts: posts

@@ -56,13 +56,24 @@ export default {
     /*background-color: #f2f2f2;*/
     /*padding-bottom: get-vw(300px);*/
 }
-
+.hero-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    @media screen and (max-width: 767px){
+       align-items: end;
+        height: 128px;
+    }
+    h1{
+        font-size: 24px;
+    }
+}
 .post-grid{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin-left: auto;
     width: 80vw;
-    justify-content: center;
     @media screen and (max-width: 767px){
         display: block;
         margin: auto;

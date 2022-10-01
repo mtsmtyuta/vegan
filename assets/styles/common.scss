@@ -33,6 +33,12 @@ html, body{
     font-size: 18px;
   }
 }
+article{
+  min-height: 100vh;
+  @media screen and (max-width: 767px){
+    min-height: 80vh;
+  }
+}
 
 .green{
   color: $main-color;
