@@ -31,6 +31,7 @@ const dynamicRoutes = async () =>{
 }
 
   module.exports = {
+    // mode: 'static',
     mode: 'universal',
     /*
     ** Headers of the page

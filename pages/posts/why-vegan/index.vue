@@ -3,7 +3,8 @@
   <article>
     <div class="hero-banner why-vegan">
       <h1 class="page-title">
-        WHY VEGAN
+          <img src="~assets/icons/category_why_vegan.svg" alt="why_vegan">
+          WHY VEGAN
       </h1>
     </div>
     <PostGrid :posts="category"></PostGrid>
@@ -40,7 +41,6 @@
                 const category = posts.filter(function (item) {
                     return item.fields.category === 'why-vegan'
                 });
-                console.log(posts)
                 return {
                     category: category,
                     posts: posts

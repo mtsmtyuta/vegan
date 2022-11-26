@@ -3,6 +3,7 @@
   <article>
     <div class="hero-banner faq">
       <h1 class="page-title">
+          <img src="~assets/icons/category_ox_life.svg" alt="ox_life">
         OX LIFE
       </h1>
     </div>

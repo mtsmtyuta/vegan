@@ -29,15 +29,15 @@ html, body{
 }
 .page-title{
   font-size: 22px;
+  img{
+    margin-right: 16px;
+  }
   @media screen and (max-width: 767px){
     font-size: 18px;
   }
 }
 article{
-  min-height: 100vh;
-  @media screen and (max-width: 767px){
-    min-height: 80vh;
-  }
+  min-height: 80vh;
 }
 
 .green{

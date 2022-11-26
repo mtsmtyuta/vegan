@@ -27,9 +27,7 @@
         display: flex;
         padding: get-vw(36px);
         justify-content: space-between;
-        &-logo{
-            margin: 28px 0;
-        }
+        margin-top: 80px;
         &-nav{
             display: flex;
             &.bottom{

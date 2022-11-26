@@ -87,10 +87,10 @@
         }
       }
       &.bottom{
-        margin-top: get-vh(240px);
-        @media screen and (max-width: 767px){
-          margin-top: get-spvh(146px);
-        }
+        //margin-top: get-vh(240px);
+        //@media screen and (max-width: 767px){
+        //  margin-top: get-spvh(146px);
+        //}
       }
     }
     .logo {

@@ -48,14 +48,8 @@
     }
   }
   .author{
-    width: get-vw(620px);
-    /*max-width: 620px;*/
     margin: auto;
     padding: get-vw(60px) 0 get-vw(108px);
-    @media screen and (max-width: 767px){
-      /*width: responsive-vw(310px);*/
-      width: 100%;
-    }
     .txt-box{
       width: get-vw(400px);
       @media screen and (max-width: 767px){

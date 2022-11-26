@@ -3,6 +3,7 @@
   <article>
     <div class="hero-banner recipe">
       <h1 class="page-title">
+          <img src="~assets/icons/category_recipes.svg" alt="recipes">
         RECIPES
       </h1>
     </div>

@@ -3,6 +3,7 @@
   <article>
     <div class="hero-banner nutrition">
       <h1 class="page-title">
+          <img src="~assets/icons/category_nutrition.svg" alt="nutrition">
         NUTRITION
       </h1>
     </div>

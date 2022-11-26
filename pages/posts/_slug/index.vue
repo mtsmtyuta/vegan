@@ -3,11 +3,7 @@
   <article>
     <div v-if="currentPost.fields.topImage" class="single-post-page">
       <SinglePost :post="currentPost"/>
-      <!--      <Author :author="currentPost.fields.author"></Author>-->
       <RelatedPosts :post="currentPost"></RelatedPosts>
-    </div>
-    <div class="section-recent">
-      <RecentPosts :posts="allPosts"></RecentPosts>
     </div>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </article>

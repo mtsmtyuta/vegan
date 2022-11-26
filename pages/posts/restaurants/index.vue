@@ -3,7 +3,9 @@
   <article>
     <div class="hero-banner restaurant">
       <h1 class="page-title">
-        RESTAURANTS <span></span>
+          <img src="~assets/icons/category_restaurants.svg" alt="restaurants">
+
+          RESTAURANTS <span></span>
       </h1>
     </div>
     <PostGrid :posts="category"></PostGrid>
