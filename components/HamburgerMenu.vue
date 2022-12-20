@@ -13,7 +13,7 @@
             </ul>
             <ul class="header-nav bottom">
               <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/posts">ARCHIVE</nuxt-link></li>
-              <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/writers">WRITER</nuxt-link></li>
+<!--              <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/writers">WRITER</nuxt-link></li>-->
               <li class="header-nav__item"><nuxt-link @click.native="hamburger()" to="/about-us">ABOUT US</nuxt-link></li>
             </ul>
         </div>

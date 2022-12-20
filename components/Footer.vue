@@ -15,7 +15,7 @@
             </ul>
             <ul class="footer-nav bottom flex row-to-column">
                 <li class="footer-nav__item"><nuxt-link to="/posts">ARCHIVE</nuxt-link></li>
-                <li class="footer-nav__item"><nuxt-link to="/writers">WRITER</nuxt-link></li>
+<!--                <li class="footer-nav__item"><nuxt-link to="/writers">WRITER</nuxt-link></li>-->
                 <li class="footer-nav__item"><nuxt-link to="/about-us">ABOUT US</nuxt-link></li>
             </ul>
         </div>
@@ -28,6 +28,9 @@
         padding: get-vw(36px);
         justify-content: space-between;
         margin-top: 80px;
+        &-logo{
+            margin-bottom: 28px;
+        }
         &-nav{
             display: flex;
             &.bottom{

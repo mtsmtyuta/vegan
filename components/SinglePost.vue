@@ -14,7 +14,7 @@
                 </div>
 <!--                <social-share :slug="post.fields.slug" :title="post.fields.title"></social-share>-->
                 <div v-if="post.fields.topImage" class="img-box hero"
-                     v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url +')' }"></div>
+                     v-bind:style="{ backgroundImage: 'url(' + post.fields.topImage.fields.file.url + `?fit=thumb&w=840&h=400` + ')' }"></div>
             </div>
             <div class="content">
                 <vue-markdown v-if="post.fields.body">{{ post.fields.body }}</vue-markdown>
@@ -232,6 +232,7 @@ pre {
         font-size: 22px;
         line-height: 1.5;
         margin-bottom: 36px;
+        font-weight: bold;
         @media screen and (max-width: 767px){
             font-size: 18px;
             margin-bottom: 18px;
