@@ -15,7 +15,7 @@
     <ul class="header-nav bottom pc">
       <li class="header-nav__item"><nuxt-link to="/posts">ARCHIVE</nuxt-link></li>
 <!--      <li class="header-nav__item"><nuxt-link to="/writers">WRITER</nuxt-link></li>-->
-      <li class="header-nav__item"><nuxt-link to="/about-us">ABOUT US</nuxt-link></li>
+      <li class="header-nav__item"><a href="/about-us">ABOUT US</a></li>
     </ul>
 
     <div class="sp hamburger-menu">
