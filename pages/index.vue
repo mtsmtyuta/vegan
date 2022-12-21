@@ -95,7 +95,6 @@
                             <div
                                 data-aos="fade-in"
                                 data-aos-duration="3000"
-                                data-aos-delay="500"
                             >
                                 <p>動物性食品・加工食品の摂取を減らし、植物性食品・ホールフード中心の食事に切り替えることで、</p>
                                 <p>あなたの全般的な健康だけでなく運動や知的パフォーマンスを大幅に向上させることができます。</p>
@@ -157,7 +156,7 @@
 
                          data-aos="fade-in"
                          data-aos-duration="500"
-                         data-aos-delay="400">
+                         data-aos-delay="200">
                         <img src="~assets/icons/category_recipes_white.svg" alt="recipes">
 
                         <div class="txt-box flex column">
@@ -176,7 +175,7 @@
 
                          data-aos="fade-in"
                          data-aos-duration="500"
-                         data-aos-delay="600">
+                         data-aos-delay="200">
                         <img src="~assets/icons/category_restaurants_white.svg" alt="restaurants">
                         <div class="txt-box flex column">
                             <div class="img-box restaurant-icon"></div>
@@ -193,7 +192,7 @@
 
                          data-aos="fade-in"
                          data-aos-duration="500"
-                         data-aos-delay="800">
+                         data-aos-delay="200">
                         <img src="~assets/icons/category_ox_life_white.svg" alt="ox_life">
                         <div class="txt-box flex column">
                             <div class="img-box ox-life-icon"></div>

@@ -7,10 +7,10 @@
       <div class="flex column flex-right">
         <div class="flex center-align between">
           <p class="name en">{{author.fields.name}}</p>
-          <div class="sns flex between">
-            <a target="_blank" rel="noopener" v-if="author.fields.twitter" :href="author.fields.twitter" class="img-box tw"></a>
-            <a target="_blank" rel="noopener" v-if="author.fields.instagram" :href="author.fields.instagram" class="img-box ig"></a>
-          </div>
+<!--          <div class="sns flex between">-->
+<!--            <a target="_blank" rel="noopener" v-if="author.fields.twitter" :href="author.fields.twitter" class="img-box tw"></a>-->
+<!--            <a target="_blank" rel="noopener" v-if="author.fields.instagram" :href="author.fields.instagram" class="img-box ig"></a>-->
+<!--          </div>-->
         </div>
         <p class="bio" v-if="author.fields.bio">{{author.fields.bio}}</p>
       </div>

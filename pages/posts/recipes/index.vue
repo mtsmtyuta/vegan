@@ -36,11 +36,17 @@
             return client.getEntries({
                 'content_type': env.CTF_BLOG_POST_TYPE_ID,
                 order: '-fields.publishDate',
+                limit: 1000
                 // 'fields.category': 'recipes'
             }).then(entries => {
-                const posts = entries.items;
+                const data = entries.items;
+                const today = new Date();
+
+                const posts = data.filter(function(item){
+                    let published = new Date(item.fields.publishDate);
+                    return published < today
+                });
                 const category = posts.filter(function (item) {
-                    // return item.fields.category === 'nutrition'
                     return item.fields.category === 'recipes'
                 });
                 return {

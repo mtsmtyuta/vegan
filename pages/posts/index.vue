@@ -34,11 +34,19 @@
         asyncData ({ env }) {
             return client.getEntries({
                 'content_type': env.CTF_BLOG_POST_TYPE_ID,
-                order: '-fields.publishDate'
+                order: '-fields.publishDate',
+                limit: 1000
             }).then(entries => {
+                const data = entries.items;
+                const today = new Date();
+                const items = data.filter(function(item){
+                    let published = new Date(item.fields.publishDate);
+                    return published < today
+                })
 
                 return {
-                    posts: entries.items
+                    posts: items
+                    // posts: entries.items
                 }
             }).catch(console.error)
         }
