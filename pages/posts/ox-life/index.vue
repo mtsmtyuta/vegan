@@ -19,7 +19,7 @@
 
     export default {
         head : {
-            title: 'OX LIFE | ヴィーガン生活あれこれ'
+            title: 'OX LIFE | OX生活あれこれ'
         },
         layout: 'article',
         data () {

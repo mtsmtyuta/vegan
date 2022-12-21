@@ -8,7 +8,7 @@
                 >
                     <nuxt-link v-if="post.fields.slug" :to="{ name: 'posts-slug', params: { slug: post.fields.slug }}" class="card-footer-item">
                         <div class="slide-content"
-                             data-aos="fade-up"
+                             data-aos="fade-in"
                              data-aos-duration="500"
                              data-aos-delay="0"
                              data-aos-offset="100"

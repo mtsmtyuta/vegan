@@ -9,19 +9,25 @@
                                 <div class="txt-box"
                                      data-aos="fade-in"
                                      data-aos-duration="2000"
-                                     data-aos-delay="1000">
+                                     data-aos-delay="100">
                                     <h1 class=" green">GAIN YOUR <br> OPTIMAL HEALTH</h1>
                                 </div>
-                                <img class="kv_img" height="480px" width="684px" src="~assets/img/kv_1.jpg" alt="">
+                                <img
+                                    data-aos="fade-in"
+                                    data-aos-duration="1000"
+                                    class="kv_img" height="480px" width="684px" src="~assets/img/kv_1.jpg" alt="">
                             </div>
                             <div class="flex vertical tag-line"
                                  data-aos="slide-down"
-                                 data-aos-duration="1000"
-                                 data-aos-delay="5000">
+                                 data-aos-duration="1000">
                                 <p class="bold">健康をここから始める</p>
-                                <p class="bold">ヴィーガンライフスタイルマガジン</p>
+                                <p class="bold">菜食・ホールフードライフスタイルマガジン</p>
                             </div>
-                            <div class="new-posts">
+                            <div class="new-posts"
+                                 data-aos="fade-left"
+                                 data-aos-duration="2000"
+                                 data-aos-delay="500"
+                            >
                                 <div class="articles">
                                     <div class="flex between">
                                         <div class="title_box">
@@ -76,18 +82,33 @@
                             <!--                 data-aos-duration="5000"-->
                             <!--                 data-aos-delay="1000"-->
                             <!--            >-->
-                            <div class="img-box berries">
+                            <div class="img-box berries"
+                                 data-aos="fade-left"
+                                 data-aos-duration="2000"
+                            >
                                 <img src="~assets/img/berries.jpg" alt="berries">
                             </div>
-                            <h2 class="green">UNLEASH YOUR POTENTIAL</h2>
-                            <p>動物性食品・加工食品の摂取を減らし、植物性食品・ホールフード中心の食事に切り替えることで、</p>
-                            <p>あなたの全般的な健康だけでなく運動や知的パフォーマンスを大幅に向上させることができます。</p>
-                            <p>そのことはアスリートだけでなく、人生と地球を愛する全ての人に手にしてもらいたいメリットです。</p>
-                            <p>実践の為に必要なすべてのレシピやヒント、疑問への答えはここで入手してください。</p>
+                            <h2
+                                data-aos="fade-in"
+                                data-aos-duration="2000"
+                                class="green">UNLEASH YOUR POTENTIAL</h2>
+                            <div
+                                data-aos="fade-in"
+                                data-aos-duration="3000"
+                                data-aos-delay="500"
+                            >
+                                <p>動物性食品・加工食品の摂取を減らし、植物性食品・ホールフード中心の食事に切り替えることで、</p>
+                                <p>あなたの全般的な健康だけでなく運動や知的パフォーマンスを大幅に向上させることができます。</p>
+                                <p>そのことはアスリートだけでなく、人生と地球を愛する全ての人に手にしてもらいたいメリットです。</p>
+                                <p>実践の為に必要なすべてのレシピやヒント、疑問への答えはここで入手してください。</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="img-box greens">
+                <div class="img-box greens"
+
+                     data-aos="fade-right"
+                     data-aos-duration="2000">
                     <img src="~assets/img/greens.jpg" alt="greens">
                 </div>
                 <!--        <RecentPosts class="sp" :posts="posts"></RecentPosts>-->
@@ -96,13 +117,18 @@
             </client-only>
 
 
-            <div class="category_container">
+            <div class="category_container"
+                 data-aos="fade-in"
+                 data-aos-duration="1000">
                 <div class="txt-box">
                     <h2>WHAT TO LEARN TODAY?</h2>
                     <p>何をお探しですか？</p>
                 </div>
                 <div class="content-container">
-                    <div class="category_item">
+                    <div class="category_item"
+                         data-aos="fade-in"
+                         data-aos-duration="500"
+                         data-aos-delay="100">
                         <img src="~assets/icons/category_why_vegan_white.svg" alt="why_vegan">
                         <div class="txt-box flex column">
                             <h3 class="">WHY VEGAN</h3>
@@ -113,7 +139,11 @@
                         </div>
                     </div>
 
-                    <div class="category_item">
+                    <div class="category_item"
+
+                         data-aos="fade-in"
+                         data-aos-duration="500"
+                         data-aos-delay="200">
                         <img src="~assets/icons/category_nutrition_white.svg" alt="nutrition">
 
                         <div class="txt-box flex column">
@@ -123,7 +153,11 @@
                             <Button link="/posts/nutrition" text="栄養に詳しくなる" color="white" />
                         </div>
                     </div>
-                    <div class="category_item">
+                    <div class="category_item"
+
+                         data-aos="fade-in"
+                         data-aos-duration="500"
+                         data-aos-delay="400">
                         <img src="~assets/icons/category_recipes_white.svg" alt="recipes">
 
                         <div class="txt-box flex column">
@@ -138,7 +172,11 @@
                         </div>
                     </div>
 
-                    <div class="category_item">
+                    <div class="category_item"
+
+                         data-aos="fade-in"
+                         data-aos-duration="500"
+                         data-aos-delay="600">
                         <img src="~assets/icons/category_restaurants_white.svg" alt="restaurants">
                         <div class="txt-box flex column">
                             <div class="img-box restaurant-icon"></div>
@@ -151,13 +189,17 @@
                         </div>
                     </div>
 
-                    <div class="category_item">
+                    <div class="category_item"
+
+                         data-aos="fade-in"
+                         data-aos-duration="500"
+                         data-aos-delay="800">
                         <img src="~assets/icons/category_ox_life_white.svg" alt="ox_life">
                         <div class="txt-box flex column">
                             <div class="img-box ox-life-icon"></div>
                             <h3 class="">OX LIFE</h3>
-                            <p class="strong">ヴィーガン生活</p>
-                            <p class="category-description">ヴィーガン生活をする中で出てくる疑問に答えたり日々の生活に役立つ情報を紹介します。</p>
+                            <p class="strong">菜食・ホールフード生活</p>
+                            <p class="category-description">アスリートのように生活をする中で出てくる疑問に答えたり日々の生活に役立つ情報を紹介します。</p>
                             <Button link="/posts/ox-life" text="答えを探す" color="white" />
                         </div>
                     </div>

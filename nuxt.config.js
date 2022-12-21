@@ -37,16 +37,16 @@ const dynamicRoutes = async () =>{
     ** Headers of the page
     */
     head: {
-      title: 'OX(オックス）| ヴィーガンWebマガジン',
+      title: 'OX(オックス）| 菜食・ホールフード中心生活で健康・パフォーマンス向上を目指す人のためのWebマガジン',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'OXは、ヴィーガンのライフスタイルに興味があるけれど、何から始めたらいいか分からないという方の疑問に答えます。' },
-        { hid: 'og:site_name', property: 'og:site_name', content: 'OX(オックス）| ヴィーガンWebマガジン' },
+        { hid: 'description', name: 'description', content: 'OXは、菜食・ホールフード中心のライフスタイルに興味があるけれど、何から始めたらいいか分からないという方の疑問に答えます。' },
+        { hid: 'og:site_name', property: 'og:site_name', content: 'OX(オックス）| 菜食・ホールフード中心生活で健康・パフォーマンス向上を目指す人のためのWebマガジン' },
         { hid: 'og:type', property: 'og:type', content: 'website' },
         { hid: 'og:url', property: 'og:url', content: 'https://ox-vegan.jp' },
-        { hid: 'og:title', property: 'og:title', content: 'OX(オックス）| ヴィーガンWebマガジン' },
-        { hid: 'og:description', property: 'og:description', content: 'ヴィーガンのライフスタイルに興味があるけれど、何から始めたらいいか分からないという方の疑問に答えます。' },
+        { hid: 'og:title', property: 'og:title', content: 'OX(オックス）| 菜食・ホールフード中心生活で健康・パフォーマンス向上を目指す人のためのWebマガジン' },
+        { hid: 'og:description', property: 'og:description', content: '菜食・ホールフード中心のライフスタイルに興味があるけれど、何から始めたらいいか分からないという方の疑問に答えます。' },
         { hid: 'og:image', property: 'og:image', content: 'https://ox-vegan.jp/ogp.png' },
         { name: 'twitter:card', content: 'summary_large_image' },
       ],
