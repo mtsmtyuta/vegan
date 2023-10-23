@@ -11,29 +11,60 @@ const client = contentful.createClient({
   // timeout: 1000000
 });
 
-const dynamicRoutes = async () => {
-  const post = client
-    .getEntries({
-      content_type: process.env.CTF_BLOG_POST_TYPE_ID
-    })
-    .then(entries => {
-      console.log("Entries:", entries.items); // Log the entries
-      return entries.items
-        .map(entry => {
-          if (entry && entry.fields && entry.fields.slug) {
-            console.log("Valid entry:", entry); // Log valid entries
-            return `posts/${entry.fields.slug}`;
-          } else {
-            console.error("Invalid entry:", entry); // Log invalid entries
-            return null;
-          }
-        })
-        .filter(Boolean); // Filter out invalid entries
-    });
-  return Promise.all([post]).then(values => {
-    return [...values[0]];
+const fetchAllEntries = async (content_type, skip = 0, limit = 50) => {
+  const entries = await client.getEntries({
+    content_type: content_type,
+    skip: skip,
+    limit: limit,
+    order: "-fields.publishDate"
   });
+
+  if (entries.items.length === limit) {
+    return [
+      ...entries.items,
+      ...(await fetchAllEntries(content_type, skip + limit, limit))
+    ];
+  }
+
+  return entries.items;
 };
+
+const dynamicRoutes = async () => {
+  const posts = await fetchAllEntries(process.env.CTF_BLOG_POST_TYPE_ID);
+  return posts
+    .map(entry => {
+      if (entry && entry.fields && entry.fields.slug) {
+        return `posts/${entry.fields.slug}`;
+      } else {
+        return null;
+      }
+    })
+    .filter(Boolean);
+};
+
+// const dynamicRoutes = async () => {
+//   const post = client
+//     .getEntries({
+//       content_type: process.env.CTF_BLOG_POST_TYPE_ID
+//     })
+//     .then(entries => {
+//       console.log("Entries:", entries.items); // Log the entries
+//       return entries.items
+//         .map(entry => {
+//           if (entry && entry.fields && entry.fields.slug) {
+//             console.log("Valid entry:", entry); // Log valid entries
+//             return `posts/${entry.fields.slug}`;
+//           } else {
+//             console.error("Invalid entry:", entry); // Log invalid entries
+//             return null;
+//           }
+//         })
+//         .filter(Boolean); // Filter out invalid entries
+//     });
+//   return Promise.all([post]).then(values => {
+//     return [...values[0]];
+//   });
+// };
 
 // const dynamicRoutes = async () => {
 //   const post = client
@@ -50,6 +81,8 @@ const dynamicRoutes = async () => {
 
 module.exports = {
   mode: "static",
+  debug: true,
+
   head: {
     title:
       "OX(オックス）| 菜食・ホールフード中心生活で健康・パフォーマンス向上を目指す人のためのWebマガジン",
@@ -101,22 +134,23 @@ module.exports = {
     ]
   },
   generate: {
-    // routes: dynamicRoutes,
-    routes() {
-      let postRoutes = client
-        .getEntries({
-          content_type: process.CTF_BLOG_POST_TYPE_ID
-        })
-        .then(entries => {
-          return [...entries.items.map(entry => `posts/${entry.fields.slug}`)];
-        });
-      return Promise.all([postRoutes]).then(values => {
-        return [...values[0]];
-      });
-    },
-    fallback: true,
-    interval: 1000
+    routes: dynamicRoutes
+    // routes() {
+    //   let postRoutes = client
+    //     .getEntries({
+    //       content_type: process.CTF_BLOG_POST_TYPE_ID
+    //     })
+    //     .then(entries => {
+    //       return [...entries.items.map(entry => `posts/${entry.fields.slug}`)];
+    //     });
+    //   return Promise.all([postRoutes]).then(values => {
+    //     return [...values[0]];
+    //   });
+    // },
+    // fallback: true,
+    // interval: 1000
   },
+
   plugins: [
     { src: "./plugins/vue-slick-carousel.js" },
     { src: "~/plugins/aos.js", mode: "client" },
@@ -142,18 +176,19 @@ module.exports = {
   sitemap: {
     path: "/sitemap.xml",
     hostname: "https://ox-vegan.jp",
-    routes() {
-      let postRoutes = client
-        .getEntries({
-          content_type: process.CTF_BLOG_POST_TYPE_ID
-        })
-        .then(entries => {
-          return [...entries.items.map(entry => `posts/${entry.fields.slug}`)];
-        });
-      return Promise.all([postRoutes]).then(values => {
-        return [...values[0]];
-      });
-    }
+    routes: dynamicRoutes
+    // routes() {
+    //   let postRoutes = client
+    //     .getEntries({
+    //       content_type: process.CTF_BLOG_POST_TYPE_ID
+    //     })
+    //     .then(entries => {
+    //       return [...entries.items.map(entry => `posts/${entry.fields.slug}`)];
+    //     });
+    //   return Promise.all([postRoutes]).then(values => {
+    //     return [...values[0]];
+    //   });
+    // }
   },
 
   styleResources: {
